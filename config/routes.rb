@@ -1,4 +1,5 @@
 Realtorest::Application.routes.draw do
+    match 'listings' => 'listings#view'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

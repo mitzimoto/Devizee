@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  prop_type: MyString
+  list_no: MyString
+
+two:
+  prop_type: MyString
+  list_no: MyString

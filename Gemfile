@@ -26,6 +26,7 @@ group :development do
 end
 
 gem 'jquery-rails'
+gem 'multiple_table_inheritance', '~> 0.1.10'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
