@@ -1,0 +1,2621 @@
+TOWN_NUM|LONG|COUNTY|STATE
+1|Boston|SUFF|MA
+12|Brookline|NORF|MA
+13|Cambridge|MIDD|MA
+14|Everett|MIDD|MA
+15|Malden|MIDD|MA
+16|Medford|MIDD|MA
+17|Somerville|MIDD|MA
+20|Revere|SUFF|MA
+21|Winthrop|SUFF|MA
+22|Chelsea|SUFF|MA
+23|Canton|NORF|MA
+24|Dedham|NORF|MA
+25|Foxboro|NORF|MA
+26|Mansfield|BRIS|MA
+27|Medfield|NORF|MA
+28|Milton|NORF|MA
+29|Norwood|NORF|MA
+30|Sharon|NORF|MA
+31|Walpole|NORF|MA
+32|Westwood|NORF|MA
+33|Bellingham|NORF|MA
+34|Franklin|NORF|MA
+35|Medway|NORF|MA
+36|Millis|NORF|MA
+37|Norfolk|NORF|MA
+38|Wrentham|NORF|MA
+39|Newton|MIDD|MA
+40|Waltham|MIDD|MA
+41|Watertown|MIDD|MA
+42|Arlington|MIDD|MA
+43|Belmont|MIDD|MA
+44|Winchester|MIDD|MA
+45|Ashland|MIDD|MA
+46|Framingham|MIDD|MA
+47|Holliston|MIDD|MA
+48|Hopkinton|MIDD|MA
+49|Hudson|MIDD|MA
+50|Natick|MIDD|MA
+51|Sudbury|MIDD|MA
+52|Wayland|MIDD|MA
+53|Dover|NORF|MA
+54|Needham|NORF|MA
+55|Sherborn|MIDD|MA
+56|Wellesley|NORF|MA
+57|Weston|MIDD|MA
+58|Acton|MIDD|MA
+59|Bedford|MIDD|MA
+60|Boxborough|MIDD|MA
+61|Burlington|MIDD|MA
+62|Concord|MIDD|MA
+63|Lexington|MIDD|MA
+64|Lincoln|MIDD|MA
+65|Maynard|MIDD|MA
+66|Stow|MIDD|MA
+67|Attleboro|BRIS|MA
+68|North Attleboro|BRIS|MA
+69|Plainville|NORF|MA
+70|Seekonk|BRIS|MA
+101|Barnstable|BARN|MA
+102|Bourne|BARN|MA
+103|Brewster|BARN|MA
+104|Chatham|BARN|MA
+105|Dennis|BARN|MA
+106|Eastham|BARN|MA
+107|Falmouth|BARN|MA
+108|Harwich|BARN|MA
+111|Mashpee|BARN|MA
+112|Nantucket|NANT|MA
+113|Orleans|BARN|MA
+114|Provincetown|BARN|MA
+115|Sandwich|BARN|MA
+116|Truro|BARN|MA
+117|Wareham|PLYM|MA
+118|Wellfleet|BARN|MA
+119|Yarmouth|BARN|MA
+121|Aquinnah|DUKE|MA
+122|Chilmark|DUKE|MA
+123|West Tisbury|DUKE|MA
+124|Tisbury|DUKE|MA
+125|Oak Bluffs|DUKE|MA
+126|Edgartown|DUKE|MA
+127|Gosnold|DUKE|MA
+150|Marion|PLYM|MA
+151|Mattapoisett|PLYM|MA
+152|Rochester|PLYM|MA
+153|Lakeville|PLYM|MA
+154|Acushnet|BRIS|MA
+155|Fairhaven|BRIS|MA
+156|New Bedford|BRIS|MA
+157|Dartmouth|BRIS|MA
+160|Westport|BRIS|MA
+161|Fall River|BRIS|MA
+162|Freetown|BRIS|MA
+163|Somerset|BRIS|MA
+164|Swansea|BRIS|MA
+170|Norton|BRIS|MA
+171|Raynham|BRIS|MA
+172|Berkley|BRIS|MA
+173|Taunton|BRIS|MA
+174|Dighton|BRIS|MA
+175|Rehoboth|BRIS|MA
+180|Middleboro|PLYM|MA
+181|Bridgewater|PLYM|MA
+182|East Bridgewater|PLYM|MA
+183|West Bridgewater|PLYM|MA
+184|Easton|BRIS|MA
+185|Brockton|PLYM|MA
+186|Whitman|PLYM|MA
+187|Rockland|PLYM|MA
+188|Abington|PLYM|MA
+189|Holbrook|NORF|MA
+190|Randolph|NORF|MA
+191|Avon|NORF|MA
+192|Stoughton|NORF|MA
+193|Weymouth|NORF|MA
+194|Braintree|NORF|MA
+195|Quincy|NORF|MA
+196|Hull|PLYM|MA
+200|Hingham|PLYM|MA
+201|Cohasset|NORF|MA
+202|Scituate|PLYM|MA
+203|Norwell|PLYM|MA
+204|Hanover|PLYM|MA
+205|Hanson|PLYM|MA
+206|Halifax|PLYM|MA
+207|Pembroke|PLYM|MA
+208|Marshfield|PLYM|MA
+209|Duxbury|PLYM|MA
+210|Kingston|PLYM|MA
+211|Plympton|PLYM|MA
+212|Carver|PLYM|MA
+213|Plymouth|PLYM|MA
+301|Woburn|MIDD|MA
+302|Wilmington|MIDD|MA
+303|North Reading|MIDD|MA
+304|Reading|MIDD|MA
+305|Stoneham|MIDD|MA
+306|Melrose|MIDD|MA
+307|Wakefield|MIDD|MA
+311|Saugus|ESSX|MA
+312|Lynn|ESSX|MA
+313|Lynnfield|ESSX|MA
+314|Nahant|ESSX|MA
+315|Peabody|ESSX|MA
+316|Salem|ESSX|MA
+317|Swampscott|ESSX|MA
+318|Marblehead|ESSX|MA
+319|Beverly|ESSX|MA
+320|Danvers|ESSX|MA
+321|Middleton|ESSX|MA
+322|Topsfield|ESSX|MA
+323|Wenham|ESSX|MA
+324|Hamilton|ESSX|MA
+325|Manchester|ESSX|MA
+326|Gloucester|ESSX|MA
+327|Rockport|ESSX|MA
+328|Essex|ESSX|MA
+329|Ipswich|ESSX|MA
+341|Rowley|ESSX|MA
+342|Newbury|ESSX|MA
+343|West Newbury|ESSX|MA
+344|Newburyport|ESSX|MA
+345|Salisbury|ESSX|MA
+346|Amesbury|ESSX|MA
+351|Merrimac|ESSX|MA
+352|Haverhill|ESSX|MA
+353|Groveland|ESSX|MA
+354|Georgetown|ESSX|MA
+361|Boxford|ESSX|MA
+362|North Andover|ESSX|MA
+363|Andover|ESSX|MA
+364|Lawrence|ESSX|MA
+365|Methuen|ESSX|MA
+371|Dracut|MIDD|MA
+372|Lowell|MIDD|MA
+373|Tewksbury|MIDD|MA
+374|Billerica|MIDD|MA
+375|Carlisle|MIDD|MA
+376|Chelmsford|MIDD|MA
+377|Tyngsborough|MIDD|MA
+378|Dunstable|MIDD|MA
+379|Westford|MIDD|MA
+380|Littleton|MIDD|MA
+401|Worcester|WORC|MA
+402|Berlin|WORC|MA
+403|Boylston|WORC|MA
+404|Clinton|WORC|MA
+405|Marlborough|MIDD|MA
+406|Northborough|WORC|MA
+407|Southborough|WORC|MA
+408|Westborough|WORC|MA
+409|Shrewsbury|WORC|MA
+410|West Boylston|WORC|MA
+411|Sterling|WORC|MA
+412|Princeton|WORC|MA
+413|Holden|WORC|MA
+414|Rutland|WORC|MA
+415|Barre|WORC|MA
+416|Hardwick|WORC|MA
+417|New Braintree|WORC|MA
+418|Oakham|WORC|MA
+419|Paxton|WORC|MA
+420|Leicester|WORC|MA
+421|Spencer|WORC|MA
+422|East Brookfield|WORC|MA
+423|North Brookfield|WORC|MA
+424|West Brookfield|WORC|MA
+425|Brookfield|WORC|MA
+426|Warren|WORC|MA
+427|Sturbridge|WORC|MA
+428|Southbridge|WORC|MA
+429|Dudley|WORC|MA
+430|Charlton|WORC|MA
+431|Oxford|WORC|MA
+432|Webster|WORC|MA
+433|Douglas|WORC|MA
+434|Sutton|WORC|MA
+435|Northbridge|WORC|MA
+436|Uxbridge|WORC|MA
+437|Millville|WORC|MA
+438|Blackstone|WORC|MA
+439|Mendon|WORC|MA
+440|Hopedale|WORC|MA
+441|Milford|WORC|MA
+442|Upton|WORC|MA
+443|Grafton|WORC|MA
+444|Millbury|WORC|MA
+445|Auburn|WORC|MA
+451|Bolton|WORC|MA
+452|Harvard|WORC|MA
+453|Lancaster|WORC|MA
+454|Leominster|WORC|MA
+455|Fitchburg|WORC|MA
+456|Lunenburg|WORC|MA
+457|Shirley|MIDD|MA
+458|Ayer|MIDD|MA
+459|Groton|MIDD|MA
+460|Pepperell|MIDD|MA
+461|Townsend|MIDD|MA
+462|Ashby|MIDD|MA
+463|Ashburnham|WORC|MA
+464|Westminster|WORC|MA
+465|Gardner|WORC|MA
+466|Winchendon|WORC|MA
+467|Royalston|WORC|MA
+468|Templeton|WORC|MA
+469|Hubbardston|WORC|MA
+470|Phillipston|WORC|MA
+471|Petersham|WORC|MA
+472|Athol|WORC|MA
+473|Orange|FRAN|MA
+479|Devens|WORC|MA
+501|Leverett|FRAN|MA
+502|Shutesbury|FRAN|MA
+503|New Salem|FRAN|MA
+504|Wendell|FRAN|MA
+505|Erving|FRAN|MA
+506|Warwick|FRAN|MA
+507|Northfield|FRAN|MA
+508|Gill|FRAN|MA
+509|Bernardston|FRAN|MA
+510|Leyden|FRAN|MA
+511|Greenfield|FRAN|MA
+512|Shelburne|FRAN|MA
+513|Colrain|FRAN|MA
+514|Heath|FRAN|MA
+515|Rowe|FRAN|MA
+516|Monroe|FRAN|MA
+517|Charlemont|FRAN|MA
+518|Hawley|FRAN|MA
+519|Buckland|FRAN|MA
+520|Ashfield|FRAN|MA
+521|Conway|FRAN|MA
+522|Deerfield|FRAN|MA
+523|Montague|FRAN|MA
+524|Sunderland|FRAN|MA
+525|Whately|FRAN|MA
+526|Amherst|HAMP|MA
+527|Hadley|HAMP|MA
+528|Pelham|HAMP|MA
+529|Hatfield|HAMP|MA
+530|Northampton|HAMP|MA
+531|Chesterfield|HAMP|MA
+532|Cummington|HAMP|MA
+533|Worthington|HAMP|MA
+534|Goshen|HAMP|MA
+535|Williamsburg|HAMP|MA
+536|Huntington|HAMP|MA
+537|Middlefield|HAMP|MA
+538|Plainfield|HAMP|MA
+539|Easthampton|HAMP|MA
+540|Westhampton|HAMP|MA
+551|Williamstown|BERK|MA
+552|Clarksburg|BERK|MA
+553|Florida|BERK|MA
+554|North Adams|BERK|MA
+555|Adams|BERK|MA
+556|New Ashford|BERK|MA
+557|Hancock|BERK|MA
+558|Lanesborough|BERK|MA
+559|Cheshire|BERK|MA
+560|Savoy|BERK|MA
+561|Windsor|BERK|MA
+562|Peru|BERK|MA
+563|Hinsdale|BERK|MA
+564|Dalton|BERK|MA
+565|Pittsfield|BERK|MA
+566|Richmond|BERK|MA
+567|West Stockbridge|BERK|MA
+568|Stockbridge|BERK|MA
+569|Lenox|BERK|MA
+570|Lee|BERK|MA
+571|Washington|BERK|MA
+572|Becket|BERK|MA
+573|Tyringham|BERK|MA
+574|Otis|BERK|MA
+575|Sandisfield|BERK|MA
+576|Monterey|BERK|MA
+577|New Marlboro|BERK|MA
+578|Sheffield|BERK|MA
+579|Mount Washington|BERK|MA
+580|Egremont|BERK|MA
+581|Great Barrington|BERK|MA
+582|Alford|BERK|MA
+675|Guilford|VTWD|VT
+676|Vernon|VTWD|VT
+677|West Halifax|VTWD|VT
+678|Whitingham|VTWD|VT
+679|Readsboro|VTWD|VT
+680|Stamford|VTWD|VT
+681|Pownal|VTWD|VT
+685|Windham|VTWD|VT
+833|Chester|HAMD|MA
+834|Blandford|HAMD|MA
+835|Tolland|HAMD|MA
+836|Granville|HAMD|MA
+837|Russell|HAMD|MA
+838|Montgomery|HAMD|MA
+839|Springfield|HAMD|MA
+850|West Springfield|HAMD|MA
+851|Agawam|HAMD|MA
+852|Longmeadow|HAMD|MA
+853|East Longmeadow|HAMD|MA
+854|Hampden|HAMD|MA
+855|Wilbraham|HAMD|MA
+856|Ludlow|HAMD|MA
+857|Chicopee|HAMD|MA
+858|Holyoke|HAMD|MA
+859|South Hadley|HAMP|MA
+860|Granby|HAMP|MA
+861|Southampton|HAMP|MA
+862|Westfield|HAMD|MA
+863|Southwick|HAMD|MA
+865|Monson|HAMD|MA
+866|Palmer|HAMD|MA
+867|Belchertown|HAMP|MA
+868|Ware|HAMP|MA
+869|Brimfield|HAMD|MA
+870|Wales|HAMD|MA
+871|Holland|HAMD|MA
+998|Out of Town|OTHR|MA
+999|Other|OTHR|MA
+1001|Acworth|SULL|NH
+1002|Albany|CARR|NH
+1003|Alexandria|GRAF|NH
+1004|Allenstown|MERR|NH
+1005|Alstead|CHES|NH
+1006|Alton|BELK|NH
+1007|Amherst|HILL|NH
+1008|Andover|MERR|NH
+1009|Antrim|HILL|NH
+1010|Ashland|GRAF|NH
+1011|Atkinson|ROCK|NH
+1012|Auburn|ROCK|NH
+1013|Barnstead|BELK|NH
+1014|Barrington|STRA|NH
+1015|Bartlett|CARR|NH
+1016|Bath|GRAF|NH
+1017|Bedford|HILL|NH
+1018|Belmont|BELK|NH
+1019|Bennington|HILL|NH
+1020|Benton|GRAF|NH
+1021|Berlin|COOS|NH
+1022|Bethlehem|GRAF|NH
+1023|Boscawen|MERR|NH
+1024|Bow|MERR|NH
+1025|Bradford|MERR|NH
+1026|Brentwood|ROCK|NH
+1027|Bridgewater|GRAF|NH
+1028|Bristol|GRAF|NH
+1029|Brookfield|CARR|NH
+1030|Brookline|HILL|NH
+1031|Campton|GRAF|NH
+1032|Canaan|GRAF|NH
+1033|Candia|ROCK|NH
+1034|Canterbury|MERR|NH
+1035|Carroll|COOS|NH
+1036|Center Harbor|BELK|NH
+1037|Charlestown|SULL|NH
+1038|Chatham|CARR|NH
+1039|Chester|ROCK|NH
+1040|Chesterfield|CHES|NH
+1041|Chichester|MERR|NH
+1042|Claremont|SULL|NH
+1043|Clarksville|COOS|NH
+1044|Colebrook|COOS|NH
+1045|Columbia|COOS|NH
+1046|Concord|MERR|NH
+1047|Conway|CARR|NH
+1048|Cornish|SULL|NH
+1049|Croydon|SULL|NH
+1050|Dalton|COOS|NH
+1051|Danbury|MERR|NH
+1052|Danville|ROCK|NH
+1053|Deerfield|ROCK|NH
+1054|Deering|HILL|NH
+1055|Derry|ROCK|NH
+1056|Dorchester|GRAF|NH
+1057|Dover|STRA|NH
+1058|Dublin|CHES|NH
+1059|Dummer|COOS|NH
+1060|Dunbarton|MERR|NH
+1061|Durham|STRA|NH
+1062|East Kingston|ROCK|NH
+1063|Easton|GRAF|NH
+1064|Eaton|CARR|NH
+1065|Effingham|CARR|NH
+1066|Ellsworth|GRAF|NH
+1067|Enfield|GRAF|NH
+1068|Epping|ROCK|NH
+1069|Epsom|MERR|NH
+1070|Errol|COOS|NH
+1071|Exeter|ROCK|NH
+1072|Farmington|STRA|NH
+1073|Fitzwilliam|CHES|NH
+1074|Francestown|HILL|NH
+1075|Franconia|GRAF|NH
+1076|Franklin|MERR|NH
+1077|Freedom|CARR|NH
+1078|Fremont|ROCK|NH
+1079|Gilford|BELK|NH
+1080|Gilmanton|BELK|NH
+1081|Gilsum|CHES|NH
+1082|Goffstown|HILL|NH
+1083|Gorham|COOS|NH
+1084|Goshen|SULL|NH
+1085|Grafton|GRAF|NH
+1086|Grantham|SULL|NH
+1087|Greenfield|HILL|NH
+1088|Greenland|ROCK|NH
+1089|Greenville|HILL|NH
+1090|Hampstead|ROCK|NH
+1091|Hampton|ROCK|NH
+1092|Hampton Falls|ROCK|NH
+1093|Hancock|HILL|NH
+1094|Hanover|GRAF|NH
+1095|Harrisville|CHES|NH
+1096|Hart's Location|CARR|NH
+1097|Haverhill|GRAF|NH
+1098|Hebron|GRAF|NH
+1099|Henniker|MERR|NH
+1100|Hill|MERR|NH
+1101|Hillsborough|HILL|NH
+1102|Hinsdale|CHES|NH
+1103|Holderness|GRAF|NH
+1104|Hollis|HILL|NH
+1105|Hooksett|MERR|NH
+1106|Hopkinton|MERR|NH
+1107|Hudson|HILL|NH
+1108|Jackson|CARR|NH
+1109|Jaffrey|CHES|NH
+1110|Jefferson|COOS|NH
+1111|Keene|CHES|NH
+1112|Kensington|ROCK|NH
+1113|Kingston|ROCK|NH
+1114|Laconia|BELK|NH
+1115|Lancaster|COOS|NH
+1116|Landaff|GRAF|NH
+1117|Langdon|SULL|NH
+1118|Lebanon|GRAF|NH
+1119|Lee|STRA|NH
+1120|Lempster|SULL|NH
+1121|Lincoln|GRAF|NH
+1122|Lisbon|GRAF|NH
+1123|Litchfield|HILL|NH
+1124|Littleton|GRAF|NH
+1125|Londonderry|ROCK|NH
+1126|Loudon|MERR|NH
+1127|Lyman|GRAF|NH
+1128|Lyme|GRAF|NH
+1129|Lyndeborough|HILL|NH
+1130|Madbury|STRA|NH
+1131|Madison|CARR|NH
+1132|Manchester|HILL|NH
+1133|Marlborough|CHES|NH
+1134|Mason|HILL|NH
+1135|Meredith|BELK|NH
+1136|Merrimack|HILL|NH
+1137|Middleton|STRA|NH
+1138|Milan|COOS|NH
+1139|Milford|HILL|NH
+1140|Milton|STRA|NH
+1141|Monroe|GRAF|NH
+1142|Mount Vernon|HILL|NH
+1143|Moultonborough|CARR|NH
+1144|Nashua|HILL|NH
+1145|Nelson|CHES|NH
+1146|New Boston|HILL|NH
+1147|New Castle|ROCK|NH
+1148|New Durham|STRA|NH
+1149|New Hampton|BELK|NH
+1150|New Ipswich|HILL|NH
+1151|New London|MERR|NH
+1152|Newbury|MERR|NH
+1153|Newfields|ROCK|NH
+1154|Newington|ROCK|NH
+1155|Newmarket|ROCK|NH
+1156|Newport|SULL|NH
+1157|Newton|ROCK|NH
+1158|North Hampton|ROCK|NH
+1159|Northfield|MERR|NH
+1160|Northumberland|COOS|NH
+1161|Northwood|ROCK|NH
+1162|Nottingham|ROCK|NH
+1163|Orange|GRAF|NH
+1164|Orford|GRAF|NH
+1165|Ossipee|CARR|NH
+1166|Pelham|HILL|NH
+1167|Pembroke|MERR|NH
+1168|Peterborough|HILL|NH
+1169|Piermont|GRAF|NH
+1170|Pittsburg|COOS|NH
+1171|Pittsfield|MERR|NH
+1172|Plainfield|SULL|NH
+1173|Plaistow|ROCK|NH
+1174|Plymouth|GRAF|NH
+1175|Portsmouth|ROCK|NH
+1176|Randolph|COOS|NH
+1177|Raymond|ROCK|NH
+1178|Richmond|CHES|NH
+1179|Rindge|CHES|NH
+1180|Rochester|STRA|NH
+1181|Rollinsford|STRA|NH
+1182|Roxbury|CHES|NH
+1183|Rumney|GRAF|NH
+1184|Rye|ROCK|NH
+1185|Salem|ROCK|NH
+1186|Salisbury|MERR|NH
+1187|Sanbornton|BELK|NH
+1188|Sandown|ROCK|NH
+1189|Sandwich|CARR|NH
+1190|Seabrook|ROCK|NH
+1191|Sharon|HILL|NH
+1192|Shelburne|COOS|NH
+1193|Somersworth|STRA|NH
+1194|South Hampton|ROCK|NH
+1195|Springfield|SULL|NH
+1196|Stark|COOS|NH
+1197|Stewartstown|COOS|NH
+1198|Stoddard|CHES|NH
+1199|Strafford|STRA|NH
+1200|Stratham|ROCK|NH
+1201|Sugar Hill|GRAF|NH
+1202|Sullivan|CHES|NH
+1203|Sunapee|SULL|NH
+1204|Surry|CHES|NH
+1205|Sutton|MERR|NH
+1206|Swanzey|CHES|NH
+1207|Tamworth|CARR|NH
+1208|Temple|HILL|NH
+1209|Thornton|GRAF|NH
+1210|Tilton|BELK|NH
+1211|Troy|CHES|NH
+1212|Tuftonboro|CARR|NH
+1213|Unity|SULL|NH
+1214|Wakefield|CARR|NH
+1215|Walpole|CHES|NH
+1216|Warner|MERR|NH
+1217|Warren|GRAF|NH
+1218|Washington|SULL|NH
+1219|Waterville Valley|GRAF|NH
+1220|Weare|HILL|NH
+1221|Webster|MERR|NH
+1222|Wentworth|GRAF|NH
+1223|Westmoreland|CHES|NH
+1224|Whitefield|COOS|NH
+1225|Wilmot|MERR|NH
+1226|Wilton|HILL|NH
+1227|Winchester|CHES|NH
+1228|Windham|ROCK|NH
+1229|Windsor|HILL|NH
+1230|Wolfeboro|CARR|NH
+1231|Woodstock|GRAF|NH
+1232|Groton|GRAF|NH
+1233|Stratford|COOS|NH
+1234|Hale's Location|CARR|NH
+1235|Marlow|CHES|NH
+1236|Wentworth Location|COOS|NH
+2001|Little Compton|NEWP|RI
+2002|Tiverton|NEWP|RI
+2003|Portsmouth|NEWP|RI
+2004|Middletown|NEWP|RI
+2005|Newport|NEWP|RI
+2006|Bristol|BRRI|RI
+2007|Warren|BRRI|RI
+2008|Barrington|BRRI|RI
+2009|East Providence|PROV|RI
+2010|Providence|PROV|RI
+2011|Pawtucket|PROV|RI
+2012|Central Falls|PROV|RI
+2013|Cumberland|PROV|RI
+2014|Lincoln|PROV|RI
+2015|Woonsocket|PROV|RI
+2016|North Smithfield|PROV|RI
+2017|Smithfield|PROV|RI
+2018|Burrillville|PROV|RI
+2019|Glocester|PROV|RI
+2020|Central|KENT|RI
+2021|Charlestown|WASH|RI
+2022|Coventry|KENT|RI
+2023|Cranston|PROV|RI
+2024|East Greenwich|KENT|RI
+2025|Exeter|WASH|RI
+2026|Foster|PROV|RI
+2027|Hopkinton|WASH|RI
+2028|Jamestown|NEWP|RI
+2029|Johnston|PROV|RI
+2030|Narragansett|WASH|RI
+2031|New Shoreham|WASH|RI
+2032|North Kingstown|WASH|RI
+2033|North Providence|PROV|RI
+2034|Richmond|WASH|RI
+2035|Scituate|PROV|RI
+2036|South Kingstown|WASH|RI
+2037|Warwick|KENT|RI
+2038|West Greenwich|KENT|RI
+2039|West Warwick|KENT|RI
+2040|Westerly|WASH|RI
+3001|Putnam|WIND|CT
+3002|Andover|TOLL|CT
+3003|Ansonia|NEWH|CT
+3004|Ashford|WIND|CT
+3005|Avon|HART|CT
+3006|Barkhamsted|LITC|CT
+3007|Beacon Falls|NEWH|CT
+3008|Berlin|HART|CT
+3009|Bethany|NEWH|CT
+3010|Bethel|FAIR|CT
+3011|Bethlehem|LITC|CT
+3012|Bloomfield|HART|CT
+3013|Bolton|TOLL|CT
+3014|Bozrah|NEWL|CT
+3015|Branford|NEWH|CT
+3016|Bridgeport|FAIR|CT
+3017|Bridgewater|LITC|CT
+3018|Bristol|HART|CT
+3019|Brookfield|FAIR|CT
+3020|Brooklyn|WIND|CT
+3021|Burlington|HART|CT
+3022|Canaan|LITC|CT
+3023|Canterbury|WIND|CT
+3024|Canton|HART|CT
+3025|Chaplin|WIND|CT
+3026|Cheshire|NEWH|CT
+3027|Chester|MDCT|CT
+3028|Clinton|MDCT|CT
+3029|Colchester|NEWL|CT
+3030|Colebrook|LITC|CT
+3031|Columbia|TOLL|CT
+3032|Cornwall|LITC|CT
+3033|Coventry|TOLL|CT
+3034|Cromwell|MDCT|CT
+3035|Danbury|FAIR|CT
+3036|Darien|FAIR|CT
+3037|Deep River|MDCT|CT
+3038|Derby|NEWH|CT
+3039|Durham|MDCT|CT
+3040|East Granby|HART|CT
+3041|East Haddam|MDCT|CT
+3042|East Hampton|MDCT|CT
+3043|East Hartford|HART|CT
+3044|East Haven|NEWH|CT
+3045|East Lyme|NEWL|CT
+3046|East Windsor|HART|CT
+3047|Eastford|WIND|CT
+3048|Easton|FAIR|CT
+3049|Ellington|TOLL|CT
+3050|Enfield|HART|CT
+3051|Essex|MDCT|CT
+3052|Fairfield|FAIR|CT
+3053|Farmington|HART|CT
+3054|Franklin|NEWL|CT
+3055|Glastonbury|HART|CT
+3056|Goshen|LITC|CT
+3057|Granby|HART|CT
+3058|Greenwich|FAIR|CT
+3059|Griswold|NEWL|CT
+3060|Groton|NEWL|CT
+3061|Guilford|NEWH|CT
+3062|Haddam|MDCT|CT
+3063|Hamden|NEWH|CT
+3064|Hampton|WIND|CT
+3065|Hartford|HART|CT
+3066|Hartland|HART|CT
+3067|Harwinton|LITC|CT
+3068|Hebron|TOLL|CT
+3069|Kent|LITC|CT
+3070|Killingly|WIND|CT
+3071|Killingworth|MDCT|CT
+3072|Lebanon|NEWL|CT
+3073|Ledyard|NEWL|CT
+3074|Lisbon|NEWL|CT
+3075|Litchfield|LITC|CT
+3076|Lyme|NEWL|CT
+3077|Madison|NEWH|CT
+3078|Manchester|HART|CT
+3079|Mansfield|TOLL|CT
+3080|Marlborough|HART|CT
+3081|Meriden|NEWH|CT
+3082|Middlebury|NEWH|CT
+3083|Middlefield|MDCT|CT
+3084|Middletown|MDCT|CT
+3085|Milford|NEWH|CT
+3086|Monroe|FAIR|CT
+3087|Montville|NEWL|CT
+3088|Morris|LITC|CT
+3089|Naugatuck|NEWH|CT
+3090|Newington|HART|CT
+3091|Newtown|FAIR|CT
+3092|New Britain|HART|CT
+3093|New Canaan|FAIR|CT
+3094|New Fairfield|FAIR|CT
+3095|New Hartford|LITC|CT
+3096|New Haven|NEWH|CT
+3097|New London|NEWL|CT
+3098|New Milford|LITC|CT
+3099|Norfolk|LITC|CT
+3100|North Branford|NEWH|CT
+3101|North Canaan|LITC|CT
+3102|North Haven|NEWH|CT
+3103|North Stonington|NEWL|CT
+3104|Norwalk|FAIR|CT
+3105|Norwich|NEWL|CT
+3106|Old Lyme|NEWL|CT
+3107|Old Saybrook|MDCT|CT
+3108|Orange|NEWH|CT
+3109|Oxford|NEWH|CT
+3110|Plainfield|WIND|CT
+3111|Plainville|HART|CT
+3112|Plymouth|LITC|CT
+3113|Pomfret|WIND|CT
+3114|Portland|MDCT|CT
+3115|Preston|NEWL|CT
+3116|Prospect|NEWH|CT
+3118|Redding|FAIR|CT
+3119|Ridgefield|FAIR|CT
+3120|Rocky Hill|HART|CT
+3121|Roxbury|LITC|CT
+3122|Salem|NEWL|CT
+3123|Salisbury|LITC|CT
+3124|Scotland|WIND|CT
+3125|Seymour|NEWH|CT
+3126|Sharon|LITC|CT
+3127|Shelton|FAIR|CT
+3128|Sherman|FAIR|CT
+3129|Simsbury|HART|CT
+3130|Somers|TOLL|CT
+3131|South Windsor|HART|CT
+3132|Southbury|NEWH|CT
+3133|Southington|HART|CT
+3134|Sprague|NEWL|CT
+3135|Stafford|TOLL|CT
+3136|Stamford|FAIR|CT
+3137|Sterling|WIND|CT
+3138|Stonington|NEWL|CT
+3139|Stratford|FAIR|CT
+3140|Suffield|HART|CT
+3141|Thomaston|LITC|CT
+3142|Thompson|WIND|CT
+3143|Tolland|TOLL|CT
+3144|Torrington|LITC|CT
+3145|Trumbull|FAIR|CT
+3146|Union|TOLL|CT
+3147|Vernon|TOLL|CT
+3148|Voluntown|NEWL|CT
+3149|Wallingford|NEWH|CT
+3150|Warren|LITC|CT
+3151|Washington|LITC|CT
+3152|Waterbury|NEWH|CT
+3153|Waterford|NEWL|CT
+3154|Watertown|LITC|CT
+3155|West Hartford|HART|CT
+3156|West Haven|NEWH|CT
+3157|Westbrook|MDCT|CT
+3158|Weston|FAIR|CT
+3159|Westport|FAIR|CT
+3160|Wethersfield|HART|CT
+3161|Willington|TOLL|CT
+3162|Wilton|FAIR|CT
+3163|Winchester|LITC|CT
+3164|Windham|WIND|CT
+3165|Windsor|HART|CT
+3166|Windsor Locks|HART|CT
+3167|Wolcott|NEWH|CT
+3168|Woodbridge|NEWH|CT
+3169|Woodbury|LITC|CT
+3170|Woodstock|WIND|CT
+4001|Brattleboro|VTWD|VT
+4002|Randolph|ORAN|VT
+4003|Highgate|FRAV|VT
+4004|Rutland|RUVT|VT
+4005|Addison|ADVT|VT
+4006|Albany|ORVT|VT
+4007|Alburg|GIVT|VT
+4008|Andover|WIVT|VT
+4009|Arlington|BNVT|VT
+4010|Ascutney|WIVT|VT
+4011|Athens|WIVT|VT
+4014|Bakersfield|FRAV|VT
+4015|Baltimore|WIVT|VT
+4016|Barnard|WIVT|VT
+4017|Barnet|CAVT|VT
+4018|Barre|WAVT|VT
+4020|Barton|ORVT|VT
+4021|Bellows Falls|VTWD|VT
+4022|Belvidere|LAVT|VT
+4023|Bennington|BNVT|VT
+4024|Benson|RUVT|VT
+4025|Berkshire|FRAV|VT
+4026|Berlin|WAVT|VT
+4027|Bethel|WIVT|VT
+4028|Bloomfield|ESVT|VT
+4029|Bolton|WAVT|VT
+4030|Bradford|ORAN|VT
+4031|Braintree|ORAN|VT
+4032|Brandon|RUVT|VT
+4033|Bridgeport|ADVT|VT
+4034|Bridgewater|WIVT|VT
+4035|Brighton|ESVT|VT
+4036|Bristol|ADVT|VT
+4037|Brookfield|ORAN|VT
+4038|Brookline|VTWD|VT
+4039|Brownington|ORVT|VT
+4040|Brownsville|WIVT|VT
+4041|Brunswick|ESVT|VT
+4043|Burke|CAVT|VT
+4044|Burlington|CHVT|VT
+4045|Cabot|WAVT|VT
+4046|Calais|WAVT|VT
+4048|Cambridge|CHVT|VT
+4049|Canaan|ESVT|VT
+4050|Castleton|RUVT|VT
+4051|Cavendish|WIVT|VT
+4052|Charleston|ORVT|VT
+4053|Charlotte|CHVT|VT
+4054|Chelsea|ORAN|VT
+4055|Chester|WIVT|VT
+4056|Chittenden|RUVT|VT
+4057|Clarendon|RUVT|VT
+4058|Colchester|CHVT|VT
+4059|Concord|ESVT|VT
+4060|Corinth|ORAN|VT
+4061|Cornwall|ADVT|VT
+4062|Coventry|ORVT|VT
+4063|Craftsbury|ORVT|VT
+4064|Danby|RUVT|VT
+4065|Danville|CAVT|VT
+4066|Derby|ORVT|VT
+4067|Dorset|BNVT|VT
+4068|Dover|VTWD|VT
+4069|Dummerston|VTWD|VT
+4070|Duxbury|WAVT|VT
+4071|East Haven|ESVT|VT
+4072|East Montpelier|WAVT|VT
+4073|Eden|LAVT|VT
+4074|Elmore|LAVT|VT
+4075|Enosburg|FRAV|VT
+4076|Essex|CHVT|VT
+4077|Fairfax|CHVT|VT
+4078|Fairfield|FRAV|VT
+4079|Fair Haven|RUVT|VT
+4080|Fairlee|ORAN|VT
+4081|Fayston|WAVT|VT
+4083|Ferrisburg|ADVT|VT
+4084|Fletcher|FRAV|VT
+4085|Franklin|FRAV|VT
+4086|Georgia|CHVT|VT
+4087|Gilman|ESVT|VT
+4089|Glover|ORVT|VT
+4090|Goshen|RUVT|VT
+4091|Grafton|VTWD|VT
+4092|Granby|ESVT|VT
+4093|Grand Isle|GIVT|VT
+4094|Granville|ADVT|VT
+4095|Greensboro|ORVT|VT
+4096|Groton|CAVT|VT
+4097|Guildhall|ESVT|VT
+4098|Halifax|VTWD|VT
+4099|Hancock|ADVT|VT
+4100|Hardwick|CAVT|VT
+4101|Hartford|WIVT|VT
+4102|Hartland|WIVT|VT
+4103|Hinesburg|CHVT|VT
+4104|Holland|ORVT|VT
+4105|Hubbardton|RUVT|VT
+4106|Huntington|CHVT|VT
+4107|Hyde Park|LAVT|VT
+4108|Ira|RUVT|VT
+4109|Irasburg|ORVT|VT
+4111|Jamaica|VTWD|VT
+4112|Jay|ORVT|VT
+4113|Jericho|CHVT|VT
+4114|Johnson|LAVT|VT
+4115|Killington|RUVT|VT
+4116|Kirby|ESVT|VT
+4118|Landgrove|VTWD|VT
+4119|Leicester|RUVT|VT
+4120|Lemington|ESVT|VT
+4122|Lincoln|ADVT|VT
+4123|Londonderry|VTWD|VT
+4124|Lowell|ORVT|VT
+4125|Ludlow|WIVT|VT
+4126|Lunenburg|ESVT|VT
+4127|Lyndon|CAVT|VT
+4128|Maidstone|ESVT|VT
+4129|Manchester|BNVT|VT
+4130|Marlboro|VTWD|VT
+4131|Marshfield|WAVT|VT
+4132|Mendon|RUVT|VT
+4133|Middletown Springs|RUVT|VT
+4134|Middlebury|ADVT|VT
+4135|Middlesex|WAVT|VT
+4136|Milton|CHVT|VT
+4137|Monkton|ADVT|VT
+4138|Montgomery|FRAV|VT
+4139|Montpelier|WAVT|VT
+4140|Moretown|WAVT|VT
+4141|Morgan|ORVT|VT
+4142|Morristown|LAVT|VT
+4143|Mount Holly|RUVT|VT
+4144|Mount Tabor|RUVT|VT
+4145|New Haven|ADVT|VT
+4146|Newark|CAVT|VT
+4147|Newbury|ORAN|VT
+4148|Newfane|VTWD|VT
+4149|Newport|ORVT|VT
+4150|Newport center|ORVT|VT
+4151|North Hero|GIVT|VT
+4152|Northfield|WAVT|VT
+4153|Norton|ESVT|VT
+4154|Norwich|WIVT|VT
+4155|Orange|WAVT|VT
+4156|Orleans|ORVT|VT
+4157|Orwell|ADVT|VT
+4159|Panton|ADVT|VT
+4160|Pawlet|RUVT|VT
+4161|Peacham|CAVT|VT
+4162|Perkinsville|WIVT|VT
+4163|Peru|BNVT|VT
+4164|Pittsfield|RUVT|VT
+4165|Pittsford|RUVT|VT
+4166|Plainfield|WAVT|VT
+4167|Plymouth|WIVT|VT
+4168|Pomfret|WIVT|VT
+4169|Poultney|RUVT|VT
+4170|Proctor|RUVT|VT
+4171|Putney|VTWD|VT
+4172|Quechee|WIVT|VT
+4173|Reading|WIVT|VT
+4174|Richford|FRAV|VT
+4175|Richmond|CHVT|VT
+4176|Ripton|ADVT|VT
+4177|Rochester|WIVT|VT
+4178|Rockingham|VTWD|VT
+4179|Roxbury|ADVT|VT
+4180|Royalton|WIVT|VT
+4181|Rupert|BNVT|VT
+4182|Ryegate|CAVT|VT
+4183|Salisbury|ADVT|VT
+4184|Sandgate|BNVT|VT
+4185|Searsburg|VTWD|VT
+4186|Shaftsbury|BNVT|VT
+4187|Sharon|WIVT|VT
+4188|Sheffield|CAVT|VT
+4189|Shelburne|CHVT|VT
+4190|Sheldon|FRAV|VT
+4191|Shoreham|ADVT|VT
+4192|Shrewsbury|RUVT|VT
+4194|South Burlington|CHVT|VT
+4195|South Hero|GIVT|VT
+4196|Springfield|WIVT|VT
+4197|Saint Albans|FRAV|VT
+4198|Saint George|CHVT|VT
+4199|Saint Johnsbury|CAVT|VT
+4200|Stannard|ORVT|VT
+4201|Starksboro|ADVT|VT
+4202|Stockbridge|WIVT|VT
+4203|Stowe|LAVT|VT
+4204|Strafford|ORAN|VT
+4205|Stratton|VTWD|VT
+4206|Sudbury|RUVT|VT
+4207|Sunderland|BNVT|VT
+4208|Sutton|CAVT|VT
+4209|Swanton|FRAV|VT
+4210|Thetford|ORAN|VT
+4211|Tinmouth|RUVT|VT
+4212|Topsham|ORAN|VT
+4213|Townshend|VTWD|VT
+4214|Troy|ORVT|VT
+4215|Tunbridge|ORAN|VT
+4216|Underhill|CHVT|VT
+4217|Vergennes|ADVT|VT
+4218|Vershire|ORAN|VT
+4219|Victory|ESVT|VT
+4220|Waitsfield|WAVT|VT
+4221|Walden|CAVT|VT
+4222|Wallingford|RUVT|VT
+4223|Waltham|ADVT|VT
+4224|Wardsboro|VTWD|VT
+4226|Warren|WAVT|VT
+4228|Washington|ORAN|VT
+4229|Waterbury|WAVT|VT
+4230|Waterford|CAVT|VT
+4231|Waterville|LAVT|VT
+4232|Weathersfield|WIVT|VT
+4233|Wells|RUVT|VT
+4235|West Fairlee|ORAN|VT
+4236|West Haven|RUVT|VT
+4237|West Rutland|RUVT|VT
+4238|West Windsor|WIVT|VT
+4239|Westfield|ORVT|VT
+4240|Westford|CHVT|VT
+4241|Westminster|VTWD|VT
+4242|Westmore|ORVT|VT
+4243|Weston|WIVT|VT
+4244|Weybridge|ADVT|VT
+4245|Wheelock|CAVT|VT
+4246|Whiting|ADVT|VT
+4247|Williamstown|ORAN|VT
+4248|Williston|CHVT|VT
+4249|Wilmington|VTWD|VT
+4250|Winooski|CHVT|VT
+4251|Windsor|WIVT|VT
+4252|Winhall|BNVT|VT
+4253|Wolcott|LAVT|VT
+4254|Woodbury|WAVT|VT
+4255|Woodford|BNVT|VT
+4256|Woodstock|WIVT|VT
+4257|Worcester|WAVT|VT
+5001|Abbot|PISM|ME
+5002|Acton|YORM|ME
+5003|Addison|WASM|ME
+5004|Albion|KENM|ME
+5005|Alexander|WASM|ME
+5006|Alfred|YORM|ME
+5007|Allagash|AROM|ME
+5008|Alna|LINM|ME
+5009|Alton|PENM|ME
+5010|Amherst|HANM|ME
+5011|Amity|AROM|ME
+5012|Andover|OXFM|ME
+5013|Anson|SOMM|ME
+5014|Appleton|KNOM|ME
+5015|Arrowsic|SAGM|ME
+5016|Arundel|YORM|ME
+5017|Ashland|AROM|ME
+5018|Athens|SOMM|ME
+5019|Atkinson|PISM|ME
+5020|Auburn|ANDM|ME
+5021|Augusta|KENM|ME
+5022|Aurora|HANM|ME
+5023|Avon|FRAM|ME
+5024|Baileyville|WASM|ME
+5025|Baldwin|CUMM|ME
+5026|Bancroft|AROM|ME
+5027|Bangor|PENM|ME
+5028|Bar Harbor|HANM|ME
+5029|Baring|WASM|ME
+5030|Bath|SAGM|ME
+5031|Beals|WASM|ME
+5032|Beaver Cove|PISM|ME
+5033|Beddington|WASM|ME
+5034|Belfast|WALM|ME
+5035|Belgrade|KENM|ME
+5036|Belmont|WALM|ME
+5037|Benton|KENM|ME
+5038|Berwick|YORM|ME
+5039|Bethel|OXFM|ME
+5040|Biddeford|YORM|ME
+5041|Bingham|SOMM|ME
+5042|Blaine|AROM|ME
+5043|Blue Hill|HANM|ME
+5044|Boothbay|LINM|ME
+5045|Boothbay Harbor|LINM|ME
+5046|Bowdoin|SAGM|ME
+5047|Bowdoinham|SAGM|ME
+5048|Bowerbank|PISM|ME
+5049|Bradford|PENM|ME
+5050|Bradley|PENM|ME
+5051|Bremen|LINM|ME
+5052|Brewer|PENM|ME
+5053|Bridgewater|AROM|ME
+5054|Bridgton|CUMM|ME
+5055|Brighton|SOMM|ME
+5056|Bristol|LINM|ME
+5057|Brooklin|HANM|ME
+5058|Brooks|WALM|ME
+5059|Brooksville|HANM|ME
+5060|Brownfield|OXFM|ME
+5061|Brownville|PISM|ME
+5062|Brunswick|CUMM|ME
+5063|Buckfield|OXFM|ME
+5064|Bucksport|HANM|ME
+5065|Burlington|PENM|ME
+5066|Burnham|WALM|ME
+5067|Buxton|YORM|ME
+5068|Byron|OXFM|ME
+5069|Calais|WASM|ME
+5070|Cambridge|SOMM|ME
+5071|Camden|KNOM|ME
+5072|Canaan|SOMM|ME
+5073|Canton|OXFM|ME
+5074|Cape Elizabeth|CUMM|ME
+5075|Caratunk|SOMM|ME
+5076|Caribou|AROM|ME
+5077|Carmel|PENM|ME
+5078|Carrabassett Valley|FRAM|ME
+5079|Carroll|PENM|ME
+5080|Carthage|FRAM|ME
+5081|Cary|AROM|ME
+5082|Casco|CUMM|ME
+5083|Castine|HANM|ME
+5084|Castle Hill|AROM|ME
+5085|Caswell|AROM|ME
+5086|Centerville|WASM|ME
+5087|Chapman|AROM|ME
+5088|Charleston|PENM|ME
+5089|Charlotte|WASM|ME
+5090|Chelsea|KENM|ME
+5091|Cherryfield|WASM|ME
+5092|Chester|PENM|ME
+5093|Chesterville|FRAM|ME
+5094|China|KENM|ME
+5095|Clifton|PENM|ME
+5096|Clinton|KENM|ME
+5097|Codyville|WASM|ME
+5098|Columbia|WASM|ME
+5099|Columbia Falls|WASM|ME
+5100|Cooper|WASM|ME
+5101|Coplin|FRAM|ME
+5102|Corinna|PENM|ME
+5103|Corinth|PENM|ME
+5104|Cornish|YORM|ME
+5105|Cornville|SOMM|ME
+5106|Cranberry Isles|HANM|ME
+5107|Crawford|WASM|ME
+5108|Crystal|AROM|ME
+5109|Cumberland|CUMM|ME
+5110|Cushing|KNOM|ME
+5111|Cutler|WASM|ME
+5112|Cyr Plt|AROM|ME
+5113|Dallas Plt|FRAM|ME
+5114|Damariscotta|LINM|ME
+5115|Danforth|WASM|ME
+5116|Dayton|YORM|ME
+5117|Deblois|WASM|ME
+5118|Dedham|HANM|ME
+5119|Deer Isle|HANM|ME
+5120|Denmark|OXFM|ME
+5121|Dennistown|SOMM|ME
+5122|Dennysville|WASM|ME
+5123|Detroit|SOMM|ME
+5124|Dexter|PENM|ME
+5125|Dixfield|OXFM|ME
+5126|Dixmont|PENM|ME
+5127|Dover Foxcroft|PISM|ME
+5128|Dresden|LINM|ME
+5129|Drew|PENM|ME
+5130|Durham|ANDM|ME
+5131|Dyer Brook|AROM|ME
+5132|Eagle Lake|AROM|ME
+5133|East Machias|WASM|ME
+5134|East Millinocket|PENM|ME
+5135|Eastbrook|HANM|ME
+5136|Easton|AROM|ME
+5137|Eastport|WASM|ME
+5138|Eddington|PENM|ME
+5139|Edgecomb|LINM|ME
+5140|Edinburg|PENM|ME
+5141|Eliot|YORM|ME
+5142|Ellsworth|HANM|ME
+5143|Embden|SOMM|ME
+5144|Enfield|PENM|ME
+5145|Etna|PENM|ME
+5146|Eustis|FRAM|ME
+5147|Exeter|PENM|ME
+5148|Fairfield|SOMM|ME
+5149|Falmouth|CUMM|ME
+5150|Farmingdale|KENM|ME
+5151|Farmington|FRAM|ME
+5152|Fayette|KENM|ME
+5153|Fort Fairfield|AROM|ME
+5154|Fort Kent|AROM|ME
+5155|Frankfort|WALM|ME
+5156|Franklin|HANM|ME
+5157|Freedom|WALM|ME
+5158|Freeport|CUMM|ME
+5159|Frenchboro|HANM|ME
+5160|Frenchville|AROM|ME
+5161|Friendship|KNOM|ME
+5162|Frye Island|CUMM|ME
+5163|Fryeburg|OXFM|ME
+5164|Gardiner|KENM|ME
+5165|Garfield|AROM|ME
+5166|Garland|PENM|ME
+5167|Georgetown|SAGM|ME
+5168|Gilead|OXFM|ME
+5169|Glenburn|PENM|ME
+5170|Glenwood|AROM|ME
+5171|Gorham|CUMM|ME
+5172|Gouldsboro|HANM|ME
+5173|Grand Isle|AROM|ME
+5174|Grand Lake Stream|WASM|ME
+5175|Gray|CUMM|ME
+5176|Great Pond Plt|HANM|ME
+5177|Greenbush|PENM|ME
+5178|Greene|ANDM|ME
+5179|Greenville|PISM|ME
+5180|Greenwood|OXFM|ME
+5181|Guilford|PISM|ME
+5182|Hallowell|KENM|ME
+5183|Hamlin|AROM|ME
+5184|Hammond|AROM|ME
+5185|Hampden|PENM|ME
+5186|Hancock|HANM|ME
+5187|Hanover|OXFM|ME
+5188|Harmony|SOMM|ME
+5189|Harpswell|CUMM|ME
+5190|Harrington|WASM|ME
+5191|Harrison|CUMM|ME
+5192|Hartford|OXFM|ME
+5193|Hartland|SOMM|ME
+5194|Haynesville|AROM|ME
+5195|Hebron|OXFM|ME
+5196|Hermon|PENM|ME
+5197|Hersey|AROM|ME
+5198|Hiram|OXFM|ME
+5199|Hodgdon|AROM|ME
+5200|Holden|PENM|ME
+5201|Hollis|YORM|ME
+5202|Hope|KNOM|ME
+5203|Houlton|AROM|ME
+5204|Howland|PENM|ME
+5205|Hudson|PENM|ME
+5206|Industry|FRAM|ME
+5207|Island Falls|AROM|ME
+5208|Isle Au Haut|KNOM|ME
+5209|Islesboro|WALM|ME
+5210|Jackman|SOMM|ME
+5211|Jackson|WALM|ME
+5212|Jay|FRAM|ME
+5213|Jefferson|LINM|ME
+5214|Jonesboro|WASM|ME
+5215|Jonesport|WASM|ME
+5216|Kenduskeag|PENM|ME
+5217|Kennebunk|YORM|ME
+5218|Kennebunkport|YORM|ME
+5219|Kingfield|FRAM|ME
+5220|Kingsbury|PISM|ME
+5221|Kittery|YORM|ME
+5222|Knox|WALM|ME
+5223|Lagrange|PENM|ME
+5224|Lake View|PISM|ME
+5225|Lakeville|PENM|ME
+5226|Lamoine|HANM|ME
+5227|Lebanon|YORM|ME
+5228|Lee|PENM|ME
+5229|Leeds|ANDM|ME
+5230|Levant|PENM|ME
+5231|Lewiston|ANDM|ME
+5232|Liberty|WALM|ME
+5233|Limerick|YORM|ME
+5234|Limestone|AROM|ME
+5235|Limington|YORM|ME
+5236|Lincoln|PENM|ME
+5237|Lincolnville|WALM|ME
+5238|Linneus|AROM|ME
+5239|Lisbon|ANDM|ME
+5240|Litchfield|KENM|ME
+5241|Littleton|AROM|ME
+5242|Livermore|ANDM|ME
+5243|Livermore Falls|ANDM|ME
+5244|Long Island|CUMM|ME
+5245|Lovell|OXFM|ME
+5246|Lowell|PENM|ME
+5247|Lubec|WASM|ME
+5248|Ludlow|AROM|ME
+5249|Lyman|YORM|ME
+5250|Machias|WASM|ME
+5251|Machiasport|WASM|ME
+5252|Macwahoc|AROM|ME
+5253|Madawaska|AROM|ME
+5254|Madison|SOMM|ME
+5255|Madrid|FRAM|ME
+5256|Magalloway Plt|OXFM|ME
+5257|Manchester|KENM|ME
+5258|Mapleton|AROM|ME
+5259|Mariaville|HANM|ME
+5260|Mars Hill|AROM|ME
+5261|Marshfield|WASM|ME
+5262|Masardis|AROM|ME
+5263|Matinicus Isle|KNOM|ME
+5264|Mattawamkeag|PENM|ME
+5265|Maxfield|PENM|ME
+5266|Mechanic Falls|ANDM|ME
+5267|Meddybemps|WASM|ME
+5268|Medford|PISM|ME
+5269|Medway|PENM|ME
+5270|Mercer|SOMM|ME
+5271|Merrill|AROM|ME
+5272|Mexico|OXFM|ME
+5273|Milbridge|WASM|ME
+5274|Milford|PENM|ME
+5275|Millinocket|PENM|ME
+5276|Milo|PISM|ME
+5277|Minot|ANDM|ME
+5278|Monhegan Island|LINM|ME
+5279|Monmouth|KENM|ME
+5280|Monroe|WALM|ME
+5281|Monson|PISM|ME
+5282|Monticello|AROM|ME
+5283|Montville|WALM|ME
+5284|Moose River|SOMM|ME
+5285|Moro|AROM|ME
+5286|Morrill|WALM|ME
+5287|Moscow|SOMM|ME
+5288|Mount Chase|PENM|ME
+5289|Mount Desert|HANM|ME
+5290|Mount Vernon|KENM|ME
+5291|Naples|CUMM|ME
+5292|Nashville|AROM|ME
+5293|New Canada|AROM|ME
+5294|New Gloucester|CUMM|ME
+5295|New Limerick|AROM|ME
+5296|New Portland|SOMM|ME
+5297|New Sharon|FRAM|ME
+5298|New Sweden|AROM|ME
+5299|New Vineyard|FRAM|ME
+5300|Newburgh|PENM|ME
+5301|Newcastle|LINM|ME
+5302|Newfield|YORM|ME
+5303|Newport|PENM|ME
+5304|Newry|OXFM|ME
+5305|Nobleboro|LINM|ME
+5306|Norridgewock|SOMM|ME
+5307|North Berwick|YORM|ME
+5308|North Haven|KNOM|ME
+5309|North Yarmouth|CUMM|ME
+5310|Northfield|WASM|ME
+5311|Northport|WALM|ME
+5312|Norway|OXFM|ME
+5313|Oakfield|AROM|ME
+5314|Oakland|KENM|ME
+5315|Ogunquit|YORM|ME
+5316|Old Orchard Beach|YORM|ME
+5317|Old Town|PENM|ME
+5318|Orient|AROM|ME
+5319|Orland|HANM|ME
+5320|Orono|PENM|ME
+5321|Orrington|PENM|ME
+5322|Osborn|HANM|ME
+5323|Otis|HANM|ME
+5324|Otisfield|OXFM|ME
+5325|Owls Head|KNOM|ME
+5326|Oxbow|AROM|ME
+5327|Oxford|OXFM|ME
+5328|Palermo|WALM|ME
+5329|Palmyra|SOMM|ME
+5330|Paris|OXFM|ME
+5331|Parkman|PISM|ME
+5332|Parsonsfield|YORM|ME
+5333|Passadumkeag|PENM|ME
+5334|Indian Township Res|WASM|ME
+5335|Pleasant Point Ind Res|WASM|ME
+5336|Patten|PENM|ME
+5337|Pembroke|WASM|ME
+5338|Penobscot|HANM|ME
+5339|Penobscot Indian Island|PENM|ME
+5340|Perham|AROM|ME
+5341|Perry|WASM|ME
+5342|Peru|OXFM|ME
+5343|Phillips|FRAM|ME
+5344|Phippsburg|SAGM|ME
+5345|Pittsfield|SOMM|ME
+5346|Pittston|KENM|ME
+5347|Pleasant Ridge|SOMM|ME
+5348|Plymouth|PENM|ME
+5349|Poland|ANDM|ME
+5350|Portage Lake|AROM|ME
+5351|Porter|OXFM|ME
+5352|Portland|CUMM|ME
+5353|Pownal|CUMM|ME
+5354|Presque Isle|AROM|ME
+5355|Princeton|WASM|ME
+5356|Prospect|WALM|ME
+5357|Randolph|KENM|ME
+5358|Rangeley|FRAM|ME
+5359|Raymond|CUMM|ME
+5360|Readfield|KENM|ME
+5361|Reed|AROM|ME
+5362|Richmond|SAGM|ME
+5363|Ripley|SOMM|ME
+5364|Robbinston|WASM|ME
+5365|Rockland|KNOM|ME
+5366|Rockport|KNOM|ME
+5367|Rome|KENM|ME
+5368|Roque Bluffs|WASM|ME
+5369|Roxbury|OXFM|ME
+5370|Rumford|OXFM|ME
+5371|Sabattus|ANDM|ME
+5372|Saco|YORM|ME
+5373|Saint Agatha|AROM|ME
+5374|Saint Albans|SOMM|ME
+5375|Saint Francis|AROM|ME
+5376|Saint George|KNOM|ME
+5377|Saint John|AROM|ME
+5378|Sandy River|FRAM|ME
+5379|Sanford|YORM|ME
+5380|Sangerville|PISM|ME
+5381|Scarborough|CUMM|ME
+5382|Searsmont|WALM|ME
+5383|Searsport|WALM|ME
+5384|Sebago|CUMM|ME
+5385|Sebec|PISM|ME
+5386|Seboeis Plt|PENM|ME
+5387|Sedgwick|HANM|ME
+5388|Shapleigh|YORM|ME
+5389|Sherman|AROM|ME
+5390|Shirley|PISM|ME
+5391|Sidney|KENM|ME
+5392|Skowhegan|SOMM|ME
+5393|Smithfield|SOMM|ME
+5394|Smyrna|AROM|ME
+5395|Solon|SOMM|ME
+5396|Somerville|LINM|ME
+5397|Sorrento|HANM|ME
+5398|South Berwick|YORM|ME
+5399|South Bristol|LINM|ME
+5400|South Portland|CUMM|ME
+5401|South Thomaston|KNOM|ME
+5402|Southport|LINM|ME
+5403|Southwest Harbor|HANM|ME
+5404|Springfield|PENM|ME
+5405|Stacyville|PENM|ME
+5406|Standish|CUMM|ME
+5407|Starks|SOMM|ME
+5408|Stetson|PENM|ME
+5409|Steuben|WASM|ME
+5410|Stockholm|AROM|ME
+5411|Stockton Springs|WALM|ME
+5412|Stoneham|OXFM|ME
+5413|Stonington|HANM|ME
+5414|Stow|OXFM|ME
+5415|Strong|FRAM|ME
+5416|Sullivan|HANM|ME
+5417|Sumner|OXFM|ME
+5418|Surry|HANM|ME
+5419|Swans Island|HANM|ME
+5420|Swanville|WALM|ME
+5421|Sweden|OXFM|ME
+5422|Talmadge|WASM|ME
+5423|Temple|FRAM|ME
+5424|The Forks Plt|SOMM|ME
+5425|Thomaston|KNOM|ME
+5426|Thorndike|WALM|ME
+5427|Topsfield|WASM|ME
+5428|Topsham|SAGM|ME
+5429|Tremont|HANM|ME
+5430|Trenton|HANM|ME
+5431|Troy|WALM|ME
+5432|Turner|ANDM|ME
+5433|Union|KNOM|ME
+5434|Unity|WALM|ME
+5435|Upton|OXFM|ME
+5436|Van Buren|AROM|ME
+5437|Vanceboro|WASM|ME
+5438|Vassalboro|KENM|ME
+5439|Veazie|PENM|ME
+5440|Verona|HANM|ME
+5441|Vienna|KENM|ME
+5442|Vinalhaven|KNOM|ME
+5443|Wade|AROM|ME
+5444|Waite|WASM|ME
+5445|Waldo|WALM|ME
+5446|Waldoboro|LINM|ME
+5447|Wales|ANDM|ME
+5448|Wallagrass|AROM|ME
+5449|Waltham|HANM|ME
+5450|Warren|KNOM|ME
+5451|Washburn|AROM|ME
+5452|Washington|KNOM|ME
+5453|Waterboro|YORM|ME
+5454|Waterford|OXFM|ME
+5455|Waterville|KENM|ME
+5456|Wayne|KENM|ME
+5457|Webster|PENM|ME
+5458|Weld|FRAM|ME
+5459|Wellington|PISM|ME
+5460|Wells|YORM|ME
+5461|Wesley|WASM|ME
+5462|West Bath|SAGM|ME
+5463|West Forks|SOMM|ME
+5464|West Gardiner|KENM|ME
+5465|West Paris|OXFM|ME
+5466|Westbrook|CUMM|ME
+5467|Westfield|AROM|ME
+5468|Westmanland|AROM|ME
+5469|Weston|AROM|ME
+5470|Westport|LINM|ME
+5471|Whitefield|LINM|ME
+5472|Whiting|WASM|ME
+5473|Whitneyville|WASM|ME
+5474|Willimantic|PISM|ME
+5475|Wilton|FRAM|ME
+5476|Windham|CUMM|ME
+5477|Windsor|KENM|ME
+5478|Winn|PENM|ME
+5479|Winslow|KENM|ME
+5480|Winter Harbor|HANM|ME
+5481|Winterport|WALM|ME
+5482|Winterville|AROM|ME
+5483|Winthrop|KENM|ME
+5484|Wiscasset|LINM|ME
+5485|Woodland|AROM|ME
+5486|Woodstock|OXFM|ME
+5487|Woodville|PENM|ME
+5488|Woolwich|SAGM|ME
+5489|Yarmouth|CUMM|ME
+5490|York|YORM|ME
+5491|Unorganized Piscataquis|PISM|ME
+5492|Unorganized Somerset|SOMM|ME
+5493|Rockwood|SOMM|ME
+6000|Naples|COLL|FL
+6001|Bonita Springs|LEFL|FL
+6002|Fort Myers|LEFL|FL
+6003|Bradenton|MAFL|FL
+6004|Cape Coral|LEFL|FL
+6005|Estero|LEFL|FL
+6006|Long Boat Key|SAFL|FL
+6007|Marco Island|COLL|FL
+6008|Pine Island|LEFL|FL
+6009|Port Charlotte|CHFL|FL
+6010|Punta Gorda|CHFL|FL
+6011|Sarasota|SAFL|FL
+6012|Orlando|ORFL|FL
+6013|Winter Springs|SEFL|FL
+6014|De Leon Springs|VOFL|FL
+6015|Sebring|HGFL|FL
+6016|Melbourne|BREV|FL
+6017|Cape Canaveral|BREV|FL
+6018|Cocoa|BREV|FL
+6019|Cocoa Beach|BREV|FL
+6020|Indian Harbour Beach|BREV|FL
+6021|Melbourne|BREV|FL
+6022|Palm Bay|BREV|FL
+6023|Rockledge|BREV|FL
+6024|Satellite Beach|BREV|FL
+6025|Titusville|BREV|FL
+6026|West Melbourne|BREV|FL
+6027|Beverly Hills|CITR|FL
+6028|Black Diamond|CITR|FL
+6029|Citrus Hills|CITR|FL
+6030|Citrus Springs|CITR|FL
+6031|Crystal River|CITR|FL
+6032|Floral City|CITR|FL
+6033|Hernando|CITR|FL
+6034|Homosassa Springs|CITR|FL
+6035|Homosassa|CITR|FL
+6036|Inverness|CITR|FL
+6037|Lecanto|CITR|FL
+6038|Pine Ridge|CITR|FL
+6039|Sugarmill Woods|CITR|FL
+6040|Palm Beach Gardens|PBFL|FL
+6041|Ormond Beach|VOFL|FL
+6042|Daytona Beach Shores|VOFL|FL
+6043|Daytona Beach|VOFL|FL
+6044|DeBary|VOFL|FL
+6045|DeLand|VOFL|FL
+6046|Deltona|VOFL|FL
+6047|Edgewater|VOFL|FL
+6048|Holly Hill|VOFL|FL
+6049|Lake Helen|VOFL|FL
+6050|New Smyrna Beach|VOFL|FL
+6051|Oak Hill|VOFL|FL
+6052|Orange City|VOFL|FL
+6053|Pierson|VOFL|FL
+6054|Ponce Inlet|VOFL|FL
+6055|Port Orange|VOFL|FL
+6056|South Daytona|VOFL|FL
+6057|Barberville|VOFL|FL
+6058|Cassadaga|VOFL|FL
+6059|DeLand Southwest|VOFL|FL
+6060|Emporia|VOFL|FL
+6061|Enterprise|VOFL|FL
+6062|Glencoe|VOFL|FL
+6063|North DeLand|VOFL|FL
+6064|Ormond-By-The-Sea|VOFL|FL
+6065|Samsula-Spruce Creek|VOFL|FL
+6066|Seville|VOFL|FL
+6067|West DeLand|VOFL|FL
+6068|Wilbur By-The-Sea|VOFL|FL
+6069|Boca Raton|PBFL|FL
+6070|Deerfield|BROW|FL
+6071|Ocala|MNFL|FL
+6072|Ocklawaha|MNFL|FL
+6073|Fort Pierce|STFL|FL
+6074|Delray Beach|PBFL|FL
+6075|Palm Coast|FLFL|FL
+6076|North Miami Beach|MDFL|FL
+6077|Miami|MDFL|FL
+6078|Fellsmere|IRFL|FL
+6079|Indian River Shores|IRFL|FL
+6080|Orchid|IRFL|FL
+6081|Sebastian|IRFL|FL
+6082|Vero Beach|IRFL|FL
+6083|Gifford|IRFL|FL
+6084|Roseland|IRFL|FL
+6085|Wabasso|IRFL|FL
+6086|Winter Beach|IRFL|FL
+6087|Brandon|HLFL|FL
+6088|Odessa|PAFL|FL
+6089|Tampa|HLFL|FL
+6090|Valrico|HLFL|FL
+6091|Lithia|HLFL|FL
+6092|Thonotosassa|HLFL|FL
+6093|Sun City Center|HLFL|FL
+6094|Apollo Beach|HLFL|FL
+6095|Plant City|HLFL|FL
+6096|Riverview|HLFL|FL
+6097|Gibsonton|HLFL|FL
+6098|Tarpon Springs|PIFL|FL
+6099|Wesley Chapel|PAFL|FL
+6100|Clearwater|PIFL|FL
+6101|Palm Harbor|PIFL|FL
+6102|St. Petersburg|PIFL|FL
+6103|Safety Harbor|PIFL|FL
+6104|Largo|PIFL|FL
+6105|Trinity|PAFL|FL
+6106|Howey in the Hills|LKFL|FL
+6107|Sunrise|BRFL|FL
+6108|Fort Lauderdale|BRFL|FL
+6109|Destin|OKAL|FL
+6110|Venice|SARA|FL
+6111|Englewood |CHAR|FL
+7000|Adams|NYJE|NY
+7001|Addison|NYSU|NY
+7002|Afton|NYCH|NY
+7003|Alabama|NYGE|NY
+7004|Albany|NYAB|NY
+7005|Albion|NYOS|NY
+7006|Alden|NYER|NY
+7007|Alexander|NYGE|NY
+7008|Alexandria|NYJE|NY
+7009|Alfred|NYAL|NY
+7010|Allegany|NYCT|NY
+7011|Allen|NYAL|NY
+7012|Alma|NYAL|NY
+7013|Almond|NYAL|NY
+7014|Altona|NYCL|NY
+7015|Amboy|NYOS|NY
+7016|Amenia|NYDU|NY
+7017|Amherst|NYER|NY
+7018|Amity|NYAL|NY
+7019|Amsterdam|NYMT|NY
+7020|Ancram|COLU|NY
+7021|Andes|NYDE|NY
+7022|Andover|NYAL|NY
+7023|Angelica|NYAL|NY
+7024|Annsville|NYON|NY
+7025|Antwerp|NYJE|NY
+7026|Arcade|NYWY|NY
+7027|Arcadia|NYWN|NY
+7028|Argyle|NYWA|NY
+7029|Arietta|NYHA|NY
+7030|Arkwright|NYCQ|NY
+7031|Ashford|NYCT|NY
+7032|Ashland|NYCM|NY
+7033|Athens|NYGR|NY
+7034|Attica|NYWY|NY
+7035|Au Sable|NYCL|NY
+7036|Auburn|NYCY|NY
+7037|Augusta|NYON|NY
+7038|Aurelius|NYCY|NY
+7039|Aurora|NYER|NY
+7040|Austerlitz|COLU|NY
+7041|Ava|NYON|NY
+7042|Avoca|NYSU|NY
+7043|Avon|NYLI|NY
+7044|Babylon|NYSK|NY
+7045|Bainbridge|NYCH|NY
+7046|Baldwin|NYCM|NY
+7047|Ballston|NYSA|NY
+7048|Bangor|NYFR|NY
+7049|Barker|NYBR|NY
+7050|Barre|NYOL|NY
+7051|Barrington|NYYA|NY
+7052|Barton|NYTI|NY
+7053|Batavia|NYGE|NY
+7054|Bath|NYSU|NY
+7055|Beacon|NYDU|NY
+7056|Bedford|NYWE|NY
+7057|Beekman|NYDU|NY
+7058|Beekmantown|NYCL|NY
+7059|Belfast|NYAL|NY
+7060|Bellmont|NYFR|NY
+7061|Bennington|NYWY|NY
+7062|Benson|NYHA|NY
+7063|Benton|NYYA|NY
+7064|Bergen|NYGE|NY
+7065|Berkshire|NYTI|NY
+7066|Berlin|RENS|NY
+7067|Berne|NYAB|NY
+7068|Bethany|NYGE|NY
+7069|Bethel|NYSV|NY
+7070|Bethlehem|NYAB|NY
+7071|Big Flats|NYCM|NY
+7072|Binghamton|NYBR|NY
+7073|Birdsall|NYAL|NY
+7074|Black Brook|NYCL|NY
+7075|Bleecker|NYFU|NY
+7076|Blenheim|NYSH|NY
+7077|Blooming Grove|NYOE|NY
+7078|Bolivar|NYAL|NY
+7079|Bolton|NYWR|NY
+7080|Bombay|NYFR|NY
+7081|Boonville|NYON|NY
+7082|Boston|NYER|NY
+7083|Bovina|NYDE|NY
+7084|Boylston|NYOS|NY
+7085|Bradford|NYSU|NY
+7086|Brandon|NYFR|NY
+7087|Brant|NYER|NY
+7088|Brasher|NYST|NY
+7089|Bridgewater|NYON|NY
+7090|Brighton|NYFR|NY
+7091|Bristol|NYOR|NY
+7092|Broadalbin|NYFU|NY
+7093|Brookfield|NYMA|NY
+7094|Brookhaven|NYSK|NY
+7095|Broome|NYSH|NY
+7096|Brownville|NYJE|NY
+7097|Brunswick|RENS|NY
+7098|Brutus|NYCY|NY
+7099|Buffalo|NYER|NY
+7100|Burke|NYFR|NY
+7101|Burlington|NYOT|NY
+7102|Burns|NYAL|NY
+7103|Busti|NYCQ|NY
+7104|Butler|NYWN|NY
+7105|Butternuts|NYOT|NY
+7106|Byron|NYGE|NY
+7107|Cairo|NYGR|NY
+7108|Caledonia|NYLI|NY
+7109|Callicoon|NYSV|NY
+7110|Cambria|NYNI|NY
+7111|Cambridge|NYWA|NY
+7112|Camden|NYON|NY
+7113|Cameron|NYSU|NY
+7114|Camillus|NYOO|NY
+7115|Campbell|NYSU|NY
+7116|Canaan|COLU|NY
+7117|Canadice|NYOR|NY
+7118|Canajoharie|NYMT|NY
+7119|Canandaigua|NYOR|NY
+7120|Candor|NYTI|NY
+7121|Caneadea|NYAL|NY
+7122|Canisteo|NYSU|NY
+7123|Canton|NYST|NY
+7124|Cape Vincent|NYJE|NY
+7125|Carlisle|NYSH|NY
+7126|Carlton|NYOL|NY
+7127|Carmel|NYPU|NY
+7128|Caroga|NYFU|NY
+7129|Caroline|NYTO|NY
+7130|Carroll|NYCQ|NY
+7131|Carrollton|NYCT|NY
+7132|Castile|NYWY|NY
+7133|Catharine|NYSY|NY
+7134|Catlin|NYCM|NY
+7135|Cato|NYCY|NY
+7136|Caton|NYSU|NY
+7137|Catskill|NYGR|NY
+7138|Cayuta|NYSY|NY
+7139|Cazenovia|NYMA|NY
+7140|Centerville|NYAL|NY
+7141|Champion|NYJE|NY
+7142|Champlain|NYCL|NY
+7143|Charleston|NYMT|NY
+7144|Charlotte|NYCQ|NY
+7145|Charlton|NYSA|NY
+7146|Chateaugay|NYFR|NY
+7147|Chatham|COLU|NY
+7148|Chautauqua|NYCQ|NY
+7149|Chazy|NYCL|NY
+7150|Cheektowaga|NYER|NY
+7151|Chemung|NYCM|NY
+7152|Chenango|NYBR|NY
+7153|Cherry Creek|NYCQ|NY
+7154|Cherry Valley|NYOT|NY
+7155|Chester|NYOE|NY
+7156|Chesterfield|NYES|NY
+7157|Chili|NYMN|NY
+7158|Cicero|NYOO|NY
+7159|Cincinnatus|NYCO|NY
+7160|Clare|NYST|NY
+7161|Clarence|NYER|NY
+7162|Clarendon|NYOL|NY
+7163|Clarkson|NYMN|NY
+7164|Clarkstown|NYRO|NY
+7165|Clarksville|NYAL|NY
+7166|Claverack|COLU|NY
+7167|Clay|NYOO|NY
+7168|Clayton|NYJE|NY
+7169|Clermont|COLU|NY
+7170|Clifton|NYST|NY
+7171|Clifton Park|NYSA|NY
+7172|Clinton|NYDU|NY
+7173|Clymer|NYCQ|NY
+7174|Cobleskill|NYSH|NY
+7175|Cochecton|NYSV|NY
+7176|Coeymans|NYAB|NY
+7177|Cohocton|NYSU|NY
+7178|Cohoes|NYAB|NY
+7179|Colchester|NYDE|NY
+7180|Colden|NYER|NY
+7181|Coldspring|NYCT|NY
+7182|Colesville|NYBR|NY
+7183|Collins|NYER|NY
+7184|Colonie|NYAB|NY
+7185|Colton|NYST|NY
+7186|Columbia|COLU|NY
+7187|Columbus|NYCH|NY
+7188|Concord|NYER|NY
+7189|Conesus|NYLI|NY
+7190|Conesville|NYSH|NY
+7191|Conewango|NYCT|NY
+7192|Conklin|NYBR|NY
+7193|Conquest|NYCY|NY
+7194|Constable|NYFR|NY
+7195|Constantia|NYOS|NY
+7196|Copake|COLU|NY
+7197|Corinth|NYSA|NY
+7198|Corning|NYSU|NY
+7199|Cornwall|NYOE|NY
+7200|Cortland|NYCO|NY
+7201|Cortlandt|NYWE|NY
+7202|Cortlandville|NYCO|NY
+7203|Coventry|NYCH|NY
+7204|Covert|NYSE|NY
+7205|Covington|NYWY|NY
+7206|Coxsackie|NYGR|NY
+7207|Crawford|NYOE|NY
+7208|Croghan|NYLE|NY
+7209|Crown Point|NYES|NY
+7210|Cuba|NYAL|NY
+7211|Cuyler|NYCO|NY
+7212|Danby|NYTO|NY
+7213|Dannemora|NYCL|NY
+7214|Dansville|NYSU|NY
+7215|Danube|NYHE|NY
+7216|Darien|NYGE|NY
+7217|Davenport|NYDE|NY
+7218|Day|NYSA|NY
+7219|Dayton|NYCT|NY
+7220|De Kalb|NYST|NY
+7221|De Peyster|NYST|NY
+7222|De Witt|NYOO|NY
+7223|Decatur|NYOT|NY
+7224|Deerfield|NYON|NY
+7225|Deerpark|NYOE|NY
+7226|Delaware|NYSV|NY
+7227|Delhi|NYDE|NY
+7228|Denmark|NYLE|NY
+7229|Denning|NYUL|NY
+7230|Deposit|NYDE|NY
+7231|DeRuyter|NYMA|NY
+7232|Diana|NYLE|NY
+7233|Dickinson|NYBR|NY
+7234|Dix|NYSY|NY
+7235|Dover|NYDU|NY
+7236|Dresden|NYWA|NY
+7237|Dryden|NYTO|NY
+7238|Duane|NYFR|NY
+7239|Duanesburg|NYSC|NY
+7240|Dunkirk|NYCQ|NY
+7241|Durham|NYGR|NY
+7242|Eagle|NYWY|NY
+7243|East Bloomfield|NYOR|NY
+7244|East Fishkill|NYDU|NY
+7245|East Greenbush|RENS|NY
+7246|East Hampton|NYSK|NY
+7247|East Otto|NYCT|NY
+7248|East Rochester|NYMN|NY
+7249|Eastchester|NYWE|NY
+7250|Easton|NYWA|NY
+7251|Eaton|NYMA|NY
+7252|Eden|NYER|NY
+7253|Edinburg|NYSA|NY
+7254|Edmeston|NYOT|NY
+7255|Edwards|NYST|NY
+7256|Elba|NYGE|NY
+7257|Elbridge|NYOO|NY
+7258|Elizabethtown|NYES|NY
+7259|Ellenburg|NYCL|NY
+7260|Ellery|NYCQ|NY
+7261|Ellicott|NYCQ|NY
+7262|Ellicottville|NYCT|NY
+7263|Ellington|NYCQ|NY
+7264|Ellisburg|NYJE|NY
+7265|Elma|NYER|NY
+7266|Elmira|NYCM|NY
+7267|Enfield|NYTO|NY
+7268|Ephratah|NYFU|NY
+7269|Erin|NYCM|NY
+7270|Erwin|NYSU|NY
+7271|Esopus|NYUL|NY
+7272|Esperance|NYSH|NY
+7273|Essex|NYES|NY
+7274|Evans|NYER|NY
+7275|Exeter|NYOT|NY
+7276|Fabius|NYOO|NY
+7277|Fairfield|NYHE|NY
+7278|Fallsburg|NYSV|NY
+7279|Farmersville|NYCT|NY
+7280|Farmington|NYOR|NY
+7281|Fayette|NYSE|NY
+7282|Fenner|NYMA|NY
+7283|Fenton|NYBR|NY
+7284|Fine|NYST|NY
+7285|Fishkill|NYDU|NY
+7286|Fleming|NYCY|NY
+7287|Florence|NYON|NY
+7288|Florida|NYMT|NY
+7289|Floyd|NYON|NY
+7290|Forestburgh|NYSV|NY
+7291|Forestport|NYON|NY
+7292|Fort Ann|NYWA|NY
+7293|Fort Covington|NYFR|NY
+7294|Fort Edward|NYWA|NY
+7295|Fowler|NYST|NY
+7296|Frankfort|NYHE|NY
+7297|Franklin|NYFR|NY
+7298|Franklinville|NYCT|NY
+7299|Freedom|NYCT|NY
+7300|Freetown|NYCO|NY
+7301|Fremont|NYSU|NY
+7302|French Creek|NYCQ|NY
+7303|Friendship|NYAL|NY
+7304|Fulton|NYSH|NY
+7305|Gaines|NYOL|NY
+7306|Gainesville|NYWY|NY
+7307|Galen|NYWN|NY
+7308|Gallatin|COLU|NY
+7309|Galway|NYSA|NY
+7310|Gardiner|NYUL|NY
+7311|Gates|NYMN|NY
+7312|Geddes|NYOO|NY
+7313|Genesee|NYAL|NY
+7314|Genesee Falls|NYWY|NY
+7315|Geneseo|NYLI|NY
+7316|Geneva|NYOR|NY
+7317|Genoa|NYCY|NY
+7318|Georgetown|NYMA|NY
+7319|German|NYCH|NY
+7320|German Flatts|NYHE|NY
+7321|Germantown|COLU|NY
+7322|Gerry|NYCQ|NY
+7323|Ghent|COLU|NY
+7324|Gilboa|NYSH|NY
+7325|Glen|NYMT|NY
+7326|Glen Cove|NYNA|NY
+7327|Glens Falls|NYWR|NY
+7328|Glenville|NYSC|NY
+7329|Gloversville|NYFU|NY
+7330|Gorham|NYOR|NY
+7331|Goshen|NYOE|NY
+7332|Gouverneur|NYST|NY
+7333|Grafton|RENS|NY
+7334|Granby|NYOS|NY
+7335|Grand Island|NYER|NY
+7336|Granger|NYAL|NY
+7337|Granville|NYWA|NY
+7338|Great Valley|NYCT|NY
+7339|Greece|NYMN|NY
+7340|Green Island|NYAB|NY
+7341|Greenburgh|NYWE|NY
+7342|Greene|NYCH|NY
+7343|Greenfield|NYSA|NY
+7344|Greenport|COLU|NY
+7345|Greenville|NYGR|NY
+7346|Greenwich|NYWA|NY
+7347|Greenwood|NYSU|NY
+7348|Greig|NYLE|NY
+7349|Groton|NYTO|NY
+7350|Grove|NYAL|NY
+7351|Groveland|NYLI|NY
+7352|Guilderland|NYAB|NY
+7353|Guilford|NYCH|NY
+7354|Hadley|NYSA|NY
+7355|Hague|NYWR|NY
+7356|Halcott|NYGR|NY
+7357|Halfmoon|NYSA|NY
+7358|Hamburg|NYER|NY
+7359|Hamden|NYDE|NY
+7360|Hamilton|NYMA|NY
+7361|Hamlin|NYMN|NY
+7362|Hammond|NYST|NY
+7363|Hampton|NYWA|NY
+7364|Hamptonburgh|NYOE|NY
+7365|Hancock|NYDE|NY
+7366|Hannibal|NYOS|NY
+7367|Hanover|NYCQ|NY
+7368|Hardenburgh|NYUL|NY
+7369|Harford|NYCO|NY
+7370|Harmony|NYCQ|NY
+7371|Harpersfield|NYDE|NY
+7372|Harrietstown|NYFR|NY
+7373|Harrisburg|NYLE|NY
+7374|Harrison|NYWE|NY
+7375|Hartford|NYWA|NY
+7376|Hartland|NYNI|NY
+7377|Hartsville|NYSU|NY
+7378|Hartwick|NYOT|NY
+7379|Hastings|NYOS|NY
+7380|Haverstraw|NYRO|NY
+7381|Hebron|NYWA|NY
+7382|Hector|NYSY|NY
+7383|Hempstead|NYNA|NY
+7384|Henderson|NYJE|NY
+7385|Henrietta|NYMN|NY
+7386|Herkimer|NYHE|NY
+7387|Hermon|NYST|NY
+7388|Highland|NYSV|NY
+7389|Highlands|NYOE|NY
+7390|Hillsdale|COLU|NY
+7391|Hinsdale|NYCT|NY
+7392|Holland|NYER|NY
+7393|Homer|NYCO|NY
+7394|Hoosick|RENS|NY
+7395|Hope|NYHA|NY
+7396|Hopewell|NYOR|NY
+7397|Hopkinton|NYST|NY
+7398|Horicon|NYWR|NY
+7399|Hornby|NYSU|NY
+7400|Hornell|NYSU|NY
+7401|Hornellsville|NYSU|NY
+7402|Horseheads|NYCM|NY
+7403|Hounsfield|NYJE|NY
+7404|Howard|NYSU|NY
+7405|Hume|NYAL|NY
+7406|Humphrey|NYCT|NY
+7407|Hunter|NYGR|NY
+7408|Huntington|NYSK|NY
+7409|Hurley|NYUL|NY
+7410|Huron|NYWN|NY
+7411|Hyde Park|NYDU|NY
+7412|Independence|NYAL|NY
+7413|Indian Lake|NYHA|NY
+7414|Inlet|NYHA|NY
+7415|Ira|NYCY|NY
+7416|Irondequoit|NYMN|NY
+7417|Ischua|NYCT|NY
+7418|Islip|NYSK|NY
+7419|Italy|NYYA|NY
+7420|Ithaca|NYTO|NY
+7421|Jackson|NYWA|NY
+7422|Jamestown|NYCQ|NY
+7423|Jasper|NYSU|NY
+7424|Java|NYWY|NY
+7425|Jay|NYES|NY
+7426|Jefferson|NYSH|NY
+7427|Jerusalem|NYYA|NY
+7428|Jewell|NYON|NY
+7429|Jewett|NYGR|NY
+7430|Johnsburg|NYWR|NY
+7431|Johnstown|NYFU|NY
+7432|Junius|NYSE|NY
+7433|Keene|NYES|NY
+7434|Kendall|NYOL|NY
+7435|Kent|NYPU|NY
+7436|Kiantone|NYCQ|NY
+7437|Kinderhook|COLU|NY
+7438|Kingsbury|NYWA|NY
+7439|Kingston|NYUL|NY
+7440|Kirkland|NYON|NY
+7441|Kirkwood|NYBR|NY
+7442|Knox|NYAB|NY
+7443|Kortright|NYDE|NY
+7444|La Grange|NYDU|NY
+7445|Lackawanna|NYER|NY
+7446|LaFayette|NYOO|NY
+7447|Lake George|NYWR|NY
+7448|Lake Luzerne|NYWR|NY
+7449|Lake Pleasant|NYHA|NY
+7450|Lancaster|NYER|NY
+7451|Lansing|NYTO|NY
+7452|Lapeer|NYCO|NY
+7453|Laurens|NYOT|NY
+7454|Lawrence|NYST|NY
+7455|Le Ray|NYJE|NY
+7456|Le Roy|NYGE|NY
+7457|Lebanon|NYMA|NY
+7458|Ledyard|NYCY|NY
+7459|Lee|NYON|NY
+7460|Leicester|NYLI|NY
+7461|Lenox|NYMA|NY
+7462|Leon|NYCT|NY
+7463|Lewis|NYLE|NY
+7464|Lewisboro|NYWE|NY
+7465|Lewiston|NYNI|NY
+7466|Lexington|NYGR|NY
+7467|Leyden|NYLE|NY
+7468|Liberty|NYSV|NY
+7469|Lima|NYLI|NY
+7470|Lincklaen|NYCH|NY
+7471|Lincoln|NYMA|NY
+7472|Lindley|NYSU|NY
+7473|Lisbon|NYST|NY
+7474|Lisle|NYBR|NY
+7475|Litchfield|NYHE|NY
+7476|Little Falls|NYHE|NY
+7477|Little Valley|NYCT|NY
+7478|Livingston|COLU|NY
+7479|Livonia|NYLI|NY
+7480|Lloyd|NYUL|NY
+7481|Locke|NYCY|NY
+7482|Lockport|NYNI|NY
+7483|Lodi|NYSE|NY
+7484|Long Beach|NYNA|NY
+7485|Long Lake|NYHA|NY
+7486|Lorraine|NYJE|NY
+7487|Louisville|NYST|NY
+7488|Lowville|NYLE|NY
+7489|Lumberland|NYSV|NY
+7490|Lyme|NYJE|NY
+7491|Lyndon|NYCT|NY
+7492|Lyons|NYWN|NY
+7493|Lyonsdale|NYLE|NY
+7494|Lysander|NYOO|NY
+7495|Macedon|NYWN|NY
+7496|Machias|NYCT|NY
+7497|Macomb|NYST|NY
+7498|Madison|NYMA|NY
+7499|Madrid|NYST|NY
+7500|Maine|NYBR|NY
+7501|Malone|NYFR|NY
+7502|Malta|NYSA|NY
+7503|Mamakating|NYSV|NY
+7504|Mamaroneck|NYWE|NY
+7505|Manchester|NYOR|NY
+7506|Manheim|NYHE|NY
+7507|Manlius|NYOO|NY
+7508|Mansfield|NYCT|NY
+7509|Marathon|NYCO|NY
+7510|Marbletown|NYUL|NY
+7511|Marcellus|NYOO|NY
+7512|Marcy|NYON|NY
+7513|Marilla|NYER|NY
+7514|Marion|NYWN|NY
+7515|Marlborough|NYUL|NY
+7516|Marshall|NYON|NY
+7517|Martinsburg|NYLE|NY
+7518|Maryland|NYOT|NY
+7519|Masonville|NYDE|NY
+7520|Massena|NYST|NY
+7521|Mayfield|NYFU|NY
+7522|McDonough|NYCH|NY
+7523|Mechanicville|NYSA|NY
+7524|Mendon|NYMN|NY
+7525|Mentz|NYCY|NY
+7526|Meredith|NYDE|NY
+7527|Mexico|NYOS|NY
+7528|Middleburgh|NYSH|NY
+7529|Middlebury|NYWY|NY
+7530|Middlefield|NYOT|NY
+7531|Middlesex|NYYA|NY
+7532|Middletown|NYOE|NY
+7533|Milan|NYDU|NY
+7534|Milford|NYOT|NY
+7535|Milo|NYYA|NY
+7536|Milton|NYSA|NY
+7537|Mina|NYCQ|NY
+7538|Minden|NYMT|NY
+7539|Minerva|NYES|NY
+7540|Minetto|NYOS|NY
+7541|Minisink|NYOE|NY
+7542|Mohawk|NYMT|NY
+7543|Moira|NYFR|NY
+7544|Monroe|NYOE|NY
+7545|Montague|NYLE|NY
+7546|Montezuma|NYCY|NY
+7547|Montgomery|NYOE|NY
+7548|Montour|NYSY|NY
+7549|Mooers|NYCL|NY
+7550|Moravia|NYCY|NY
+7551|Moreau|NYSA|NY
+7552|Morehouse|NYHA|NY
+7553|Moriah|NYES|NY
+7554|Morris|NYOT|NY
+7555|Morristown|NYST|NY
+7556|Mount Hope|NYOE|NY
+7557|Mount Kisco|NYWE|NY
+7558|Mount Morris|NYLI|NY
+7559|Mount Pleasant|NYWE|NY
+7560|Mount Vernon|NYWE|NY
+7561|Murray|NYOL|NY
+7562|Nanticoke|NYBR|NY
+7563|Naples|NYOR|NY
+7564|Napoli|NYCT|NY
+7565|Nassau|RENS|NY
+7566|Nelson|NYMA|NY
+7567|Neversink|NYSV|NY
+7568|New Albion|NYCT|NY
+7569|New Baltimore|NYGR|NY
+7570|New Berlin|NYCH|NY
+7571|New Bremen|NYLE|NY
+7572|New Castle|NYWE|NY
+7573|New Hartford|NYON|NY
+7574|New Haven|NYOS|NY
+7575|New Hudson|NYAL|NY
+7576|New Lebanon|COLU|NY
+7577|New Lisbon|NYOT|NY
+7578|New Paltz|NYUL|NY
+7579|New Rochelle|NYWE|NY
+7580|New Scotland|NYAB|NY
+7581|New Windsor|NYOE|NY
+7582|New York City|NYNE|NY
+7583|Newark Valley|NYTI|NY
+7584|Newburgh|NYOE|NY
+7585|Newcomb|NYES|NY
+7586|Newfane|NYNI|NY
+7587|Newfield|NYTO|NY
+7588|Newport|NYHE|NY
+7589|Newstead|NYER|NY
+7590|Niagara|NYNI|NY
+7591|Niagara Falls|NYNI|NY
+7592|Nichols|NYTI|NY
+7593|Niles|NYCY|NY
+7594|Niskayuna|NYSC|NY
+7595|Norfolk|NYST|NY
+7596|North Castle|NYWE|NY
+7597|North Collins|NYER|NY
+7598|North Dansville|NYLI|NY
+7599|North East|NYDU|NY
+7600|North Elba|NYES|NY
+7601|North Greenbush|RENS|NY
+7602|North Harmony|NYCQ|NY
+7603|North Hempstead|NYNA|NY
+7604|North Hudson|NYES|NY
+7605|North Norwich|NYCH|NY
+7606|North Salem|NYWE|NY
+7607|North Tonawanda|NYNI|NY
+7608|Northampton|NYFU|NY
+7609|Northumberland|NYSA|NY
+7610|Norway|NYHE|NY
+7611|Norwich|NYCH|NY
+7612|Nunda|NYLI|NY
+7613|Oakfield|NYGE|NY
+7614|Ogden|NYMN|NY
+7615|Ogdensburg|NYST|NY
+7616|Ohio|NYHE|NY
+7617|Olean|NYCT|NY
+7618|Olive|NYUL|NY
+7619|Oneida|NYMA|NY
+7620|Oneonta|NYOT|NY
+7621|Onondaga|NYOO|NY
+7622|Ontario|NYWN|NY
+7623|Oppenheim|NYFU|NY
+7624|Orange|NYSY|NY
+7625|Orangetown|NYRO|NY
+7626|Orangeville|NYWY|NY
+7627|Orchard Park|NYER|NY
+7628|Orleans|NYJE|NY
+7629|Orwell|NYOS|NY
+7630|Osceola|NYLE|NY
+7631|Ossian|NYLI|NY
+7632|Ossining|NYWE|NY
+7633|Oswegatchie|NYST|NY
+7634|Oswego|NYOS|NY
+7635|Otego|NYOT|NY
+7636|Otisco|NYOO|NY
+7637|Otsego|NYOT|NY
+7638|Otselic|NYCH|NY
+7639|Otto|NYCT|NY
+7640|Ovid|NYSE|NY
+7641|Owasco|NYCY|NY
+7642|Owego|NYTI|NY
+7643|Oxford|NYCH|NY
+7644|Oyster Bay|NYNA|NY
+7645|Palatine|NYMT|NY
+7646|Palermo|NYOS|NY
+7647|Palmyra|NYWN|NY
+7648|Pamelia|NYJE|NY
+7649|Paris|NYON|NY
+7650|Parish|NYOS|NY
+7651|Parishville|NYST|NY
+7652|Parma|NYMN|NY
+7653|Patterson|NYPU|NY
+7654|Pavilion|NYGE|NY
+7655|Pawling|NYDU|NY
+7656|Peekskill|NYWE|NY
+7657|Pelham|NYWE|NY
+7658|Pembroke|NYGE|NY
+7659|Pendleton|NYNI|NY
+7660|Penfield|NYMN|NY
+7661|Perinton|NYMN|NY
+7662|Perry|NYWY|NY
+7663|Perrysburg|NYCT|NY
+7664|Persia|NYCT|NY
+7665|Perth|NYFU|NY
+7666|Peru|NYCL|NY
+7667|Petersburgh|RENS|NY
+7668|Pharsalia|NYCH|NY
+7669|Phelps|NYOR|NY
+7670|Philadelphia|NYJE|NY
+7671|Philipstown|NYPU|NY
+7672|Piercefield|NYST|NY
+7673|Pierrepont|NYST|NY
+7674|Pike|NYWY|NY
+7675|Pinckney|NYLE|NY
+7676|Pine Plains|NYDU|NY
+7677|Pitcairn|NYST|NY
+7678|Pitcher|NYCH|NY
+7679|Pittsfield|NYOT|NY
+7680|Pittsford|NYMN|NY
+7681|Pittstown|RENS|NY
+7682|Plainfield|NYOT|NY
+7683|Plattekill|NYUL|NY
+7684|Plattsburgh|NYCL|NY
+7685|Pleasant Valley|NYDU|NY
+7686|Plymouth|NYCH|NY
+7687|Poestenkill|RENS|NY
+7688|Poland|NYCQ|NY
+7689|Pomfret|NYCQ|NY
+7690|Pompey|NYOO|NY
+7691|Port Jervis|NYOE|NY
+7692|Portage|NYLI|NY
+7693|Porter|NYNI|NY
+7694|Portland|NYCQ|NY
+7695|Portville|NYCT|NY
+7696|Potsdam|NYST|NY
+7697|Potter|NYYA|NY
+7698|Poughkeepsie|NYDU|NY
+7699|Pound Ridge|NYWE|NY
+7700|Prattsburgh|NYSU|NY
+7701|Prattsville|NYGR|NY
+7702|Preble|NYCO|NY
+7703|Preston|NYCH|NY
+7704|Princetown|NYSC|NY
+7705|Providence|NYSA|NY
+7706|Pulteney|NYSU|NY
+7707|Putnam|NYWA|NY
+7708|Putnam Valley|NYPU|NY
+7709|Queensbury|NYWR|NY
+7710|Ramapo|NYRO|NY
+7711|Randolph|NYCT|NY
+7712|Rathbone|NYSU|NY
+7713|Reading|NYSY|NY
+7714|Red Hook|NYDU|NY
+7715|Red House|NYCT|NY
+7716|Redfield|NYOS|NY
+7717|Remsen|NYON|NY
+7718|Renssalaer|RENS|NY
+7719|Rensselaer|RENS|NY
+7720|Rensselaerville|NYAB|NY
+7721|Rhinebeck|NYDU|NY
+7722|Richfield|NYOT|NY
+7723|Richford|NYTI|NY
+7724|Richland|NYOS|NY
+7725|Richmond|NYOR|NY
+7726|Richmondville|NYSH|NY
+7727|Ridgeway|NYOL|NY
+7728|Riga|NYMN|NY
+7729|Ripley|NYCQ|NY
+7730|Riverhead|NYSK|NY
+7731|Rochester|NYMN|NY
+7732|Rockland|NYSV|NY
+7733|Rodman|NYJE|NY
+7734|Rome|NYON|NY
+7735|Romulus|NYSE|NY
+7736|Root|NYMT|NY
+7737|Rose|NYWN|NY
+7738|Roseboom|NYOT|NY
+7739|Rosendale|NYUL|NY
+7740|Rossie|NYST|NY
+7741|Rotterdam|NYSC|NY
+7742|Roxbury|NYDE|NY
+7743|Royalton|NYNI|NY
+7744|Rush|NYMN|NY
+7745|Rushford|NYAL|NY
+7746|Russell|NYST|NY
+7747|Russia|NYHE|NY
+7748|Rutland|NYJE|NY
+7749|Rye|NYWE|NY
+7750|Salamanca|NYCT|NY
+7751|Salem|NYWA|NY
+7752|Salina|NYOO|NY
+7753|Salisbury|NYHE|NY
+7754|Sand Lake|RENS|NY
+7755|Sandy Creek|NYOS|NY
+7756|Sanford|NYBR|NY
+7757|Sangerfield|NYON|NY
+7758|Santa Clara|NYFR|NY
+7759|Saranac|NYCL|NY
+7760|Saratoga|NYSA|NY
+7761|Saratoga Springs|NYSA|NY
+7762|Sardinia|NYER|NY
+7763|Saugerties|NYUL|NY
+7764|Savannah|NYWN|NY
+7765|Scarsdale|NYWE|NY
+7766|Schaghticoke|RENS|NY
+7767|Schenectady|NYSC|NY
+7768|Schodack|RENS|NY
+7769|Schoharie|NYSH|NY
+7770|Schroeppel|NYOS|NY
+7771|Schroon|NYES|NY
+7772|Schuyler|NYHE|NY
+7773|Schuyler Falls|NYCL|NY
+7774|Scio|NYAL|NY
+7775|Scipio|NYCY|NY
+7776|Scott|NYCO|NY
+7777|Scriba|NYOS|NY
+7778|Sempronius|NYCY|NY
+7779|Seneca|NYOR|NY
+7780|Seneca Falls|NYSE|NY
+7781|Sennett|NYCY|NY
+7782|Seward|NYSH|NY
+7783|Shandaken|NYUL|NY
+7784|Sharon|NYSH|NY
+7785|Shawangunk|NYUL|NY
+7786|Shelby|NYOL|NY
+7787|Sheldon|NYWY|NY
+7788|Shelter Island|NYSK|NY
+7789|Sherburne|NYCH|NY
+7790|Sheridan|NYCQ|NY
+7791|Sherman|NYCQ|NY
+7792|Sherrill|NYON|NY
+7793|Sidney|NYDE|NY
+7794|Skaneateles|NYOO|NY
+7795|Smithfield|NYMA|NY
+7796|Smithtown|NYSK|NY
+7797|Smithville|NYCH|NY
+7798|Smyrna|NYCH|NY
+7799|Sodus|NYWN|NY
+7800|Solon|NYCO|NY
+7801|Somers|NYWE|NY
+7802|Somerset|NYNI|NY
+7803|South Bristol|NYOR|NY
+7804|South Valley|NYCT|NY
+7805|Southampton|NYSK|NY
+7806|Southeast|NYPU|NY
+7807|Southold|NYSK|NY
+7808|Southport|NYCM|NY
+7809|Spafford|NYOO|NY
+7810|Sparta|NYLI|NY
+7811|Spencer|NYTI|NY
+7812|Springfield|NYOT|NY
+7813|Springport|NYCY|NY
+7814|Springwater|NYLI|NY
+7815|St. Armand|NYES|NY
+7816|St. Johnsville|NYMT|NY
+7817|Stafford|NYGE|NY
+7818|Stamford|NYDE|NY
+7819|Stanford|NYDU|NY
+7820|Stark|NYHE|NY
+7821|Starkey|NYYA|NY
+7822|Stephentown|RENS|NY
+7823|Sterling|NYCY|NY
+7824|Steuben|NYON|NY
+7825|Stillwater|NYSA|NY
+7826|Stockbridge|NYMA|NY
+7827|Stockholm|NYST|NY
+7828|Stockport|COLU|NY
+7829|Stockton|NYCQ|NY
+7830|Stony Creek|NYWR|NY
+7831|Stony Point|NYRO|NY
+7832|Stratford|NYFU|NY
+7833|Stuyvesant|COLU|NY
+7834|Sullivan|NYMA|NY
+7835|Summerhill|NYCY|NY
+7836|Summit|NYSH|NY
+7837|Sweden|NYMN|NY
+7838|Syracuse|NYOO|NY
+7839|Taghkanic|COLU|NY
+7840|Taylor|NYCO|NY
+7841|Theresa|NYJE|NY
+7842|Thompson|NYSV|NY
+7843|Throop|NYCY|NY
+7844|Thurman|NYWR|NY
+7845|Thurston|NYSU|NY
+7846|Ticonderoga|NYES|NY
+7847|Tioga|NYTI|NY
+7848|Tompkins|NYDE|NY
+7849|Tonawanda|NYER|NY
+7850|Torrey|NYYA|NY
+7851|Trenton|NYON|NY
+7852|Triangle|NYBR|NY
+7853|Troupsburg|NYSU|NY
+7854|Troy|RENS|NY
+7855|Truxton|NYCO|NY
+7856|Tully|NYOO|NY
+7857|Tupper Lake|NYFR|NY
+7858|Turin|NYLE|NY
+7859|Tuscarora|NYSU|NY
+7860|Tusten|NYSV|NY
+7861|Tuxedo|NYOE|NY
+7862|Tyre|NYSE|NY
+7863|Tyrone|NYSY|NY
+7864|Ulster|NYUL|NY
+7865|Ulysses|NYTO|NY
+7866|Unadilla|NYOT|NY
+7867|Union|NYBR|NY
+7868|Union Vale|NYDU|NY
+7869|Urbana|NYSU|NY
+7870|Utica|NYON|NY
+7871|Van Buren|NYOO|NY
+7872|Van Etten|NYCM|NY
+7873|Varick|NYSE|NY
+7874|Venice|NYCY|NY
+7875|Vernon|NYON|NY
+7876|Verona|NYON|NY
+7877|Vestal|NYBR|NY
+7878|Veteran|NYCM|NY
+7879|Victor|NYOR|NY
+7880|Victory|NYCY|NY
+7881|Vienna|NYON|NY
+7882|Villenova|NYCQ|NY
+7883|Virgil|NYCO|NY
+7884|Volney|NYOS|NY
+7885|Waddington|NYST|NY
+7886|Wales|NYER|NY
+7887|Wallkill|NYOE|NY
+7888|Walton|NYDE|NY
+7889|Walworth|NYWN|NY
+7890|Wappinger|NYDU|NY
+7891|Ward|NYAL|NY
+7892|Warren|NYHE|NY
+7893|Warrensburg|NYWR|NY
+7894|Warsaw|NYWY|NY
+7895|Warwick|NYOE|NY
+7896|Washington|NYDU|NY
+7897|Waterford|NYSA|NY
+7898|Waterloo|NYSE|NY
+7899|Watertown|NYJE|NY
+7900|Watervliet|NYAB|NY
+7901|Watson|NYLE|NY
+7902|Waverly|NYFR|NY
+7903|Wawarsing|NYUL|NY
+7904|Wawayanda|NYOE|NY
+7905|Wayland|NYSU|NY
+7906|Wayne|NYSU|NY
+7907|Webb|NYHE|NY
+7908|Webster|NYMN|NY
+7909|Wells|NYHA|NY
+7910|Wellsville|NYAL|NY
+7911|West Almond|NYAL|NY
+7912|West Bloomfield|NYOR|NY
+7913|West Monroe|NYOS|NY
+7914|West Seneca|NYER|NY
+7915|West Sparta|NYLI|NY
+7916|West Turin|NYLE|NY
+7917|West Union|NYSU|NY
+7918|Westerlo|NYAB|NY
+7919|Western|NYON|NY
+7920|Westfield|NYCQ|NY
+7921|Westford|NYOT|NY
+7922|Westmoreland|NYON|NY
+7923|Westport|NYES|NY
+7924|Westville|NYFR|NY
+7925|Wethersfield|NYWY|NY
+7926|Wheatfield|NYNI|NY
+7927|Wheatland|NYMN|NY
+7928|Wheeler|NYSU|NY
+7929|White Creek|NYWA|NY
+7930|White Plains|NYWE|NY
+7931|Whitehall|NYWA|NY
+7932|Whitestown|NYON|NY
+7933|Willet|NYCO|NY
+7934|Williamson|NYWN|NY
+7935|Williamstown|NYOS|NY
+7936|Willing|NYAL|NY
+7937|Willsboro|NYES|NY
+7938|Wilmington|NYES|NY
+7939|Wilna|NYJE|NY
+7940|Wilson|NYNI|NY
+7941|Wilton|NYSA|NY
+7942|Windham|NYGR|NY
+7943|Windsor|NYBR|NY
+7944|Winfield|NYHE|NY
+7945|Wirt|NYAL|NY
+7946|Wolcott|NYWN|NY
+7947|Woodbury|NYOE|NY
+7948|Woodhull|NYSU|NY
+7949|Woodstock|NYUL|NY
+7950|Worcester|NYOT|NY
+7951|Worth|NYJE|NY
+7952|Wright|NYSH|NY
+7953|Yates|NYOL|NY
+7954|Yonkers|NYWE|NY
+7955|York|NYLI|NY
+7956|Yorkshire|NYCT|NY
+7957|Yorktown|NYWE|NY
+7958|St.Augustine|FLFL|FL
+7959|Pembroke Pines|BROW|FL
+7961|Sanford|SEFL|FL
+7962|Lake Mary |SEFL|FL
+7963|Longwood|SEFL|FL
+7964|Kissimmee|OSCL|FL
+7965|Akron|NYER|NY
+7966|Miramar Beach|WLFL|FL

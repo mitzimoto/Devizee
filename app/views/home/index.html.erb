@@ -1,6 +1,13 @@
 <%= render :partial => "shared/nav" %>
 
 <div id="content">
-
+<% @listings.each do |listing| %>
+<% photo_url = Listing.get_photo_url listing.list_no, 0 %>
+<div class="tile">
+    <img src="ftp://ftp.mlspin.com/<%=photo_url%>" alt="<%=listing.street_name%>" width="190"/>
+</div>
+<%end%>
 
 </div>
+
+ /photo/30/688/400_0.jpg

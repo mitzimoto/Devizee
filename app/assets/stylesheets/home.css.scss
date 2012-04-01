@@ -2,6 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$tile_width: 205px;
+$tile_padding: 15px;
+
+@import "effects";
+
 body {
-    background: image-url('wood_bg.jpg') repeat top left;
+    background: image-url('wood.png') repeat top left;
 }
+
+#content {
+    position: relative;
+}
+
+.tile {
+    min-height: 100px;
+    width: $tile_width - $tile_padding;
+    border: 1px solid #D2D2D2;
+    background: white;
+    padding: $tile_padding;
+    @include shadow1
+}
+
+

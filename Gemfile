@@ -27,6 +27,8 @@ end
 
 gem 'jquery-rails'
 gem 'multiple_table_inheritance', '~> 0.1.10'
+gem 'will_paginate', '~> 3.0.beta'
+gem 'curb'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

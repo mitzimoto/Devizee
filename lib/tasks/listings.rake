@@ -1,43 +1,114 @@
+require 'net/ftp'
+
+default_filenames = {
+    'Agent'     => 'data/agents.txt',
+    'Area'      => 'data/areas.txt',
+    'County'    => 'data/counties.txt',
+    'Office'    => 'data/offices.txt',
+    'Town'      => 'data/towns.txt',
+    'Bizopp'    => 'data/idx_bu.txt',
+    'Condo'     => 'data/idx_cc.txt',
+    'Commercial'=> 'data/idx_ci.txt',
+    'Land'      => 'data/idx_ld.txt',
+    'MultiFamily'=> 'data/idx_mf.txt',
+    'MobileHome'=> 'data/idx_mh.txt',
+    'Rental'    => 'data/idx_rn.txt',
+    'Sfprop'    => 'data/idx.txt'
+}
+
+def die(message)
+    puts message
+    exit 1
+end
+
 namespace :listings do
   desc 'Build the category tree'
-  task :load_sfprops => :environment do
-    file = File.new("/home/eric/idx.txt")
+  task :load, [:table, :file] => :environment do |t, args|
 
+    table = args[:table]        || die("You must specify a table to load!")
+
+    #make sure the table we get actually exists
+    default_filenames[table]    || die("Unknown table!: #{table}")
+    filename = args[:file]      || default_filenames[table]
+
+    #open the file
+    file = File.new(filename)   || die("Error opening #{filename}: #{$!}")
+
+    #The first line of the .txt file is the header, split it on |
     line = file.gets
     headers = line.split('|')
 
     #Get rid of the weird newline in the last element
     headers.last.gsub!("\r\n", '')
 
-    Sfprop.transaction do #This makes inserts waaaaaay faster. 
+    Table = table.constantize
+
+    Table.fix_headers(headers)
+
+    Table.transaction do #This makes inserts waaaaaay faster. 
 
         while(line = file.gets)
+            puts line
             data = line.split('|')
             options = Hash.new
     
             data.each_with_index do |value, index|
-    
-                #Skip the first item. We've replaced it with "subtype"
-                next if index == 0
-    
+     
+                next if headers[index] == 'PROP_TYPE'
+
                 #get rid of the newline on the last element
-                value = '' if value == "\r\n"
-    
+                value.chomp!
+
                 #replace empty values with null
                 value = nil if value == ''
-    
-                #Fix for the stupid area column
-                headers[index] = 'AREA_CODE' if headers[index] == 'AREA'
-    
+
                 options[:"#{headers[index].downcase}"] = value
+
             end
-    
-            puts Sfprop.create(options)
+
+            Table.create(options)
+
         end
 
     end
 
     file.close
   end
+
+  desc 'Download images from the MLS'
+  task :photo, [:page] => :environment do |t,args|
+
+        imgdir = "app/assets/images/mls"
+        listings = Listing.paginate(:page => args[:page], :per_page => 10)
+
+        ftp = Net::FTP.new('ftp.mlspin.com')
+        ftp.login
+        ftp.debug_mode = true
+
+        listings.each do |listing|
+
+            filename = Listing.get_photo_url listing.list_no, 0
+            puts filename
+            next if File.exists?("#{imgdir}/#{filename}") and !File.zero?("#{imgdir}/#{filename}")
+
+            dirname = File.dirname(filename)
+            basename = File.basename(filename)
+
+            %x[ mkdir -p "#{imgdir}/#{dirname}" ]
+
+            begin
+                ftp.chdir("/#{dirname}")
+                ftp.getbinaryfile(basename, "#{imgdir}/#{filename}")
+            rescue 
+                puts "Failed to get #{dirname}/#{basename}"
+                File.unlink("#{imgdir}/#{filename}") if File.exists?("#{imgdir}/#{filename}")
+            end
+
+            sleep 1
+        end
+
+        ftp.close
+  end    
+
 
 end

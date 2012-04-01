@@ -1,7 +1,7 @@
 class CreateTowns < ActiveRecord::Migration
   def change
     create_table :towns do |t|
-      t.string  :town_num
+      t.string  :num
       t.string  :long
       t.string  :county
       t.string  :state

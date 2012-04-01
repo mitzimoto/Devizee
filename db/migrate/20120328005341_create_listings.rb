@@ -4,13 +4,13 @@ class CreateListings < ActiveRecord::Migration
 
       #PALL
       t.string    :subtype, :null => false
-      t.string    :list_no
+      t.string    :list_no, :null => false
       t.string    :list_agent
       t.string    :list_office
       t.string    :status
       t.integer   :list_price
       t.integer   :town_num
-      t.string    :area
+      t.string    :area_code
       t.string    :zip_code
       t.integer   :photo_count
       t.string    :photo_date

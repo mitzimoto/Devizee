@@ -11,9 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120330030845) do
+ActiveRecord::Schema.define(:version => 20120329203657) do
 
   create_table "agents", :force => true do |t|
+    t.string   "code"
     t.string   "first_name"
     t.string   "last_name"
     t.datetime "created_at", :null => false
@@ -135,13 +136,13 @@ ActiveRecord::Schema.define(:version => 20120330030845) do
 
   create_table "listings", :force => true do |t|
     t.string   "subtype",       :null => false
-    t.string   "list_no"
+    t.string   "list_no",       :null => false
     t.string   "list_agent"
     t.string   "list_office"
     t.string   "status"
     t.integer  "list_price"
     t.integer  "town_num"
-    t.string   "area_code"
+    t.string   "area"
     t.string   "zip_code"
     t.integer  "photo_count"
     t.string   "photo_date"
@@ -233,6 +234,7 @@ ActiveRecord::Schema.define(:version => 20120330030845) do
   end
 
   create_table "offices", :force => true do |t|
+    t.string   "code"
     t.string   "name"
     t.string   "phone"
     t.datetime "created_at", :null => false
@@ -333,7 +335,7 @@ ActiveRecord::Schema.define(:version => 20120330030845) do
   end
 
   create_table "towns", :force => true do |t|
-    t.string   "town_num"
+    t.string   "num"
     t.string   "long"
     t.string   "county"
     t.string   "state"
