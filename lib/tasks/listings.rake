@@ -1,4 +1,5 @@
 require 'net/ftp'
+require 'fileutils'
 
 default_filenames = {
     'Agent'     => 'data/agents.txt',
@@ -87,6 +88,9 @@ namespace :listings do
 
         listings.each do |listing|
 
+            #If there are no photos, then there's not nee to do anything
+            #next if listing.photo_count < 1
+
             filename = Listing.get_photo_url listing.list_no, 0
             puts filename
             next if File.exists?("#{imgdir}/#{filename}") and !File.zero?("#{imgdir}/#{filename}")
@@ -102,9 +106,17 @@ namespace :listings do
             rescue 
                 puts "Failed to get #{dirname}/#{basename}"
                 File.unlink("#{imgdir}/#{filename}") if File.exists?("#{imgdir}/#{filename}")
+                FileUtils.cp("app/assets/images/photo-not-available.jpeg", "#{imgdir}/#{filename}" )
             end
 
-            sleep 1
+            begin
+                ftp.login if ftp.closed?()
+            rescue
+                puts "Connection closed and can't login..."
+                sleep 30
+                retry
+            end
+
         end
 
         ftp.close

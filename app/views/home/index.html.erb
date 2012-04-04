@@ -1,13 +1,38 @@
 <%= render :partial => "shared/nav" %>
 
-<div id="content">
-<% @listings.each do |listing| %>
-<% photo_url = Listing.get_photo_url listing.list_no, 0 %>
-<div class="tile">
-    <img src="ftp://ftp.mlspin.com/<%=photo_url%>" alt="<%=listing.street_name%>" width="190"/>
-</div>
-<%end%>
 
-</div>
 
- /photo/30/688/400_0.jpg
+    <div class="container">
+        <div class="row">
+
+            <div class="span11 offset1" id="tiles">
+    
+                    <% @listings.each do |listing| %>
+                    <% photo_url = Listing.get_photo_url listing.list_no, 0 %>
+    
+                    <div class="tile">
+                        <div class="padded">
+                            <%=image_tag "mls/#{photo_url}" %>
+                            <div class="tags">
+                                <strong><%= listing.street_no.titleize %> <%=listing.street_name.titleize %></strong> <span class="     price label label-success"><%= number_to_currency(listing.list_price, :precision => 0) %></span>
+                            </div>
+                        </div>
+                        <div class="gray-area">
+                            <span class="label label-info"><%=listing.no_bedrooms%> Bedroom</span>
+                            <span class="label label-warning"><%=listing.no_full_baths + listing.no_half_baths%> Bathroom</span>
+                            <span class="label label-important"><%=number_with_delimiter listing.square_feet%> sqft</span>
+                        </div>
+                    </div> <!-- .tile -->
+    
+                    <% end %>
+    
+    
+            </div>
+        </div><!-- row-fluid -->
+    </div><!-- container -->
+
+
+
+
+
+

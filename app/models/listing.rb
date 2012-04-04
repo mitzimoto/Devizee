@@ -16,4 +16,6 @@ class Listing < ActiveRecord::Base
     def self.get_photo_url(num,photo)
         return "photo/#{num[0..1]}/#{num[2..4]}/#{num[5..7]}_#{photo}.jpg"
     end
+
+
 end

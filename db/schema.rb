@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120329203657) do
+ActiveRecord::Schema.define(:version => 20120402184013) do
 
   create_table "agents", :force => true do |t|
     t.string   "code"
@@ -271,7 +271,8 @@ ActiveRecord::Schema.define(:version => 20120329203657) do
     t.datetime "updated_at",     :null => false
   end
 
-  create_table "sfprops", :primary_key => "listing_id", :force => true do |t|
+  create_table "sfprops", :id => false, :force => true do |t|
+    t.integer  "listing_id"
     t.string   "sf_type"
     t.string   "style"
     t.integer  "lot_size"
@@ -281,7 +282,7 @@ ActiveRecord::Schema.define(:version => 20120329203657) do
     t.integer  "garage_parking"
     t.string   "basement"
     t.integer  "no_rooms"
-    t.integer  "no_beedrooms"
+    t.integer  "no_bedrooms"
     t.integer  "no_full_baths"
     t.integer  "no_half_baths"
     t.string   "master_bath"

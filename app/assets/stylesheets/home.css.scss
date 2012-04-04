@@ -2,26 +2,66 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$tile_width: 205px;
-$tile_padding: 15px;
+$tile_width: 250px;
+$tile_padding: 0px;
 
 @import "effects";
+
+@mixin padded($pad: 15px) {
+    padding: $pad;
+}
 
 body {
     background: image-url('wood.png') repeat top left;
 }
 
-#content {
+div#tiles {
     position: relative;
 }
 
-.tile {
-    min-height: 100px;
+div.tile {
+
     width: $tile_width - $tile_padding;
     border: 1px solid #D2D2D2;
     background: white;
     padding: $tile_padding;
-    @include shadow1
+    @include shadow1;
+
+    img {
+        width: 100%;
+    }
+
+    .tags {
+        margin-top: 5px;
+    }
+
+    .price {
+        float: right;
+    }
+
+    .gray-area {
+        background: #F1F1F1;
+        padding: 5px 15px 5px 15px;
+        text-align: center;
+    }
+
+    .padded {
+        @include padded;
+    }
 }
+
+
+div.thumbnail {
+    background: white;
+    @include shadow1;
+}
+
+div#sidebar {
+    .padding {
+        @include padded;
+    }
+}
+
+
 
 
