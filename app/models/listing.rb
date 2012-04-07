@@ -5,6 +5,9 @@ class Listing < ActiveRecord::Base
     belongs_to :town,   :foreign_key => :town_num
     belongs_to :area,   :foreign_key => :area_short
 
+    has_many :sfprops
+    has_many :lands
+
     def self.fix_headers (headers)
         headers.map! do |header|
             header = "AREA_SHORT" if header == "AREA"

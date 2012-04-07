@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120402184013) do
+ActiveRecord::Schema.define(:version => 20120404024603) do
 
   create_table "agents", :force => true do |t|
     t.string   "code"
@@ -338,10 +338,10 @@ ActiveRecord::Schema.define(:version => 20120402184013) do
   create_table "towns", :force => true do |t|
     t.string   "num"
     t.string   "long"
-    t.string   "county"
+    t.string   "county_short"
     t.string   "state"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
 end

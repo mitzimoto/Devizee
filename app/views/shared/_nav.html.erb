@@ -8,10 +8,63 @@
       </a>
       <a class="brand" href="#">Realtorest</a>
       <div class="nav-collapse">
+        <form class="navbar-search pull-left">
+          <input type="text" class="search-query" placeholder="Search for homes in...">
+        </form>
+
         <ul class="nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More Search Options <b class="caret"></b></a>
+            <ul class="dropdown-menu span3" id="advanced-search">
+              <form class="form-horizontal">
+              <li class="nav-header">Price</li>
+              <li class="advanced-input">
+                  <div class="control-group">                
+                    <div class="input-prepend">
+                      <span class="add-on">$</span><input type="text" class="span1" placeholder="Min">
+                    </div>
+                    <span class="to">To</span>  
+                    <div class="input-prepend">
+                      <span class="add-on">$</span><input type="text" class="span1" placeholder="Max">
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-header">Beds &amp; Baths</li>
+              <li class="advanced-input">
+                  <div class="control-group">
+                    <label class="inline-block">
+                    <select class="span1 advanced-select">
+                      <option>1+</option>
+                      <option>2+</option>
+                      <option>3+</option>
+                      <option>4+</option>
+                    </select>
+                    Beds
+                    </label>
+                    <label class="inline-block">
+                    <select class="span1 advanced-select">
+                      <option>1+</option>
+                      <option>2+</option>
+                      <option>3+</option>
+                      <option>4+</option>
+                    </select>
+                    Baths
+                  </label>
+                  </div>
+              </li>
+              <li class="nav-header">Square Feet</li>
+              <li class="advanced-input">
+                  <div class="input-append">
+                    <input type="text" class="span1" placeholder="Min"><span class="add-on">Sqft</span>
+                  </div>
+                  <span class="to">To</span>  
+                  <div class="input-append">
+                    <input type="text" class="span1" placeholder="Max"><span class="add-on">sqft</span>
+                  </div>
+              </li>
+              </form>
+            </ul>
+          </li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>

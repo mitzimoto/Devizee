@@ -2,9 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$tile_width: 250px;
+$tile_width: 238px;
 $tile_padding: 0px;
+$gray_height: 30px;
 
+@import "compass";
 @import "effects";
 
 @mixin padded($pad: 15px) {
@@ -35,14 +37,56 @@ div.tile {
         margin-top: 5px;
     }
 
-    .price {
+    span.price {
         float: right;
     }
 
-    .gray-area {
-        background: #F1F1F1;
-        padding: 5px 15px 5px 15px;
+
+    span.location {
+        color: #999;
+        float: left;
+        font-size: 10px;
+    }
+
+    div.gray-area {
+
+        // needs latest Compass, add '@import "compass"' to your scss
+        background-color: #eeeeee; // Old browsers
+        @include filter-gradient(#eeeeee, #eaeaea, vertical); // IE6-8
+        // IE9 SVG, needs conditional override of 'filter' to 'none'
+        $experimental-support-for-svg: true;
+        @include background-image(linear-gradient(top,  #eeeeee 0%,#fcfcfc 0%,#eaeaea 100%));
+
+        height: $gray_height;
         text-align: center;
+        border-top: 1px solid #D2D2D2;
+        margin-top: 10px;
+
+        div.gray-section {
+            height: $gray_height - 7;
+            width: ($tile_width / 3);
+            float: left;
+            border-right: 1px solid #D2D2D2;
+            display: inline-block;
+            padding-top: 7px;
+            color: #888;
+        }
+
+        div.gray-section-middle {
+            width: ($tile_width / 3) - 2;
+        }
+
+        div.gray-section-right {
+            border-right: 0px solid black;
+        }
+
+        div.gray-section-wrapper {
+            margin: 0px auto;
+        }
+    }
+
+    span.address {
+        font-size: 12px;
     }
 
     .padded {
@@ -62,6 +106,28 @@ div#sidebar {
     }
 }
 
+ul#advanced-search{
+    margin-left: 0px;
 
+    &li.advanced-input {
+        margin-left: 15px;
+    }
 
+    &li.advanced-input label {
+        margin-right: 10px;
+    }
+}
 
+.advanced-label {
+    margin-top: 5px;
+    margin-right: 5px;
+    float: left;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+span.to {
+    margin: 0px 5px;
+}

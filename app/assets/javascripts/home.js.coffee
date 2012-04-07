@@ -5,8 +5,11 @@
 after = (ms, cb) -> setTimeout cb, ms
 every = (ms, cb) -> setInterval cb, ms
 
+
+
 $ ->
     every 500, rearrange
+    $('.dropdown-toggle').dropdown()
 
 rearrange = () ->
     console.log("rearranging")
