@@ -21,11 +21,11 @@
               <li class="advanced-input">
                   <div class="control-group">                
                     <div class="input-prepend">
-                      <span class="add-on">$</span><input type="text" class="span1" placeholder="Min">
+                      <span class="add-on">$</span><input name="adv-minprice" type="text" class="span1" placeholder="Min">
                     </div>
                     <span class="to">To</span>  
                     <div class="input-prepend">
-                      <span class="add-on">$</span><input type="text" class="span1" placeholder="Max">
+                      <span class="add-on">$</span><input name="adv-maxprice" type="text" class="span1" placeholder="Max">
                     </div>
                   </div>
               </li>
@@ -33,20 +33,20 @@
               <li class="advanced-input">
                   <div class="control-group">
                     <label class="inline-block">
-                    <select class="span1 advanced-select">
-                      <option>1+</option>
-                      <option>2+</option>
-                      <option>3+</option>
-                      <option>4+</option>
+                    <select name="adv-beds" class="span1 advanced-select">
+                      <option value="1">1+</option>
+                      <option value="2">2+</option>
+                      <option value="3">3+</option>
+                      <option value="4">4+</option>
                     </select>
                     Beds
                     </label>
                     <label class="inline-block">
-                    <select class="span1 advanced-select">
-                      <option>1+</option>
-                      <option>2+</option>
-                      <option>3+</option>
-                      <option>4+</option>
+                    <select name="adv-baths" class="span1 advanced-select">
+                      <option value="1">1+</option>
+                      <option value="2">2+</option>
+                      <option value="3">3+</option>
+                      <option value="4">4+</option>
                     </select>
                     Baths
                   </label>
@@ -54,13 +54,16 @@
               </li>
               <li class="nav-header">Square Feet</li>
               <li class="advanced-input">
+                  <div class="control-group">
                   <div class="input-append">
-                    <input type="text" class="span1" placeholder="Min"><span class="add-on">Sqft</span>
+                    <input name="adv-minsqft" type="text" class="span1" placeholder="Min"><span class="add-on">Sqft</span>
                   </div>
                   <span class="to">To</span>  
                   <div class="input-append">
-                    <input type="text" class="span1" placeholder="Max"><span class="add-on">sqft</span>
+                    <input name="adv-maxsqft" type="text" class="span1" placeholder="Max"><span class="add-on">sqft</span>
                   </div>
+                  </div>
+                  <input type="button" class="btn btn-primary" id="advanced-save" value="save">
               </li>
               </form>
             </ul>

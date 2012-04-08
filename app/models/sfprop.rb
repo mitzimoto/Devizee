@@ -1,5 +1,5 @@
 class Sfprop < ActiveRecord::Base
-    inherits_from :listing
+    inherits_from :listing, :methods => true
 
     include JsonMethodArray
 
@@ -13,4 +13,5 @@ class Sfprop < ActiveRecord::Base
     def as_json (options={})
         super(:methods => get_methods_array())
     end
+
 end

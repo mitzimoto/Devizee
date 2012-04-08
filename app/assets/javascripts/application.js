@@ -15,3 +15,4 @@
 //= require bootstrap.min
 //= require jquery.wookmark.min
 //= require home
+//= require listings
