@@ -15,6 +15,25 @@ $ ->
 
     $('#advanced-save').click window.search
 
+    #Town autocomplete
+    $('.autocomplete').typeahead (
+
+        source: (typeahead, query) ->
+            $.ajax(
+                url: "/towns.json?q=#{query}"
+                success: (data) ->
+                    typeahead.process(data)
+            )
+
+        property: "town_and_state"
+
+        onselect: (obj) ->
+            console.log(obj)
+            $('input[name=mintown]').val(obj.num)
+            $('input[name=maxtown]').val(obj.num)
+
+    )
+
 rearrange = () ->
     console.log("rearranging")
     $('.tile').wookmark

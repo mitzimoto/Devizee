@@ -12,6 +12,7 @@ module JsonMethodArray
                   :no_half_baths,
                   :no_full_baths,
                   :square_feet_delimited,
+                  :town_num,
                   :town
             ]
 

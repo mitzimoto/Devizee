@@ -11,6 +11,8 @@ window.search = ->
         maxprice: $("input[name=adv-maxprice]").val()
         minsqft: $("input[name=adv-minsqft]").val()
         maxsqft: $("input[name=adv-maxsqft]").val()
+        mintown: $("input[name=mintown]").val()
+        maxtown: $("input[name=maxtown]").val()
 
 
     $.getJSON '/listings/search/1.json', criteria, processResults

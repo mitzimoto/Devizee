@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap.min
+//= require bootstrap-typeahead
 //= require jquery.wookmark.min
 //= require home
 //= require listings

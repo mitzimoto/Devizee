@@ -9,7 +9,7 @@
       <a class="brand" href="#">Realtorest</a>
       <div class="nav-collapse">
         <form class="navbar-search pull-left">
-          <input type="text" class="search-query" placeholder="Search for homes in...">
+          <input type="text" class="search-query autocomplete" data-provide="typeahead" data-items="10" placeholder="Search for homes in...">
         </form>
 
         <ul class="nav">
@@ -17,6 +17,8 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">More Search Options <b class="caret"></b></a>
             <ul class="dropdown-menu span3" id="advanced-search">
               <form class="form-horizontal">
+              <input type="hidden" name="mintown" value="">
+              <input type="hidden" name="maxtown" value="">
               <li class="nav-header">Price</li>
               <li class="advanced-input">
                   <div class="control-group">                
