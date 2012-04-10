@@ -28,9 +28,9 @@ $ ->
         property: "town_and_state"
 
         onselect: (obj) ->
-            console.log(obj)
             $('input[name=mintown]').val(obj.num)
             $('input[name=maxtown]').val(obj.num)
+            window.search()
 
     )
 
@@ -42,7 +42,6 @@ rearrange = () ->
         offset: 12
 
 window.createTile = (listing) ->
-    console.log(listing)
 
     tileHtml = """
                     <div class="tile">
