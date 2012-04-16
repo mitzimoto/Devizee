@@ -14,6 +14,14 @@
 //= require jquery_ujs
 //= require bootstrap.min
 //= require bootstrap-typeahead
+//= require underscore-min
+//= require backbone-min
 //= require jquery.wookmark.min
-//= require home
 //= require listings
+//= require models/listing.model
+//= require views/nav.view
+//= require views/listing.view
+//= require views/search.view
+//= require views/advanced.view
+//= require routers/app.router
+//= require home

@@ -4,36 +4,15 @@
         <div class="row-fluid" id="content">
             <div class="span12" id="tiles">
     
-                    <% @listings.each do |listing| %>
-                    <% photo_url = Listing.get_photo_url listing.list_no, 0 %>
-    
-                    <div class="tile">
-                        <div class="padded">
-                            <%=image_tag "mls/#{photo_url}" %>
-                            <div class="tags">
-                                <span class="price badge badge-success"><%= number_to_currency(listing.list_price, :precision => 0) %></span>
-                                <span class="address"><strong title='<%="#{listing.street_no.titleize} #{listing.street_name.titleize}" %>'><%= truncate("#{listing.street_no.titleize} #{listing.street_name.titleize}", :length => 19, :omission => "...") %></strong></span>
-                                <span class="location"><%= "#{listing.town.long}, #{listing.town.state}" %> (2 miles)</span>
-                            </div>
-                        </div>
-                        <div class="gray-area">
-                            <div class="gray-section-wrapper clearfix">
-                                <div class="gray-section">
-                                    <%= listing.no_bedrooms %> Beds
-                                </div>
-                                <div class="gray-section gray-section-middle">
-                                    <%= listing.no_full_baths + listing.no_half_baths %> Baths
-                                </div>
-                                <div class="gray-section gray-section-right">
-                                    <%= number_with_delimiter listing.square_feet %> sqft
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- .tile -->
-    
-                    <% end %>
+
             </div>
         </div><!-- row-fluid -->
+
+<!-- backbone templates -->
+<%= render :partial => "backbone/initialListings", :object => :listings %>
+<%= render :partial => "backbone/tile" %>
+<%= render :partial => "backbone/search" %>
+<%= render :partial => "backbone/navlinks" %>
 
 
 

@@ -1,0 +1,59 @@
+<script type="text/template" id="navlinks_template">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More Search Options <b class="caret"></b></a>
+            <ul class="dropdown-menu span3" id="advanced-search">
+              <form class="form-horizontal">
+              <input type="hidden" name="mintown" value="">
+              <input type="hidden" name="maxtown" value="">
+              <li class="nav-header">Price</li>
+              <li class="advanced-input">
+                  <div class="control-group">                
+                    <div class="input-prepend">
+                      <span class="add-on">$</span><input name="adv-minprice" type="text" class="span1" placeholder="Min">
+                    </div>
+                    <span class="to">To</span>  
+                    <div class="input-prepend">
+                      <span class="add-on">$</span><input name="adv-maxprice" type="text" class="span1" placeholder="Max">
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-header">Beds &amp; Baths</li>
+              <li class="advanced-input">
+                  <div class="control-group">
+                    <label class="inline-block">
+                    <select name="adv-beds" class="span1 advanced-select">
+                      <option value="1">1+</option>
+                      <option value="2">2+</option>
+                      <option value="3">3+</option>
+                      <option value="4">4+</option>
+                    </select>
+                    Beds
+                    </label>
+                    <label class="inline-block">
+                    <select name="adv-baths" class="span1 advanced-select">
+                      <option value="1">1+</option>
+                      <option value="2">2+</option>
+                      <option value="3">3+</option>
+                      <option value="4">4+</option>
+                    </select>
+                    Baths
+                  </label>
+                  </div>
+              </li>
+              <li class="nav-header">Square Feet</li>
+              <li class="advanced-input">
+                  <div class="control-group">
+                  <div class="input-append">
+                    <input name="adv-minsqft" type="text" class="span1" placeholder="Min"><span class="add-on">Sqft</span>
+                  </div>
+                  <span class="to">To</span>  
+                  <div class="input-append">
+                    <input name="adv-maxsqft" type="text" class="span1" placeholder="Max"><span class="add-on">sqft</span>
+                  </div>
+                  </div>
+                  <input type="button" class="btn btn-primary" id="advanced-save" value="save">
+              </li>
+              </form>
+            </ul>
+          </li>
+</script>

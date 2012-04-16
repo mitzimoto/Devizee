@@ -68,4 +68,8 @@ class Listing < ActiveRecord::Base
         return number_with_delimiter self.square_feet
     end
 
+    def photo_url 
+        return Listing.get_photo_url(self.list_no, 0)
+    end
+
 end

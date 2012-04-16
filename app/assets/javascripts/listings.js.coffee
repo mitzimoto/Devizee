@@ -3,7 +3,6 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 window.search = ->
-    console.log()
     criteria =
         beds: $("select[name=adv-beds]").val()
         baths: $("select[name=adv-baths]").val()
