@@ -9,11 +9,13 @@ class AppRouter extends Backbone.Router
         $('.navbar .container').append( nav.render().$el )
 
         nav.searchView.autocomplete()
-        nav.advancedView.dropdown()
+        nav.searchView.dropdown()
 
         listings        = new Listings(window.initialListings)
-        listingsView    = new ListingsView({model:listings})
-        listingsView.render()
+        
+        #global listings view
+        window.listingsView    = new ListingsView({model:listings})
+        window.listingsView.render()
 
 
 #Export to the global namespace

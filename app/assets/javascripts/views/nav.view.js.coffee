@@ -5,14 +5,10 @@ class NavView extends Backbone.View
         @$el.addClass('nav-collapse')
         @$el.attr('id', 'nav-container')
 
-        @searchView = new SearchView()
-        @advancedView = new AdvancedView()
+        @searchView = new SearchView({model: new Search()})
 
     render: ->
-
         @$el.append( @searchView.render().$el )
-        @$el.append( @advancedView.render().$el )
-
         @
 
 @.NavView = NavView

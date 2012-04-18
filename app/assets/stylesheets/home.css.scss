@@ -3,8 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $tile_width: 238px;
+$tile_height: 257px;
 $tile_padding: 0px;
 $gray_height: 30px;
+
+$image_width: 209px;
+$image_height: 163px;
 
 @import "compass";
 @import "effects";
@@ -24,13 +28,16 @@ div#tiles {
 div.tile {
 
     width: $tile_width - $tile_padding;
+    //height: $tile_height;
     border: 1px solid #D2D2D2;
     background: white;
     padding: $tile_padding;
     @include shadow1;
 
     img {
-        width: 100%;
+        //width: 100%;
+        width: $image_width;
+        height: $image_height;
     }
 
     .tags {

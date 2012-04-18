@@ -19,9 +19,9 @@
 //= require jquery.wookmark.min
 //= require listings
 //= require models/listing.model
+//= require models/search.model
 //= require views/nav.view
 //= require views/listing.view
 //= require views/search.view
-//= require views/advanced.view
 //= require routers/app.router
 //= require home

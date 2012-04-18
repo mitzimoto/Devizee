@@ -9,3 +9,5 @@ window.every = (ms, cb) -> setInterval cb, ms
 $ ->
     TheRouter = new AppRouter
     Backbone.history.start();
+
+
