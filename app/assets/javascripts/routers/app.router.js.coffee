@@ -2,6 +2,7 @@ class AppRouter extends Backbone.Router
 
     routes:
         '' : 'index'
+        'listings/:id' : 'listings'
 
     index: ->
 
@@ -17,6 +18,8 @@ class AppRouter extends Backbone.Router
         window.listingsView    = new ListingsView({model:listings})
         window.listingsView.render()
 
+    listings: ->
+        console.log("listing route called")
 
 #Export to the global namespace
 @.AppRouter = AppRouter

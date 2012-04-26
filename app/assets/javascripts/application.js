@@ -13,15 +13,21 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap.min
+//= require bootstrap-collapse
 //= require bootstrap-typeahead
+//= require bootstrap-modal
 //= require underscore-min
 //= require backbone-min
 //= require jquery.wookmark.min
-//= require listings
+//= require jquery.mousewheel
+//= require jquery.jscrollpane.min
+//= require mwheelIntent
+
 //= require models/listing.model
 //= require models/search.model
 //= require views/nav.view
 //= require views/listing.view
+//= require views/listings.view
 //= require views/search.view
 //= require routers/app.router
 //= require home

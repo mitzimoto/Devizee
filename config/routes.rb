@@ -3,6 +3,7 @@ Realtorest::Application.routes.draw do
 
   match 'listings/search/(:page)' => 'listings#search'
   match 'listings/:list_no' => 'listings#show'
+  match 'listings/photo/:list_no/:photo_no' => 'listings#photo'
   match 'towns' => 'towns#autocomplete'
 
 

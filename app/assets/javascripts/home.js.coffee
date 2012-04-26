@@ -6,8 +6,14 @@
 window.after = (ms, cb) -> setTimeout cb, ms
 window.every = (ms, cb) -> setInterval cb, ms
 
+unless window.console
+    window.console = 
+        log: (obj) -> 
+            return
+
+
 $ ->
     TheRouter = new AppRouter
-    Backbone.history.start();
+    Backbone.history.start({pushState: true});
 
 

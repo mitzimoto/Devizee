@@ -2,24 +2,34 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
-window.search = ->
-    criteria =
-        beds: $("select[name=adv-beds]").val()
-        baths: $("select[name=adv-baths]").val()
-        minprice: $("input[name=adv-minprice]").val()
-        maxprice: $("input[name=adv-maxprice]").val()
-        minsqft: $("input[name=adv-minsqft]").val()
-        maxsqft: $("input[name=adv-maxsqft]").val()
-        mintown: $("input[name=mintown]").val()
-        maxtown: $("input[name=maxtown]").val()
+rearrange = ->
+    console.log("rearrange...")
+    $('.single-tile').wookmark
+        container: $('#single-tiles')
+        autoResize: true
+        offset: 10
+
+    api = $('#thumbnail-column').data('jsp');
+    api.reinitialise()
 
 
-    $.getJSON '/listings/search/1.json', criteria, processResults
 
-processResults = (data) ->
-    $("#tiles").empty()
+$ ->
 
-    window.createTile listing for listing in data
+    $('#thumbnail-column').height( $(window).height() - $('#thumbnail-column').offset().top - 20 )
 
-window.getPhotoUrl = (listNo, photo) ->
-    "assets/mls/photo/#{listNo.substring(0,2)}/#{listNo.substring(2,5)}/#{listNo.substring(5,8)}_#{photo}.jpg"
+    $('#thumbnail-column').jScrollPane
+        verticalDragMaxHeight: 30
+
+    rearrange()
+    window.every 500, rearrange
+
+    $('.single-tile').click ->
+        $('.single-tile').removeClass('active')
+        $(this).addClass('active')
+        $('#main-photo').attr('src', $(this).children(":first").attr('src'))
+
+
+
+
+

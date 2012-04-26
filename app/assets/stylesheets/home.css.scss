@@ -2,13 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$tile_width: 238px;
-$tile_height: 257px;
+//$tile_width: 238px;
+$tile_width: 333px;
+//$tile_height: 257px;
+$tile_height: 360px;
 $tile_padding: 0px;
 $gray_height: 30px;
 
-$image_width: 209px;
-$image_height: 163px;
+$image_width: $tile_width - 30;
+$image_height: $image_width * .78;
 
 @import "compass";
 @import "effects";
@@ -17,8 +19,10 @@ $image_height: 163px;
     padding: $pad;
 }
 
+
 body {
     background: image-url('wood.png') repeat top left;
+    padding-bottom: 50px;
 }
 
 div#tiles {
@@ -52,7 +56,8 @@ div.tile {
     span.location {
         color: #999;
         float: left;
-        font-size: 10px;
+        font-size: 14px;
+
     }
 
     div.gray-area {
@@ -93,7 +98,10 @@ div.tile {
     }
 
     span.address {
-        font-size: 12px;
+        font-size: 14px;
+        float: left;
+        margin-right: 7px;
+        min-width: 200px;
     }
 
     .padded {
@@ -137,4 +145,8 @@ ul#advanced-search{
 
 span.to {
     margin: 0px 5px;
+}
+
+*:focus {
+    outline: none;
 }

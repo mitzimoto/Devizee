@@ -1,0 +1,67 @@
+<%= render :partial => "shared/nav" %>
+
+
+<div class="container" id="main-listing">
+    <div class="row">
+        <div class="span5">
+            <div class="column-left" id="thumbnail-column">
+                <h2><%= @listing.photo_count %> Photos <small>Click to Enlarge</small></h2>
+                <div id="single-tiles">
+                <% for i in  0 .. @listing.photo_count - 1%>
+                    <div class="single-tile">
+                        <img src="/listings/photo/<%= @listing.list_no %>/<%=i%>" class="single-thumbnail"/>
+                    </div>
+                <% end %>
+                </div>
+            </div>
+        </div>
+        <div class="span7">
+            <div class="column-inner">
+                <h2><%= @listing.address %> <small><%= @listing.town.long %>, <%= @listing.town.state %></small></h2>
+                <img src="/assets/mls/<%= @listing.photo_url %>" id="main-photo"/>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Price:</th>
+                        <th><%= @listing.list_price_currency %></th>
+                    </tr>
+                    <tr>
+                        <td>Bedrooms:</td>
+                        <td><%= @listing.no_bedrooms %></td>
+                    </tr>
+                    <tr>
+                        <td>Bathrooms:</td>
+                        <td><%= @listing.total_baths %></td>
+                    </tr>
+                    <tr>
+                        <td>Property Type:</td>
+                        <td><%= @listing.prop_type %></td>
+                    </tr>
+                    <tr>
+                        <td>Square Feet:</td>
+                        <td><%= @listing.square_feet_delimited %></td>
+                    </tr>
+                    <tr>
+                        <td>Lot Size:</td>
+                        <td><%= @listing.acre %> Acre</td>
+                    </tr>
+                    <tr>
+                        <td>Basement:</td>
+                        <td><%= @listing.human_basement %></td>
+                    </tr>
+                    <tr>
+                        <td>Garage Spaces:</td>
+                        <td><%= @listing.garage_spaces %></td>
+                    </tr>
+                    <tr>
+                        <td>Zip Code:</td>
+                        <td><%= @listing.zip_code%></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<%= render :partial => "backbone/search" %>
+

@@ -14,4 +14,7 @@ class Sfprop < ActiveRecord::Base
         super(:methods => get_methods_array())
     end
 
+    def prop_type
+        return 'Single Family'
+    end
 end
