@@ -22,8 +22,14 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 </head>
 <body>
-
+<%= render :partial => "shared/nav" %>
 <%= yield %>
+<!-- backbone templates -->
+<%= render :partial => "backbone/tile" %>
+<%= render :partial => "backbone/search" %>
+<%= render :partial => "backbone/listing" %>
+<%= render :partial => "backbone/search" %>
+
 
 </body>
 </html>

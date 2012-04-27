@@ -16,6 +16,7 @@
 //= require bootstrap-collapse
 //= require bootstrap-typeahead
 //= require bootstrap-modal
+//= require bootstrap-carousel
 //= require underscore-min
 //= require backbone-full
 //= require jquery.wookmark.min

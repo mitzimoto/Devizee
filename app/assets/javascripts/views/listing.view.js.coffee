@@ -4,7 +4,10 @@ class ListingView extends Backbone.View
     tc: '#thumbnail-column'
 
     events: 
-        '.single-tile click' : 'loadImage'
+        'click .single-tile'        : 'loadImage'
+        'slid #the-carousel'        : 'slid'
+        'mouseover #the-carousel'   : 'showCarouselControl'
+        'mouseleave  #the-carousel'   : 'hideCarouselControl'
 
     initialize: ->
         console.log("initializing single listing view")
@@ -18,8 +21,9 @@ class ListingView extends Backbone.View
         $(@tc).jScrollPane
             verticalDragMaxHeight: 30
 
+        $('#the-carousel').carousel()
+        $('.carousel-control').hide()
         window.every 500, @rearrange
-
 
     rearrange: =>
         $('.single-tile').wookmark
@@ -29,10 +33,21 @@ class ListingView extends Backbone.View
     
         $(@tc).data('jsp').reinitialise()
 
-    loadImage: (e) ->
+    loadImage: (e) =>
         $('.single-tile').removeClass('active')
-        $(e.target).addClass('active')
-        $('#main-photo').attr('src', $(e.target).children(":first").attr('src'))
+        $(e.currentTarget).addClass('active')
+        index = $(e.currentTarget).attr('data-photo-id')
+        $('#the-carousel').carousel(parseInt index)
 
+    slid: (e) ->
+        currentSlide = $('#the-carousel .active').attr('data-photo-id')
+        $('.single-tile').removeClass('active')
+        $("div[data-photo-id=#{currentSlide}]").addClass('active')
+
+    showCarouselControl: ->
+        $('.carousel-control').fadeIn()
+
+    hideCarouselControl: ->
+        $('.carousel-control').fadeOut()
 
 @.ListingView = ListingView

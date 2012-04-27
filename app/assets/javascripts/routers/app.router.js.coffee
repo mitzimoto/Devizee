@@ -4,7 +4,8 @@ class AppRouter extends Backbone.Router
         '' : 'index'
         'listings/:id' : 'listings'
 
-    index: ->
+    initialize: ->
+        console.log('Initializing router')
         nav = new NavView()
         $('.navbar .container').append( nav.render().$el )
 
@@ -15,6 +16,8 @@ class AppRouter extends Backbone.Router
         
         #global listings view
         window.listingsView    = new ListingsView({model:listings})
+
+    index: ->
         window.listingsView.render()
 
     listings: ->

@@ -3,7 +3,6 @@ class ListingsView extends Backbone.View
     el: '#tiles'
 
     initialize: ->
-        _.bindAll(@,'render')
 
     events:
         "search"        : "search"

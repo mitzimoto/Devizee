@@ -1,6 +1,3 @@
-<%= render :partial => "shared/nav" %>
-
-
 <div class="container" id="main-listing">
     <div class="row">
         <div class="span5">
@@ -8,7 +5,7 @@
                 <h2><%= @listing.photo_count %> Photos <small>Click to Enlarge</small></h2>
                 <div id="single-tiles">
                 <% for i in  0 .. @listing.photo_count - 1%>
-                    <div class="single-tile">
+                    <div class="single-tile" data-photo-id=<%= i %> >
                         <img src="/listings/photo/<%= @listing.list_no %>/<%=i%>" class="single-thumbnail"/>
                     </div>
                 <% end %>
@@ -18,7 +15,22 @@
         <div class="span7">
             <div class="column-inner">
                 <h2><%= @listing.address %> <small><%= @listing.town.long %>, <%= @listing.town.state %></small></h2>
-                <img src="/assets/mls/<%= @listing.photo_url %>" id="main-photo"/>
+                <div id="the-carousel" class="carousel slide">
+                    <div class="carousel-inner">
+                    <% for i in  0 .. @listing.photo_count - 1%>
+
+                        <% if i == 0 %>
+                        <div class="item active" data-photo-id=<%= i %>>
+                        <% else %>
+                        <div class="item" data-photo-id=<%= i %>>
+                        <% end %>
+                            <img src="/listings/photo/<%= @listing.list_no %>/<%=i%>"/>
+                        </div>
+                    <% end %>
+                    </div>
+                    <a class="carousel-control left" href="#the-carousel" data-slide="prev">&lsaquo;</a>
+                    <a class="carousel-control right" href="#the-carousel" data-slide="next">&rsaquo;</a>
+                </div>
                 <table class="table table-striped">
                     <tr>
                         <th>Price:</th>
@@ -63,5 +75,5 @@
 
 </div>
 
-<%= render :partial => "backbone/search" %>
+
 
