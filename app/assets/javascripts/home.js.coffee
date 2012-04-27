@@ -15,5 +15,3 @@ unless window.console
 $ ->
     TheRouter = new AppRouter
     Backbone.history.start({pushState: true});
-
-

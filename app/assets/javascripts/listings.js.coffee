@@ -12,8 +12,6 @@ rearrange = ->
     api = $('#thumbnail-column').data('jsp');
     api.reinitialise()
 
-
-
 $ ->
 
     $('#thumbnail-column').height( $(window).height() - $('#thumbnail-column').offset().top - 20 )

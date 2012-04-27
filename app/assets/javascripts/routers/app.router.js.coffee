@@ -5,7 +5,6 @@ class AppRouter extends Backbone.Router
         'listings/:id' : 'listings'
 
     index: ->
-
         nav = new NavView()
         $('.navbar .container').append( nav.render().$el )
 
@@ -19,7 +18,8 @@ class AppRouter extends Backbone.Router
         window.listingsView.render()
 
     listings: ->
-        console.log("listing route called")
+        listing = new ListingView()
+        listing.attach()
 
 #Export to the global namespace
 @.AppRouter = AppRouter

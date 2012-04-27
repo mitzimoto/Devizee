@@ -1,22 +1,38 @@
 class ListingView extends Backbone.View
 
-    tagName: 'div'
+    el: '#main-listing'
+    tc: '#thumbnail-column'
 
-    events:
-        'hide': 'hide'
+    events: 
+        '.single-tile click' : 'loadImage'
 
     initialize: ->
-        console.log("Initializing listing view")
-        @$el.addClass 'modal'
-        @$el.attr 'id', 'MyModal'
+        console.log("initializing single listing view")
 
     render: ->
-        template = _.template( $('#listing_template').html() )
-        @$el.html template 
+        console.log("render")
 
-    hide: ->
-        @remove()
-        false
+    attach: ->
+        $(@tc).height( $(window).height() - $(@tc).offset().top - 20 )
+
+        $(@tc).jScrollPane
+            verticalDragMaxHeight: 30
+
+        window.every 500, @rearrange
+
+
+    rearrange: =>
+        $('.single-tile').wookmark
+            container: $('#single-tiles')
+            autoResize: true
+            offset: 10
+    
+        $(@tc).data('jsp').reinitialise()
+
+    loadImage: (e) ->
+        $('.single-tile').removeClass('active')
+        $(e.target).addClass('active')
+        $('#main-photo').attr('src', $(e.target).children(":first").attr('src'))
 
 
 @.ListingView = ListingView

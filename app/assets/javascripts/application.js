@@ -17,7 +17,7 @@
 //= require bootstrap-typeahead
 //= require bootstrap-modal
 //= require underscore-min
-//= require backbone-min
+//= require backbone-full
 //= require jquery.wookmark.min
 //= require jquery.mousewheel
 //= require jquery.jscrollpane.min
