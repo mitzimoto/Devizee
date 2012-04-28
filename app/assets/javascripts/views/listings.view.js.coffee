@@ -1,8 +1,9 @@
 class ListingsView extends Backbone.View
 
-    el: '#tiles'
-
     initialize: ->
+        $('.navbar').after( _.template( $('#tiles_template').html() ) )
+        @setElement( $('#tiles') )
+        console.log( @$el )
 
     events:
         "search"        : "search"
@@ -10,6 +11,7 @@ class ListingsView extends Backbone.View
         "reset"         : "reset"
 
     render: (e) ->
+        window.allowReload = true
         @appendTile listing for listing in @model.models
         @rearrange()
 
@@ -28,14 +30,22 @@ class ListingsView extends Backbone.View
             offset: 12
 
     search: (e, criteria, add) ->
+        window.TheRouter.navigate('', true) unless add
+
         @model.fetch    
             data: criteria.attributes
             success: (collection, response) =>
                 @reset() unless add
                 @render()
 
+        $('.dropdown').removeClass('open')
+
     add: (e, criteria) ->
         @search(e, criteria, true)
+
+    close: ->
+        @remove()
+        @unbind()
 
 #Export to the global namespace
 @.ListingsView = ListingsView

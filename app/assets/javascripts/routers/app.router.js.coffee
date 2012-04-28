@@ -18,11 +18,19 @@ class AppRouter extends Backbone.Router
         window.listingsView    = new ListingsView({model:listings})
 
     index: ->
-        window.listingsView.render()
+        @showView(window.listingsView)
 
     listings: ->
         listing = new ListingView()
-        listing.attach()
+        @showView(listing)
+        #listing.attach()
+
+    showView: (view) ->
+
+        this.currentView.close() if this.currentView
+
+        this.currentView = view
+        this.currentView.render()
 
 #Export to the global namespace
 @.AppRouter = AppRouter

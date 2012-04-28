@@ -46,7 +46,6 @@ class SearchView extends Backbone.View
         @
 
     search: (e, add) ->
-        console.log(add)
         if add
             window.listingsView.$el.trigger("add", @model)
         else

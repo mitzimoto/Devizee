@@ -7,15 +7,15 @@ class ListingView extends Backbone.View
         'click .single-tile'        : 'loadImage'
         'slid #the-carousel'        : 'slid'
         'mouseover #the-carousel'   : 'showCarouselControl'
-        'mouseleave  #the-carousel'   : 'hideCarouselControl'
+        'mouseleave  #the-carousel' : 'hideCarouselControl'
+        'mouseover .jspContainer'   : 'showScrollBar'
+        'mouseleave .jspContainer'  : 'hideScrollBar'
 
     initialize: ->
+        window.allowReload = false
         console.log("initializing single listing view")
 
     render: ->
-        console.log("render")
-
-    attach: ->
         $(@tc).height( $(window).height() - $(@tc).offset().top - 20 )
 
         $(@tc).jScrollPane
@@ -23,7 +23,8 @@ class ListingView extends Backbone.View
 
         $('#the-carousel').carousel()
         $('.carousel-control').hide()
-        window.every 500, @rearrange
+
+        @monitor = window.every 500, @rearrange
 
     rearrange: =>
         $('.single-tile').wookmark
@@ -50,4 +51,15 @@ class ListingView extends Backbone.View
     hideCarouselControl: ->
         $('.carousel-control').fadeOut()
 
+    showScrollBar: ->
+        $('.jspVerticalBar').fadeIn().css('visibility', 'visible').css('display', '')
+
+    hideScrollBar: ->
+        $('.jspVerticalBar').fadeOut()
+
+    close: ->
+        window.stop @monitor
+        @remove()
+        @unbind()
+        
 @.ListingView = ListingView
