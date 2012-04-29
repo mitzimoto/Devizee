@@ -11,7 +11,12 @@ div#main-listing {
     @include shadow1;
     padding: 20px;
 
-
+    .progress {
+        position: aboslute;
+        width: 270px;
+        margin: 0px auto;
+        margin-top: 200px;
+    }
 
     div.column-left {
         min-height: 600px;

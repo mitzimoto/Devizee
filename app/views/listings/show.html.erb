@@ -4,6 +4,7 @@
             <div class="column-left" id="thumbnail-column">
                 <h2><%= @listing.photo_count %> Photos <small>Click to Enlarge</small></h2>
                 <div id="single-tiles">
+                <div class="progress progress-success progress-striped"> <div class="bar" style="width: 0%;"></div></div>
                 <% for i in  0 .. @listing.photo_count - 1%>
                     <div class="single-tile" data-photo-id=<%= i %> >
                         <img src="/listings/photo/<%= @listing.list_no %>/<%=i%>" class="single-thumbnail"/>

@@ -14,6 +14,8 @@ class ListingView extends Backbone.View
     initialize: ->
         window.allowReload = false
         console.log("initializing single listing view")
+        @totalThumbs = $('.carousel-inner .item').length
+        @loadedThumbs = 0
 
     render: ->
         $(@tc).height( $(window).height() - $(@tc).offset().top - 20 )
@@ -21,8 +23,14 @@ class ListingView extends Backbone.View
         $(@tc).jScrollPane
             verticalDragMaxHeight: 30
 
+        $('.carousel-inner .item').onImagesLoad
+            each: => @updateProgressBar()
+            all: => @closeProgressBar()
+
         $('#the-carousel').carousel()
         $('.carousel-control').hide()
+
+        $('.single-tile').css('visibility', 'hidden')
 
         @monitor = window.every 500, @rearrange
 
@@ -44,6 +52,16 @@ class ListingView extends Backbone.View
         currentSlide = $('#the-carousel .active').attr('data-photo-id')
         $('.single-tile').removeClass('active')
         $("div[data-photo-id=#{currentSlide}]").addClass('active')
+
+    updateProgressBar: ->
+        @loadedThumbs++
+        percent = (@loadedThumbs / @totalThumbs)  * 100
+        console.log("#{percent}%")
+        $('.bar').width( "#{percent}%")
+
+    closeProgressBar: ->
+        $('.progress').hide()
+        $('.single-tile').css('visibility', 'visible')
 
     showCarouselControl: ->
         $('.carousel-control').fadeIn()
