@@ -38,6 +38,10 @@ div.tile {
     padding: $tile_padding;
     @include shadow1;
 
+    &:hover {
+        @include shadow2;
+    }
+
     img {
         //width: 100%;
         width: $image_width;

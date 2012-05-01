@@ -4,3 +4,10 @@
     -webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
 
 }
+
+@mixin shadow2 {
+    box-shadow: 0 1px 3px #468847;
+    -moz-box-shadow: 0 1px 2px #468847;
+    -webkit-box-shadow: 0 1px 3px #468847;
+
+}
