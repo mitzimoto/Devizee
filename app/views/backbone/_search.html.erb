@@ -3,6 +3,7 @@
         <input type="text" class="search-query autocomplete" data-provide="typeahead" data-items="10" placeholder="Search for homes in...">
         </form>
         <ul class="nav" id="nav-container">
+          <li class="divider-vertical"></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">More Search Options <b class="caret"></b></a>
             <ul class="dropdown-menu span4" id="advanced-search">
@@ -60,5 +61,16 @@
               </form>
             </ul>
           </li>
+          <li class="divider-vertical"></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="sort-dropdown">Sort By: Newest <b class="caret"></b></a>
+            <ul class="dropdown-menu span3" id="advanced-search">
+                <li><a href="#" class="sort" data-sort="newest">Newest</a></li>
+                <li><a href="#" class="sort" data-sort="priceasc">Price (Lowest to Highest)</a></li>
+                <li><a href="#" class="sort" data-sort="pricedsc">Price (Highest to Lowest)</a></li>
+                <li><a href="#" class="sort" data-sort="numphoto">Number of Photos</a></li>
+            </ul>
+          </li>
+          <li class="divider-vertical"></li>
         </ul>
 </script>

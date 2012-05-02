@@ -1,13 +1,13 @@
 @mixin shadow1 {
-    box-shadow: 0 1px 3px rgba(34,25,25,0.4);
-    -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
-    -webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+    box-shadow: 0 5px 5px rgba(34,25,25,0.4);
+    -moz-box-shadow: 0 5px 5px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 5px 5px rgba(34,25,25,0.4);
 
 }
 
 @mixin shadow2 {
-    box-shadow: 0 1px 3px #468847;
-    -moz-box-shadow: 0 1px 2px #468847;
-    -webkit-box-shadow: 0 1px 3px #468847;
+    box-shadow: 0 5px 15px #468847;
+    -moz-box-shadow: 0 5px 15px #468847;
+    -webkit-box-shadow: 0 5px 15px #468847;
 
 }

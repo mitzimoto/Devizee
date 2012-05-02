@@ -1,5 +1,7 @@
 class Rental < ActiveRecord::Base
-    inherits_from :listing, :class_name => 'Resources::Listing'
+    inherits_from :listing, :methods => true
+
+    include JsonMethodArray
 
     def self.fix_headers (headers)
         headers.map! do |header|
@@ -10,5 +12,9 @@ class Rental < ActiveRecord::Base
 
     def as_json (options={})
         super(:methods => get_methods_array())
+    end
+
+    def prop_type
+        return 'Rental'
     end
 end

@@ -1,5 +1,5 @@
 class Land < ActiveRecord::Base
-    inherits_from :listing, :class_name => 'Resources::Listing'
+    inherits_from :listing, :methods => true
 
     include JsonMethodArray
 
@@ -12,5 +12,9 @@ class Land < ActiveRecord::Base
 
     def as_json (options={})
         super(:methods => get_methods_array())
+    end
+
+    def prop_type
+        return 'Land'
     end
 end

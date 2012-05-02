@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
     def index
-        @listings = Listing.limit(50).all(:include => [:town])
+        @listings = Listing.order('list_no DESC').limit(50).all(:include => [:town])
     end
 end

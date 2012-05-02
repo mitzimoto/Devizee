@@ -2,11 +2,13 @@ class SearchView extends Backbone.View
 
     events:
         "submit #advanced-form": "search"
-        "blur :input": "updatevalue"
+        "blur :input" : "updatevalue"
+        "click .sort" : "updatesort"
 
     initialize: ->
         window.allowReload = true
         @model.set('page', 1)
+        @model.set('sort', 'newest')
         @bindScroll()
 
     render: ->
@@ -56,6 +58,11 @@ class SearchView extends Backbone.View
 
     updatevalue: (e) ->
         @model.set($(e.target).attr('name'), $(e.target).val())
+
+    updatesort: (e) ->
+        $('#sort-dropdown').html( "Sort By: " + $(e.target).html() + " <b class='caret'></b>")
+        @model.set('sort', $(e.target).attr('data-sort'))
+        @search(null, false)
 
     bindScroll: ->
         $(window).scroll =>

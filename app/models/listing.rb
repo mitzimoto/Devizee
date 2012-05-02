@@ -52,12 +52,26 @@ class Listing < ActiveRecord::Base
         params[:mintown]    = 0 if params[:mintown].blank?
         params[:maxtown]    = 10000 if params[:maxtown].blank?
 
+        order_by = {
+            'newest'    =>  'list_no DESC',
+            'priceasc'  =>  'list_price ASC',
+            'pricedsc'  =>  'list_price DESC',
+            'photo_count' => 'photo_count DESC'
+        }
+
+        params[:sort]       = 'newest' if params[:sort].blank?
+        params[:sort]       = 'newest' unless order_by.has_key?(params[:sort])
+
+        puts order_by[params[:sort]]
+
         Listing.paginate(:page => params[:page])
         .where("no_bedrooms >= ?", params[:beds])
         .where("no_full_baths + no_half_baths >= ?", params[:baths].to_i)
         .where("list_price BETWEEN ? AND ?", params[:minprice], params[:maxprice])
         .where("square_feet BETWEEN ? AND ?", params[:minsqft], params[:maxsqft])
         .where("town_num BETWEEN ? AND ? ", params[:mintown], params[:maxtown])
+        .order(order_by[params[:sort]])
+
 
     end
 
@@ -89,11 +103,12 @@ class Listing < ActiveRecord::Base
     end
 
     def self.get_photo_url(num,photo)
-        return "photo/#{num[0..1]}/#{num[2..4]}/#{num[5..7]}_#{@@photo_num_map[photo]}.jpg"
+        strnum = num.to_s
+        return "photo/#{strnum[0..1]}/#{strnum[2..4]}/#{strnum[5..7]}_#{@@photo_num_map[photo]}.jpg"
     end
 
     def photo_at_index(photo=0)
-        num = self.list_no
+        num = self.list_no.to_s
         return "photo/#{num[0..1]}/#{num[2..4]}/#{num[5..7]}_#{@@photo_num_map[photo]}.jpg"
     end
 
