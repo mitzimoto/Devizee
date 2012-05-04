@@ -26,6 +26,7 @@ class ListingView extends Backbone.View
         $('.carousel-inner .item').onImagesLoad
             each: => @updateProgressBar()
             all: => @closeProgressBar()
+            errors: => @updateProgressBar()
 
         $('#the-carousel').carousel()
         $('.carousel-control').hide()

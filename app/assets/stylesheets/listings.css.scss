@@ -41,12 +41,16 @@ div#main-listing {
             @include shadow1;
             cursor: pointer;
 
+            &.active {
+                @include shadow2;
+            }
 
+            &:hover {
+                @include shadow2;
+            };
         }
 
-        .active {
-            border: 1px solid #999 !important;
-        }
+
 
     }
 

@@ -19,7 +19,7 @@
 //= require bootstrap-carousel
 //= require underscore-min
 //= require backbone-full
-//= require jquery.onImagesLoad.min
+//= require jquery.onImagesLoad
 //= require jquery.wookmark.min
 //= require jquery.mousewheel
 //= require jquery.jscrollpane.min

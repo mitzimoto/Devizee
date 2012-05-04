@@ -1,5 +1,6 @@
 require 'net/ftp'
 require 'fileutils'
+require 'timeout'
 
 default_filenames = {
     'Agent'     => 'data/agents.txt',
@@ -80,7 +81,7 @@ namespace :listings do
   task :photo, [:page] => :environment do |t,args|
 
         imgdir = "app/assets/images/mls"
-        listings = Listing.paginate(:page => args[:page], :per_page => 10)
+        listings = Listing.order("list_no DESC").paginate(:page => args[:page], :per_page => 100)
 
         ftp = Net::FTP.new('ftp.mlspin.com')
         ftp.login
@@ -88,11 +89,15 @@ namespace :listings do
 
         listings.each do |listing|
 
-            #If there are no photos, then there's not nee to do anything
-            #next if listing.photo_count < 1
-
             filename = Listing.get_photo_url listing.list_no, 0
             puts filename
+
+            if listing.photo_count < 1
+                puts "NO PHOTO"
+                FileUtils.cp("app/assets/images/photo-not-available.jpeg", "#{imgdir}/#{filename}" )
+                next
+            end
+
             next if File.exists?("#{imgdir}/#{filename}") and !File.zero?("#{imgdir}/#{filename}")
 
             dirname = File.dirname(filename)
@@ -101,12 +106,14 @@ namespace :listings do
             %x[ mkdir -p "#{imgdir}/#{dirname}" ]
 
             begin
-                ftp.chdir("/#{dirname}")
-                ftp.getbinaryfile(basename, "#{imgdir}/#{filename}")
+                Timeout.timeout(10) do
+                    ftp.chdir("/#{dirname}")
+                    ftp.getbinaryfile(basename, "#{imgdir}/#{filename}")
+                end
             rescue 
                 puts "Failed to get #{dirname}/#{basename}"
                 File.unlink("#{imgdir}/#{filename}") if File.exists?("#{imgdir}/#{filename}")
-                FileUtils.cp("app/assets/images/photo-not-available.jpeg", "#{imgdir}/#{filename}" )
+                #FileUtils.cp("app/assets/images/photo-not-available.jpeg", "#{imgdir}/#{filename}" )
             end
 
             begin

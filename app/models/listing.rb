@@ -89,10 +89,14 @@ class Listing < ActiveRecord::Base
             %x[ mkdir -p "app/assets/images/mls/#{dirname}" ]
 
             begin
-                ftp.chdir("/#{dirname}")
-                ftp.getbinaryfile(basename, "#{photo_full_path}")
-            rescue 
+                Timeout.timeout(5) do
+                    ftp.chdir("/#{dirname}")
+                    ftp.getbinaryfile(basename, "#{photo_full_path}")
+                end
+            rescue
                 ftp.close
+                File.unlink("#{photo_full_path}")
+                photo_full_path = "app/assets/images/photo-not-available.jpeg"
             end
 
             ftp.close
@@ -141,7 +145,9 @@ class Listing < ActiveRecord::Base
     end
 
     def total_baths
-        return self.no_half_baths + self.no_full_baths
+        self.no_full_baths = 0 unless self.no_full_baths
+        self.no_half_baths = 0 unless self.no_half_baths
+        return self.no_half_baths  + self.no_full_baths
     end
 
     def human_basement
