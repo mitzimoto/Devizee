@@ -14,3 +14,7 @@
 /log/*.log
 /tmp
 /app/assets/images/mls/photo/**/
+
+#Ignore some public stuff
+public/assets
+public/images

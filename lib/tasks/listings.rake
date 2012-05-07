@@ -51,7 +51,7 @@ namespace :listings do
     Table.transaction do #This makes inserts waaaaaay faster. 
 
         while(line = file.gets)
-            puts line
+            #puts line
             data = line.split('|')
             options = Hash.new
     
@@ -69,6 +69,7 @@ namespace :listings do
 
             end
 
+	    puts options
             Table.create(options)
 
         end
