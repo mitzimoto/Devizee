@@ -2,7 +2,7 @@ class AppRouter extends Backbone.Router
 
     routes:
         '' : 'index'
-        'listings/:id' : 'listings'
+        'listings/:id/:address' : 'listings'
 
     initialize: ->
         console.log('Initializing router')

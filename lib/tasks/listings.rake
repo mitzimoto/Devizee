@@ -1,6 +1,7 @@
 require 'net/ftp'
 require 'fileutils'
 require 'timeout'
+require 'ruby-rets'
 
 default_filenames = {
     'Agent'     => 'data/agents.txt',
@@ -77,6 +78,17 @@ namespace :listings do
     file.close
   end
 
+  desc 'Download images from the MLS via RETS'
+  task :rets, [:page] => :environment do |t,args|
+    client = RETS::Client.login(    :url => "http://rets.mlspin.com/login/index.asp",
+                                    :username => "CT002681",
+                                    :password => "kXTJVPQt" )
+
+    client.get_object(:resource => :Property, :type => :Photo, :location => false, :id => "71298692:0") { |object|
+        puts object[:content]
+    }
+  end
+
   desc 'Download images from the MLS'
   task :photo, [:page] => :environment do |t,args|
 
@@ -85,15 +97,13 @@ namespace :listings do
 
         ftp = Net::FTP.new('ftp.mlspin.com')
         ftp.login
-        ftp.debug_mode = true
 
         listings.each do |listing|
 
             filename = Listing.get_photo_url listing.list_no, 0
-            puts filename
+            puts "[page #{args[:page]}] Downloading #{filename}"
 
             if listing.photo_count < 1
-                puts "NO PHOTO"
                 FileUtils.cp("app/assets/images/photo-not-available.jpeg", "#{imgdir}/#{filename}" )
                 next
             end
@@ -105,15 +115,33 @@ namespace :listings do
 
             %x[ mkdir -p "#{imgdir}/#{dirname}" ]
 
+            retries = 0
+
             begin
-                Timeout.timeout(10) do
-                    ftp.chdir("/#{dirname}")
-                    ftp.getbinaryfile(basename, "#{imgdir}/#{filename}")
+                Timeout.timeout(2) do
+                    ftp.getbinaryfile("#{dirname}/#{basename}", "#{imgdir}/#{filename}")
                 end
             rescue 
                 puts "Failed to get #{dirname}/#{basename}"
                 File.unlink("#{imgdir}/#{filename}") if File.exists?("#{imgdir}/#{filename}")
                 #FileUtils.cp("app/assets/images/photo-not-available.jpeg", "#{imgdir}/#{filename}" )
+                if retries < 5
+                    puts "Waiting 2 seconds to retry #{retries}/5"
+                    sleep 2
+                    ftp.login if ftp.closed?()
+                    retries += 1
+                    retry
+                else
+                    ftp.close
+                    ftp.login if ftp.closed?()
+                    puts "Too many retries, reconnecting"
+                    retries += 1
+                    if retries < 7
+                        retry
+                    else
+                        print "I give up"
+                    end
+                end
             end
 
             begin

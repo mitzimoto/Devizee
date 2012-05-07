@@ -1,3 +1,4 @@
+<% content_for :title, "#{@listing.address} #{@listing.town.long} #{@listing.town.state}" %>
 <img src="/assets/wood.png" style="display: none"/>
 <div class="container" id="main-listing">
     <div class="row">
@@ -8,7 +9,7 @@
                 <div class="progress progress-success progress-striped"> <div class="bar" style="width: 0%;"></div></div>
                 <% for i in  0 .. @listing.photo_count - 1%>
                     <div class="single-tile" data-photo-id=<%= i %> >
-                        <img src="/listings/photo/<%= @listing.list_no %>/<%=i%>" class="single-thumbnail"/>
+                        <img src="/listings/photo/<%= @listing.list_no %>/<%=i%>" data-mls=<%= @listing.list_no %> class="single-thumbnail"/>
                     </div>
                 <% end %>
                 </div>
@@ -26,7 +27,7 @@
                         <% else %>
                         <div class="item" data-photo-id=<%= i %>>
                         <% end %>
-                            <img src="/listings/photo/<%= @listing.list_no %>/<%=i%>"/>
+                            <img src="/listings/photo/<%= @listing.list_no %>/<%=i%>" data-mls=<%= @listing.list_no %> />
                         </div>
                     <% end %>
                     </div>

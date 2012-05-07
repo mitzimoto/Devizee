@@ -89,9 +89,8 @@ class Listing < ActiveRecord::Base
             %x[ mkdir -p "app/assets/images/mls/#{dirname}" ]
 
             begin
-                Timeout.timeout(5) do
-                    ftp.chdir("/#{dirname}")
-                    ftp.getbinaryfile(basename, "#{photo_full_path}")
+                Timeout.timeout(2) do
+                    ftp.getbinaryfile("#{dirname}/#{basename}", "#{photo_full_path}")
                 end
             rescue
                 ftp.close
@@ -126,6 +125,11 @@ class Listing < ActiveRecord::Base
 
     def address_truncated
         return truncate "#{self.street_no} #{self.street_name.titleize}", :length => 25, :omission => "..."
+    end
+
+    def address_slug
+        str = "#{self.street_no} #{self.street_name} #{self.town.long} #{self.town.state}"
+        str.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
     end
 
     def address

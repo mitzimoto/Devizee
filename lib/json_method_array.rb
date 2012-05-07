@@ -8,6 +8,7 @@ module JsonMethodArray
                   :street_name_titleized,
                   :street_name_titleized,
                   :address_truncated,
+                  :address_slug,
                   :photo_url,
                   :no_bedrooms,
                   :no_half_baths,
