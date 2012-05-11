@@ -77,28 +77,12 @@ class Listing < ActiveRecord::Base
 
     def self.download_photo(num, photo)
         photo_path = Listing.get_photo_url num, photo #photo/xx/xxx/xxx_x.jpg
-        photo_full_path = "app/assets/images/mls/#{photo_path}"
+        photo_full_path = "public/images/#{photo_path}"
 
-        unless File.exists?(photo_full_path)
-            ftp = Net::FTP.new('ftp.mlspin.com')
-            ftp.login
-
-            dirname  = File.dirname(photo_path)
-            basename = File.basename(photo_path)
-
-            %x[ mkdir -p "app/assets/images/mls/#{dirname}" ]
-
-            begin
-                Timeout.timeout(2) do
-                    ftp.getbinaryfile("#{dirname}/#{basename}", "#{photo_full_path}")
-                end
-            rescue
-                ftp.close
-                File.unlink("#{photo_full_path}")
-                photo_full_path = "app/assets/images/photo-not-available.jpeg"
-            end
-
-            ftp.close
+        if File.exists?(photo_full_path)
+            return photo_full_path
+        else
+            photo_full_path = "app/assets/images/HouseLoading.gif"
         end
 
         return photo_full_path

@@ -12,10 +12,11 @@ unless sock
     exit 1
 end
 
-sock.print("Hello\n")
+sock.print("71359563\n")
 
 while line = sock.gets
-    puts line.chomp
+    line.chomp!
+    puts "{\"status\":\"#{line}\"}"
 end
 
 sock.close
