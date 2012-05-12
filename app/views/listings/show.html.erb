@@ -57,7 +57,7 @@
                     </tr>
                     <tr>
                         <td>Lot Size:</td>
-                        <td><%= @listing.acre %> Acre</td>
+                        <td><%= number_with_precision @listing.acre, :precision => 2 %> Acre</td>
                     </tr>
                     <tr>
                         <td>Basement:</td>
