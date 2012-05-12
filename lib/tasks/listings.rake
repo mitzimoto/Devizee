@@ -1,7 +1,6 @@
 require 'net/ftp'
 require 'fileutils'
 require 'timeout'
-require 'ruby-rets'
 
 default_filenames = {
     'Agent'     => 'data/agents.txt',
