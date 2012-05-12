@@ -2,6 +2,9 @@ class ListingView extends Backbone.View
 
     el: '#main-listing'
     tc: '#thumbnail-column'
+    download_status: 'noop'
+    reload_max: 5
+    reload_tries: 0
 
     events: 
         'click .single-tile'        : 'loadImage'
@@ -13,9 +16,15 @@ class ListingView extends Backbone.View
 
     initialize: ->
         window.allowReload = false
-        console.log("initializing single listing view")
+        console.log("initializing single listing #{@options.listno}")
         @totalThumbs = $('.carousel-inner .item').length
         @loadedThumbs = 0
+
+        $.getJSON "/listings/download/#{@options.listno}.json", (response) =>
+            switch response.status
+                when 'error' then console.log('Failed to download images')
+                when 'success' then @reload_every = window.every 1000, @reloadImages
+                when 'noop' then console.log('Images previously downloaded. noop')
 
     render: ->
         $(@tc).height( $(window).height() - $(@tc).offset().top - 20 )
@@ -23,6 +32,7 @@ class ListingView extends Backbone.View
         $(@tc).jScrollPane
             verticalDragMaxHeight: 30
 
+        #Send a request to download all the photos for this listing
         $('.carousel-inner .item').onImagesLoad
             each: => @updateProgressBar()
             all: => @closeProgressBar()
@@ -54,10 +64,26 @@ class ListingView extends Backbone.View
         $('.single-tile').removeClass('active')
         $("div[data-photo-id=#{currentSlide}]").addClass('active')
 
+    reloadImages: =>
+        $('.carousel-inner .item img').each ->
+            console.log("reloading carousel image")
+            origsrc = @.src
+            @.src = origsrc + "#e" + Math.random()
+
+        $('.single-tile img').each ->
+            console.log("reloading single tile image")
+            origsrc = @.src
+            @.src = origsrc + "#e" + Math.random()
+
+        @reload_tries++
+        console.log( @reload_tries )
+        window.stop @reload_every unless @reload_tries < @reload_max
+
+        return
+
     updateProgressBar: ->
         @loadedThumbs++
         percent = (@loadedThumbs / @totalThumbs)  * 100
-        console.log("#{percent}%")
         $('.bar').width( "#{percent}%")
 
     closeProgressBar: ->

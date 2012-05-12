@@ -32,7 +32,7 @@ class ListingsController < ApplicationController
    #  #do something
    #end
 
-    @photo_path = Listing.download_photo params[:list_no], params[:photo_no].to_i
+    @photo_path = Listing.display_photo params[:list_no], params[:photo_no].to_i
   
     #respond_to do |format|
     #  format.html # search.html.erb
@@ -41,6 +41,22 @@ class ListingsController < ApplicationController
 
     File.open(@photo_path, 'rb') do |f|
       send_data f.read, :type => "image/jpeg", :disposition => "inline"
+    end
+
+  end
+
+  def download
+
+    @listing = Listing.where(:list_no => params[:list_no]).first()
+
+    status = 'noop'
+#
+    if params[:list_no] and @listing.photo_count > 1
+      status = Listing.download_photos params[:list_no] 
+    end
+
+    respond_to do |format|
+      format.json { render :json => {:status => status} }
     end
 
   end

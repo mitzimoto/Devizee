@@ -20,8 +20,8 @@ class AppRouter extends Backbone.Router
     index: ->
         @showView(window.listingsView)
 
-    listings: ->
-        listing = new ListingView()
+    listings: (id) ->
+        listing = new ListingView({listno: id})
         @showView(listing)
         #listing.attach()
 
