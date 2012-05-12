@@ -1,5 +1,5 @@
 require 'fileutils'
-require 'net/ftp'
+require 'socket'
 
 class Listing < ActiveRecord::Base
     acts_as_superclass
@@ -15,6 +15,13 @@ class Listing < ActiveRecord::Base
 
     include ActionView::Helpers::NumberHelper
     include ActionView::Helpers::TextHelper
+
+    @IMAGE_PATH = "public/images"
+
+    @PHOTO_SERVER = {
+        'hostname'  => 'localhost',
+        'port'      => '7070'
+    }
 
     @@photo_num_map = {
         0     =>  0,
@@ -75,7 +82,37 @@ class Listing < ActiveRecord::Base
 
     end
 
-    def self.download_photo(num, photo)
+    def self.download_photos(num)
+        first_photo_path = Listing.get_photo_url num, 1
+
+        if File.exists?(@IMAGE_PATH + "/" + first_photo_path)
+            return 'noop'
+        else
+
+            begin
+                sock = TCPSocket.open @PHOTO_SERVER['hostname'], @PHOTO_SERVER['port']
+            rescue
+                return 'error'
+            end
+
+            #you never know
+            return 'error' unless sock
+
+            sock.print("#{num}\n")
+
+            while response = sock.gets
+                response.chomp!
+                sock.close
+                return response
+            end
+
+            #if we got here, something ain't quite right.
+            return 'error'
+        end
+
+    end
+
+    def self.display_photo(num, photo)
         photo_path = Listing.get_photo_url num, photo #photo/xx/xxx/xxx_x.jpg
         photo_full_path = "public/images/#{photo_path}"
 

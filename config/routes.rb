@@ -1,10 +1,14 @@
 Realtorest::Application.routes.draw do
 
-
-  match 'listings/search/(:page)' => 'listings#search'
-  match 'listings/:list_no/(:any)' => 'listings#show'
+  #listings
+  match 'listings/search/(:page)'           => 'listings#search'
+  match 'listings/download/:list_no'        => 'listings#download'
+  match 'listings/:list_no/(:any)'          => 'listings#show'
   match 'listings/photo/:list_no/:photo_no' => 'listings#photo'
-  match 'towns' => 'towns#autocomplete'
+
+
+  #towns
+  match 'towns'                             => 'towns#autocomplete'
 
 
   # The priority is based upon order of creation:

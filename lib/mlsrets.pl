@@ -63,7 +63,6 @@ sub download_photo {
     my $clfh   = shift;
     my $thua   = shift;
 
-
     my $id_1 = substr $id, 0, 2;
     my $id_2 = substr $id, 2, 3;
     my $id_3 = substr $id, 5, 3;
@@ -77,6 +76,7 @@ sub download_photo {
     my $thresponse = $thua->get("http://rets.mlspin.com/getobject/index.asp?Type=Photo&Resource=Property&ID=$id:*");
 
     unless( $thresponse->is_success ) {
+        print "Error downloading photos for <$id> ( http://rets.mlspin.com/getobject/index.asp?Type=Photo&Resource=Property&ID=$id:* )\n";
         print $clfh "error\n";
         close $clfh;
         return;
@@ -91,7 +91,9 @@ sub download_photo {
     my $parsed = Email::MIME->new($full_response);
     my @images = $parsed->parts;
 
-    for my $i (0 .. $#images) {
+    #don't download photo 0
+    for my $i (1 .. $#images) {
+        print "downloading photo $i\n";
         open (FH, ">$imagesPath/$id_1/$id_2/${id_3}_" . $photo_num_map->{$i} . ".jpg");
             print FH $images[$i]->body_raw;
         close FH;
