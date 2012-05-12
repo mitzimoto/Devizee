@@ -13,7 +13,7 @@ class Town < ActiveRecord::Base
     end
 
     def self.starts_with(query="")
-        Town.select("long,state,num").where("LOWER(long) LIKE '#{query.downcase}%'").limit(10)
+	Town.select("`long`,`state`,`num`").where("LOWER(`long`) LIKE '#{query.downcase}%'").limit(10)
     end
 
     def town_and_state
