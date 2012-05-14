@@ -10,6 +10,7 @@ class SearchView extends Backbone.View
         @model.set('page', 1)
         @model.set('sort', 'newest')
         @bindScroll()
+        @model.bind('error', @doerror);
 
     render: ->
         template = _.template( $('#search_template').html() )
@@ -48,6 +49,9 @@ class SearchView extends Backbone.View
         @
 
     search: (e, add) ->
+
+        return false unless @dovalidation()
+
         if add
             window.listingsView.$el.trigger("add", @model)
         else
@@ -56,8 +60,19 @@ class SearchView extends Backbone.View
 
         return false
 
+    dovalidation: -> 
+        if @model.validate(@model.attributes)
+            @model.trigger('error', @model.errorDetail)
+            return false
+
+        #Everything's cool. Clear errors
+        $('.control-group').removeClass('error')
+        $('.control-group').tooltip('disable')
+
+        return true
+
     updatevalue: (e) ->
-        @model.set($(e.target).attr('name'), $(e.target).val())
+        @model.set($(e.target).attr('name'), $(e.target).val(), {silent: true})
 
     updatesort: (e) ->
         $('#sort-dropdown').html( "Sort By: " + $(e.target).html() + " <b class='caret'></b>")
@@ -72,5 +87,17 @@ class SearchView extends Backbone.View
                 window.allowReload = false
                 after 5000, -> window.allowReload = true
                 @search(null, true)
+
+    doerror: (error) ->
+        console.log(error)
+        console.log($("[data-control-group=#{error.group}]"))
+        errorGroup = $("[data-control-group=#{error.group}]")
+        errorGroup.addClass('error')
+        errorGroup.tooltip
+            title: error.error
+            zIndex: 2000
+            placement: 'bottom'
+        errorGroup.tooltip('enable')
+        errorGroup.tooltip('show') 
 
 @.SearchView = SearchView

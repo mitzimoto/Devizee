@@ -17,6 +17,7 @@
 //= require bootstrap-typeahead
 //= require bootstrap-modal
 //= require bootstrap-carousel
+//= require bootstrap-tooltip
 //= require underscore-min
 //= require backbone-full
 //= require jquery.onImagesLoad

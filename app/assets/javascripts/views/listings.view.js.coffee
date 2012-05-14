@@ -31,7 +31,7 @@ class ListingsView extends Backbone.View
 
     search: (e, criteria, add) ->
         window.TheRouter.navigate('', true) unless add
-
+        
         @model.fetch    
             data: criteria.attributes
             success: (collection, response) =>

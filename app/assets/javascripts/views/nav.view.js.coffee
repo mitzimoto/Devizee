@@ -6,9 +6,10 @@ class NavView extends Backbone.View
         @$el.attr('id', 'nav-container')
 
         @searchView = new SearchView({model: new Search()})
-
+        @searchView.on('error', @doerror)
     render: ->
         @$el.append( @searchView.render().$el )
         @
+
 
 @.NavView = NavView
