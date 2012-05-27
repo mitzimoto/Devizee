@@ -2,11 +2,13 @@ class AppRouter extends Backbone.Router
 
     routes:
         '' : 'index'
+        'page/:page' : 'gotopage'
         'listings/:id/:address' : 'listings'
 
     initialize: ->
         console.log('Initializing router')
-        nav = new NavView()
+        window.page = 1
+        window.nav = new NavView()
         $('.navbar .container').append( nav.render().$el )
 
         nav.searchView.autocomplete()
@@ -31,6 +33,11 @@ class AppRouter extends Backbone.Router
 
         this.currentView = view
         this.currentView.render()
+
+    gotopage: (page=1) ->
+        window.listingsView.doscroll = true
+        window.page = page
+        @showView(window.listingsView)
 
 #Export to the global namespace
 @.AppRouter = AppRouter

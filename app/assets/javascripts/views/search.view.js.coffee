@@ -7,7 +7,7 @@ class SearchView extends Backbone.View
 
     initialize: ->
         window.allowReload = true
-        @model.set('page', 1)
+        @model.set('page', window.page)
         @model.set('sort', 'newest')
         @bindScroll()
         @model.bind('error', @doerror);
@@ -83,10 +83,12 @@ class SearchView extends Backbone.View
         $(window).scroll =>
             return if !window.allowReload
             if ( $(window).scrollTop() + $(window).height() > $(document).height() - 500)
-                @model.set('page', @model.get('page') + 1)
+                @model.set('page', ++window.page )
+                page = @model.get('page')
                 window.allowReload = false
                 after 5000, -> window.allowReload = true
                 @search(null, true)
+                window.TheRouter.navigate("page/#{page}")
 
     doerror: (error) ->
         console.log(error)

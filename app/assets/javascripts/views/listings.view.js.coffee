@@ -1,5 +1,7 @@
 class ListingsView extends Backbone.View
 
+    perpage: 30
+
     initialize: ->
         $('.navbar').after( _.template( $('#tiles_template').html() ) )
         @setElement( $('#tiles') )
@@ -10,7 +12,7 @@ class ListingsView extends Backbone.View
         "add"           : "add"
         "reset"         : "reset"
 
-    render: (e) ->
+    render: () ->
         window.allowReload = true
         @appendTile listing for listing in @model.models
         @rearrange()
@@ -18,9 +20,21 @@ class ListingsView extends Backbone.View
     reset: (e) ->
         @$el.empty()
 
+
     appendTile: (listing) ->
         template = _.template($('#tile_template').html())
         @$el.append(template(listing.attributes))
+
+    scrollto: (page=window.page) =>
+        offset = ((page - 1) * @perpage)
+        console.log("in scrollto #{page} #{@}")
+        if offset > 0
+            scrollTo = $('.tile')[offset - 1]
+            console.log("scrolling to #{$(scrollTo).offset().top}")
+            $('body,html').animate 
+                scrollTop: ($(scrollTo).offset().top - 50)
+
+        return @
 
     rearrange: ->
         console.log("rearrange")
@@ -28,6 +42,9 @@ class ListingsView extends Backbone.View
             container: @.$el
             autoResize: true
             offset: 12
+
+        window.after 500, @scrollto if @doscroll
+        @doscroll = false
 
     search: (e, criteria, add) ->
         window.TheRouter.navigate('', true) unless add

@@ -16,6 +16,8 @@ class Listing < ActiveRecord::Base
     include ActionView::Helpers::NumberHelper
     include ActionView::Helpers::TextHelper
 
+    self.per_page = 30
+
     @IMAGE_PATH = "public/images"
 
     @PHOTO_SERVER = {

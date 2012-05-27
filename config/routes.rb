@@ -1,11 +1,17 @@
 Realtorest::Application.routes.draw do
 
+  # You can have the root of your site routed with "root"
+  # just remember to delete public/index.html.
+  root :to => 'home#index'
+
+  #pages
+  match  'page/:page'                       => 'home#index'
+  
   #listings
   match 'listings/search/(:page)'           => 'listings#search'
   match 'listings/download/:list_no'        => 'listings#download'
   match 'listings/:list_no/(:any)'          => 'listings#show'
   match 'listings/photo/:list_no/:photo_no' => 'listings#photo'
-
 
   #towns
   match 'towns'                             => 'towns#autocomplete'
@@ -58,9 +64,7 @@ Realtorest::Application.routes.draw do
   #     resources :products
   #   end
 
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  root :to => 'home#index'
+
 
   # See how all your routes lay out with "rake routes"
 
