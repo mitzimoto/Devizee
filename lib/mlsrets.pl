@@ -12,7 +12,7 @@ use Email::MIME;
 use Data::Dumper;
 
 #my $imagesPath  = "/home/eric/dev/rails/realtorest/public/images/photo";
-my $imagesPath  = "/var/www/0-devizee.com/public/images/photo";
+my $imagesPath  = "/var/www/public/images/photo";
 my $retsHost    = "rets.mlspin.com";
 
 my $photo_num_map = {

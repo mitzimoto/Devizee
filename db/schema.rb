@@ -81,8 +81,8 @@ ActiveRecord::Schema.define(:version => 20120502015825) do
   end
 
   create_table "listings", :force => true do |t|
-    t.string   "subtype",        :null => false
-    t.integer  "list_no",        :null => false
+    t.string   "subtype",                       :null => false
+    t.integer  "list_no",        :limit => 255, :null => false
     t.string   "list_agent"
     t.string   "list_office"
     t.string   "status"
@@ -157,8 +157,8 @@ ActiveRecord::Schema.define(:version => 20120502015825) do
     t.string   "oth6_dimen"
     t.integer  "year_built"
     t.integer  "assessments"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
   create_table "mobile_homes", :primary_key => "listing_id", :force => true do |t|
