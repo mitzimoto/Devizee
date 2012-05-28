@@ -3,7 +3,7 @@ class Town < ActiveRecord::Base
     belongs_to :county, :foreign_key => :county_short
 
     # For now, comment this line out when loading the towns into the database
-    #set_primary_key :num
+    set_primary_key :num
 
     def self.fix_headers (headers)
         headers.map! do |header|

@@ -29,6 +29,7 @@ class AppRouter extends Backbone.Router
 
     showView: (view) ->
 
+        console.log(view)
         this.currentView.close() if this.currentView
 
         this.currentView = view

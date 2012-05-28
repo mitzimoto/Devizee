@@ -1,5 +1,8 @@
 class Search extends Backbone.Model
 
+    events:
+        "change":"changepage"
+
     initialize: ->
 
     validate: (attrs) ->
@@ -10,5 +13,8 @@ class Search extends Backbone.Model
         if (Number) attrs.minsqft > (Number) attrs.maxsqft
             @.errorDetail = {error: "Minimum sqft cannot be more than Maximum sqft", group: 'squarefeet'}
             return @
+
+    changepage: ->
+        console.log("page has changed")
 
 @.Search = Search

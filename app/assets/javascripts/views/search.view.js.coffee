@@ -56,6 +56,7 @@ class SearchView extends Backbone.View
             window.listingsView.$el.trigger("add", @model)
         else
             @model.set('page', 1)
+            window.page = 1
             window.listingsView.$el.trigger("search", @model)
 
         return false
