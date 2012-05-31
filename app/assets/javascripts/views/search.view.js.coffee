@@ -89,7 +89,7 @@ class SearchView extends Backbone.View
                 window.allowReload = false
                 after 5000, -> window.allowReload = true
                 @search(null, true)
-                window.TheRouter.navigate("page/#{page}")
+                window.TheRouter.navigate("page/#{page}") unless $.browser.msie
 
     doerror: (error) ->
         console.log(error)

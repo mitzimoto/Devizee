@@ -2,6 +2,7 @@ class AppRouter extends Backbone.Router
 
     routes:
         '' : 'index'
+        '?*parameters' : 'index'
         'page/:page' : 'gotopage'
         'listings/:id/:address' : 'listings'
 

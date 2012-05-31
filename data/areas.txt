@@ -1047,7 +1047,7 @@ SHORT|LONG
 39W|Brownell Corner 
 39X|Central Village 
 39Y|Head of Westport 
-39Z|Horse Neck Beach 
+39Z|Horseneck Beach
 40A|Kirby Corner 
 40B|North Westport 
 40C|Westport Harbor 
