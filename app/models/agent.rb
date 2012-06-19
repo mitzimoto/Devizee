@@ -7,4 +7,9 @@ class Agent < ActiveRecord::Base
             header
         end
     end
+
+    def self.empty_all
+	puts "Removing all records..."
+	self.delete_all
+    end
 end

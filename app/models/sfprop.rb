@@ -10,6 +10,11 @@ class Sfprop < ActiveRecord::Base
         end
     end
 
+    def self.empty_all
+        Listing.delete_all
+	self.delete_all
+    end
+
     def as_json (options={})
         super(:methods => get_methods_array())
     end

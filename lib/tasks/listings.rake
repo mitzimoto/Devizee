@@ -3,19 +3,19 @@ require 'fileutils'
 require 'timeout'
 
 default_filenames = {
-    'Agent'     => 'data/agents.txt',
-    'Area'      => 'data/areas.txt',
-    'County'    => 'data/counties.txt',
-    'Office'    => 'data/offices.txt',
-    'Town'      => 'data/towns.txt',
-    'Bizopp'    => 'data/idx_bu.txt',
-    'Condo'     => 'data/idx_cc.txt',
-    'Commercial'=> 'data/idx_ci.txt',
-    'Land'      => 'data/idx_ld.txt',
-    'MultiFamily'=> 'data/idx_mf.txt',
-    'MobileHome'=> 'data/idx_mh.txt',
-    'Rental'    => 'data/idx_rn.txt',
-    'Sfprop'    => 'data/idx.txt'
+    'Agent'     => 'data/agents/agents.txt',
+    'Area'      => 'data/areas/areas.txt',
+    'County'    => 'data/counties/counties.txt',
+    'Office'    => 'data/offices/offices.txt',
+    'Town'      => 'data/towns/towns.txt',
+    'Bizopp'    => 'data/biz/idx_bu.txt',
+    'Condo'     => 'data/condos/idx_cc.txt',
+    'Commercial'=> 'data/commercial/idx_ci.txt',
+    'Land'      => 'data/land/idx_ld.txt',
+    'MultiFamily'=> 'data/multifam/idx_mf.txt',
+    'MobileHome'=> 'data/mobile/idx_mh.txt',
+    'Rental'    => 'data/rentals/idx_rn.txt',
+    'Sfprop'    => 'data/sfprops/idx.txt'
 }
 
 def die(message)
@@ -25,13 +25,14 @@ end
 
 namespace :listings do
   desc 'Build the category tree'
-  task :load, [:table, :file] => :environment do |t, args|
+  task :load, [:table, :file, :truncate] => :environment do |t, args|
 
     table = args[:table]        || die("You must specify a table to load!")
 
     #make sure the table we get actually exists
     default_filenames[table]    || die("Unknown table!: #{table}")
     filename = args[:file]      || default_filenames[table]
+    truncate = args[:truncate]	|| 0
 
     #open the file
     file = File.new(filename)   || die("Error opening #{filename}: #{$!}")
@@ -44,6 +45,12 @@ namespace :listings do
     headers.last.gsub!("\r\n", '')
 
     Table = table.constantize
+
+    #Truncate the table. This is subject to change
+    if truncate == "true"
+    	puts "Truncating table..."
+	Table.empty_all
+    end
 
     Table.fix_headers(headers)
 
@@ -78,6 +85,11 @@ namespace :listings do
     file.close
   end
 
+  desc 'Build the category tree'
+  task :load, [:table, :file, :truncate] => :environment do |t, args|
+
+  end
+
   desc 'Download images from the MLS via RETS'
   task :rets, [:page] => :environment do |t,args|
     client = RETS::Client.login(    :url => "http://rets.mlspin.com/login/index.asp",
@@ -91,7 +103,7 @@ namespace :listings do
 
   desc 'Download images from the MLS'
   task :photo, [:page] => :environment do |t,args|
-
+	#DEPRECIATED!
         imgdir = "app/assets/images/mls"
         listings = Listing.order("list_no DESC").paginate(:page => args[:page], :per_page => 100)
 
