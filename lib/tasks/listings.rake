@@ -54,7 +54,7 @@ namespace :listings do
 
     Table.fix_headers(headers)
 
-    Table.transaction do #This makes inserts waaaaaay faster. 
+    ActiveRecord::Base.transaction do #This makes inserts waaaaaay faster. 
 
         while(line = file.gets)
             #puts line
@@ -75,8 +75,8 @@ namespace :listings do
 
             end
 
-	    puts options
-            Table.create(options)
+	        puts options
+            Table.addnew options
 
         end
 
@@ -85,8 +85,27 @@ namespace :listings do
     file.close
   end
 
-  desc 'Build the category tree'
-  task :load, [:table, :file, :truncate] => :environment do |t, args|
+  desc 'Purge entries that are no longer listed'
+  task :remove, [:table, :file] => :environment do |t, args|
+
+        table = args[:table]        || die("You must specify a table to load!")
+
+        default_filenames[table]    || die("Unknown table!: #{table}")
+        filename = args[:file]      || die("you must specify a file!")
+
+        file = File.new(filename)   || die("Error opening #{filename}: #{$!}")
+
+        Table = table.constantize
+
+        ActiveRecord::Base.transaction do
+            while(line = file.gets)
+                data = line.split('|')
+                id = data[1]
+                record = Listing.destroy(id)
+            end
+        end
+
+        file.close
 
   end
 

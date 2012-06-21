@@ -16,6 +16,8 @@ class Listing < ActiveRecord::Base
     include ActionView::Helpers::NumberHelper
     include ActionView::Helpers::TextHelper
 
+    set_primary_key :list_no
+
     self.per_page = 30
 
     @IMAGE_PATH = "public/images"

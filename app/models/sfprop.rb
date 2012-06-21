@@ -15,6 +15,12 @@ class Sfprop < ActiveRecord::Base
 	self.delete_all
     end
 
+    def self.addnew(options={})
+        item = self.new(options)
+        item.list_no = options[:list_no]
+        item.save
+    end
+
     def as_json (options={})
         super(:methods => get_methods_array())
     end
