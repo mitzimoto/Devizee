@@ -5,7 +5,7 @@ class ListingsController < ApplicationController
   # GET /listings/1
   # GET /listings/1.json
   def show
-    @listing = Listing.where(:list_no => params[:list_no]).first()
+    @listing = Listing.find(:params[:list_no]).first()
 
     respond_to do |format|
       format.html # show.html.erb
@@ -47,7 +47,7 @@ class ListingsController < ApplicationController
 
   def download
 
-    @listing = Listing.where(:list_no => params[:list_no]).first()
+    @listing = Listing.find(params[:list_no]).first()
 
     status = 'noop'
 #

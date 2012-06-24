@@ -124,7 +124,7 @@ namespace :listings do
   task :photo, [:page] => :environment do |t,args|
 	#DEPRECIATED!
         imgdir = "app/assets/images/mls"
-        listings = Listing.order("list_no DESC").paginate(:page => args[:page], :per_page => 100)
+        listings = Listing.order("id DESC").paginate(:page => args[:page], :per_page => 100)
 
         ftp = Net::FTP.new('ftp.mlspin.com')
         ftp.login

@@ -9,7 +9,12 @@ class Agent < ActiveRecord::Base
     end
 
     def self.empty_all
-	puts "Removing all records..."
-	self.delete_all
+	   puts "Removing all records..."
+	   self.delete_all
+    end
+
+    def self.addnew(options={})
+        item = self.new(options)
+        item.save
     end
 end

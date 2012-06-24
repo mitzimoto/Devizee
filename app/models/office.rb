@@ -7,4 +7,9 @@ class Office < ActiveRecord::Base
             header
         end
     end
+
+    def self.addnew(options={})
+        item = self.new(options)
+        item.save
+    end
 end

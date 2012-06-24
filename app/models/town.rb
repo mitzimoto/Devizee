@@ -2,8 +2,9 @@ class Town < ActiveRecord::Base
     has_many :listings, :foreign_key => :town_num
     belongs_to :county, :foreign_key => :county_short
 
+    attr_accessible :num, :long, :county_short, :state
     # For now, comment this line out when loading the towns into the database
-    set_primary_key :num
+    #set_primary_key :num
 
     def self.fix_headers (headers)
         headers.map! do |header|
@@ -23,5 +24,12 @@ class Town < ActiveRecord::Base
 
     def as_json(options={})
         super( :methods => [:town_and_state] )
+    end
+
+    def self.addnew(options={})
+        puts options
+        item = self.new(options)
+        item.num = options[:num]
+        item.save
     end
 end

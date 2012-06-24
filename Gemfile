@@ -28,6 +28,7 @@ end
 
 gem 'jquery-rails'
 gem 'multiple_table_inheritance', '~> 0.2.1'
+#gem 'multiple_table_inheritance', :path => 'vendor/gems/multiple_table_inheritance-0.2.1'
 gem 'will_paginate', '~> 3.0.beta'
 gem 'curb'
 

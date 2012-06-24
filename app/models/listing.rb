@@ -13,11 +13,18 @@ class Listing < ActiveRecord::Base
     has_many :condos
     has_many :mobile_homes
 
+    #def self.primary_key
+    #    "list_no"
+    #end
+
+    def attributes_protected_by_default
+        # default is ["id", "type"]
+        []
+    end
+
     include ActionView::Helpers::NumberHelper
     include ActionView::Helpers::TextHelper
-
-    set_primary_key :list_no
-
+    
     self.per_page = 30
 
     @IMAGE_PATH = "public/images"

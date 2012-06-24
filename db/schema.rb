@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120502015825) do
+ActiveRecord::Schema.define(:version => 20120622224929) do
 
   create_table "agents", :force => true do |t|
     t.string   "code"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20120502015825) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "bizopps", :primary_key => "listing_id", :force => true do |t|
+  create_table "bizopps", :inherits => :listing, :primary_key => "listing_id", :force => true do |t|
     t.string   "bu_type"
     t.integer  "lot_sq_ft"
     t.integer  "bldg_sq_feet"
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(:version => 20120502015825) do
     t.datetime "updated_at",        :null => false
   end
 
-  create_table "commercials", :primary_key => "listing_id", :force => true do |t|
+  create_table "commercials", :inherits => :listing, :primary_key => "listing_id", :force => true do |t|
     t.string   "ci_type"
     t.string   "space_available"
     t.integer  "rsu_units"
@@ -60,7 +60,7 @@ ActiveRecord::Schema.define(:version => 20120502015825) do
     t.datetime "updated_at",      :null => false
   end
 
-  create_table "condos", :primary_key => "listing_id", :force => true do |t|
+  create_table "condos", :inherits => :listing, :primary_key => "listing_id", :force => true do |t|
     t.string   "cc_type"
     t.integer  "no_living_levels"
     t.datetime "created_at",       :null => false
@@ -74,21 +74,21 @@ ActiveRecord::Schema.define(:version => 20120502015825) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "lands", :primary_key => "listing_id", :force => true do |t|
+  create_table "lands", :inherits => :listing, :primary_key => "listing_id", :force => true do |t|
     t.string   "ld_type"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "listings", :force => true do |t|
-    t.string   "subtype",                       :null => false
-    t.integer  "list_no",        :limit => 255, :null => false
+    t.string   "subtype",        :null => false
+    t.integer  "list_no"
     t.string   "list_agent"
     t.string   "list_office"
     t.string   "status"
     t.integer  "list_price"
     t.integer  "town_num"
-    t.string   "area_code"
+    t.string   "area_short"
     t.string   "zip_code"
     t.integer  "photo_count"
     t.string   "photo_date"
@@ -155,18 +155,19 @@ ActiveRecord::Schema.define(:version => 20120502015825) do
     t.string   "oth5_dimen"
     t.string   "oth6_level"
     t.string   "oth6_dimen"
+    t.string   "oth6_room_name"
     t.integer  "year_built"
     t.integer  "assessments"
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
-  create_table "mobile_homes", :primary_key => "listing_id", :force => true do |t|
+  create_table "mobile_homes", :inherits => :listing, :primary_key => "listing_id", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  create_table "multi_families", :primary_key => "listing_id", :force => true do |t|
+  create_table "multi_families", :inherits => :listing, :primary_key => "listing_id", :force => true do |t|
     t.string   "mf_type"
     t.integer  "no_units"
     t.integer  "no_floors"
@@ -205,26 +206,25 @@ ActiveRecord::Schema.define(:version => 20120502015825) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "rentals", :primary_key => "listing_id", :force => true do |t|
+  create_table "rentals", :inherits => :listing, :primary_key => "listing_id", :force => true do |t|
     t.string   "rn_type"
     t.integer  "parking_spaces"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
 
-  create_table "sfprops", :primary_key => "listing_id", :force => true do |t|
+  create_table "sfprops", :inherits => :listing, :primary_key => "listing_list_no", :force => true do |t|
     t.string   "sf_type"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  create_table "towns", :force => true do |t|
-    t.string   "num"
+  create_table "towns", :primary_key => "num", :force => true do |t|
     t.string   "long"
     t.string   "county_short"
     t.string   "state"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
   end
 
 end

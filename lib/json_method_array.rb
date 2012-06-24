@@ -2,7 +2,7 @@ module JsonMethodArray
 
       def get_methods_array
             methods_array = [
-                  :list_no, 
+                  :id, 
                   :list_price_currency,
                   :street_no_titleized,
                   :street_name_titleized,
