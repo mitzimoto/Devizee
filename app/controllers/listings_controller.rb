@@ -47,7 +47,7 @@ class ListingsController < ApplicationController
 
   def download
 
-    @listing = Listing.find(params[:list_no]).first()
+    @listing = Listing.find(params[:list_no])
 
     status = 'noop'
 #
