@@ -5,7 +5,7 @@ class ListingsController < ApplicationController
   # GET /listings/1
   # GET /listings/1.json
   def show
-    @listing = Listing.find(:params[:list_no]).first()
+    @listing = Listing.find(params[:list_no])
 
     respond_to do |format|
       format.html # show.html.erb
