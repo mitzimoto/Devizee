@@ -17,11 +17,6 @@ class Listing < ActiveRecord::Base
     #    "list_no"
     #end
 
-    def attributes_protected_by_default
-        # default is ["id", "type"]
-        []
-    end
-
     include ActionView::Helpers::NumberHelper
     include ActionView::Helpers::TextHelper
     

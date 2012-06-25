@@ -7,11 +7,6 @@ class Sfprop < ActiveRecord::Base
 
     include JsonMethodArray
 
-        def attributes_protected_by_default
-            # default is ["id", "type"]
-            []
-        end
-
     def self.fix_headers (headers)
         headers.map! do |header|
             header = "AREA_SHORT" if header == "AREA"
@@ -25,11 +20,9 @@ class Sfprop < ActiveRecord::Base
     end
 
     def self.addnew(options={})
-        self.create(options)
-        #item = self.new(options)
-        #item.list_no = options[:list_no]
-        #item.save!
-        #puts item.list_no
+        item = self.new(options)
+        item.parent_association.id = item.list_no
+        item.save!
     end
 
     def as_json (options={})

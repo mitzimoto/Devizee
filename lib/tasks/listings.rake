@@ -75,7 +75,7 @@ namespace :listings do
 
             end
 
-	        puts options
+	        #puts options
             Table.addnew options
 
         end
