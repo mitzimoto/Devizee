@@ -46,7 +46,7 @@ my $sock = new IO::Socket::INET (
     Proto       => 'tcp',
     Listen      => SOMAXCONN,
     Reuse       => 1
-) or die ("Unable to create listening socket");
+) or die ("Unable to create listening socket: $!");
 
 print "Ready to accept connections...\n";
 

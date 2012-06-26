@@ -9,10 +9,12 @@ use IO::Socket;
 use threads;
 use threads::shared;
 use Data::Dumper;
+use File::Copy;
 
-my $imagesPath  = "/home/eric/dev/rails/realtorest/public/images/photo";
+#my $imagesPath  = "/home/eric/dev/rails/realtorest/public/images/photo";
 
-#my $imagesPath  = "/var/www/public/images/photo";
+my $basePath    = "/var/www";
+my $imagesPath  = "$basePath/public/images/photo";
 my $retsHost    = "rets.mlspin.com";
 
 my $photo_num_map = {
@@ -50,7 +52,6 @@ while( $line = <$INPUT> ) {
 
     my @data = split(/\|/, $line);
     download_photo($data[1]);
-    exit;
 }
 
 sub download_photo {
@@ -64,9 +65,10 @@ sub download_photo {
     mkdir "$imagesPath/$id_1"       unless ( -d "$imagesPath/$id_1");
     mkdir "$imagesPath/$id_1/$id_2" unless ( -d "$imagesPath/$id_1/$id_2");
 
-    return if ( -f "$imagesPath/$id_1/$id_2/${id_3}_0.jpg");
+    return if ( -s "$imagesPath/$id_1/$id_2/${id_3}_0.jpg" > 100);
+    #return if ( -f "$imagesPath/$id_1/$id_2/${id_3}_0.jpg");
 
-    print "Downloading photo for <$id>\n";
+    print "Downloading photo for <$id> <http://$retsHost/getobject/index.asp?Type=Photo&Resource=Property&ID=$id:0>\n";
 
     my $thresponse = $ua->get("http://$retsHost/getobject/index.asp?Type=Photo&Resource=Property&ID=$id:0");
 
@@ -74,6 +76,14 @@ sub download_photo {
         print "Error downloading photos for <$id> ( http://$retsHost/getobject/index.asp?Type=Photo&Resource=Property&ID=$id:0 )\n";
         return;
     }
+
+    if ($thresponse->content =~ /No Object Found/) {
+        print "Photo not available <$id> " . $thresponse->content . "\n";
+        copy( "$basePath/app/assets/images/photo-not-available.jpeg", "$imagesPath/$id_1/$id_2/${id_3}_0.jpg");
+        return;
+    }
+
+    print "Found photo for <$id>\n";
 
     open (FH, ">$imagesPath/$id_1/$id_2/${id_3}_0.jpg");
         print FH $thresponse->content;
