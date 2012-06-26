@@ -24,6 +24,7 @@
 //= require jquery.wookmark.min
 //= require jquery.mousewheel
 //= require jquery.jscrollpane.min
+//= require jquery.cookie
 //= require mwheelIntent
 
 //= require models/listing.model

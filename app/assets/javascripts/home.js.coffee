@@ -17,4 +17,9 @@ $ ->
     window.TheRouter = new AppRouter
     Backbone.history.start({pushState: true});
 
-    $('#ieModal').modal('show') if $.browser.msie
+    $('#ieModal').on 'show', ->
+        $.cookie("devizee_ie", "set", { expires: 1 })
+
+    console.log( $.cookie("devizee_ie") )
+    unless $.cookie("devizee_ie")
+        $('#ieModal').modal('show') #if $.browser.msie
