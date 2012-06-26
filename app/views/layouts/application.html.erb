@@ -29,6 +29,28 @@
 <%= render :partial => "backbone/tile" %>
 <%= render :partial => "backbone/search" %>
 
+<div class="modal hide" id="ieModal">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>You're using Internet Explorer :(</h3>
+  </div>
+  <div class="modal-body">
+    <img src='/images/IE_icon.jpg' class='pull-left' width="100"/>
+    <p><strong>Hey Internet Explorer user, let's talk</strong></p>
+
+    <p>Unfortunately, <i>Devizee</i> isn't fully supported by Internet Explorer. </p>
+
+    <p>Listen: it's not you, it's me. <i>Devizee</i> was born out of one web deveoper's desire to learn new technologies and keep his skills sharp. Because of that, this site uses some pretty fancy, cutting edge browser technology that internet explorer just doesn't support yet. It's called HTML5 and it's really cool. I worked pretty hard on developing <i>Devizee</i>, so do me a favor and try it out in <a href="http://chrome.google.com">Google Chrome</a> or <a href="http://firefox.com">Mozilla Firefox</a>. I promise it's worth it!</p>
+
+    <p>Even if you don't want to use <i>Devizee</i>, and I'll understand if you don't, I highly recommend downloading one of the browsers I just mentioned anyway. It will seriously improve your web browsing experience! Everything from Facebook to Google will work faster and look better. There's a lot of cool stuff happening in web development lately and you're missing out by using an unsupported browser!</p>
+
+    <p>If you would rather try and use the site anyway, that's fine too. Just be warned, a lot of stuff is going to look pretty bad and a lot of the functionality will be completely broken</p>
+
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-primary" data-dismiss="modal">I understand, I rather use the broken site </a>
+  </div>
+</div>
 
 
 </body>

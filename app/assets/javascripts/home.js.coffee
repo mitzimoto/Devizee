@@ -16,3 +16,5 @@ unless window.console
 $ ->
     window.TheRouter = new AppRouter
     Backbone.history.start({pushState: true});
+
+    $('#ieModal').modal('show') if $.browser.msie
