@@ -5,7 +5,9 @@ class ListingsController < ApplicationController
   # GET /listings/1
   # GET /listings/1.json
   def show
-    @listing = Listing.find(params[:list_no])
+    @listing = Listing.includes(:agent).find(params[:list_no])
+    @agent = Agent.where(:code => @listing.agent_code).first()
+    @office = Office.where(:code => @listing.office_code).first()
 
     respond_to do |format|
       format.html # show.html.erb

@@ -48,7 +48,8 @@ class Listing < ActiveRecord::Base
     def self.fix_headers (headers)
         headers.map! do |header|
             header = "AREA_SHORT" if header == "AREA"
-            header
+            header = "OFFICE_CODE" if header == "LIST_OFFICE"
+            header = "AGENT_CODE" if header == "LIST_AGENT"
         end
 
     end

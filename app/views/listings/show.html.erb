@@ -71,7 +71,18 @@
                         <td>Zip Code:</td>
                         <td><%= @listing.zip_code%></td>
                     </tr>
+                    <tr>
+                        <td>Listing Agent:</td>
+                        <td><%= @agent.first_name %> <%= @agent.last_name %></td>
+                    </tr>
+                    <tr>
+                        <td>Listing Office:</td>
+                        <td><%= @office.name %></td>
+                    </tr>
                 </table>
+            </div>
+            <div class="disclaimer">
+            2010, MLS Property Information Network, Inc. All rights reserved. a and information set forth herein were provided to MLS Property Information Network, Inc. from third party sources, including sellers, lessors and pu blic records, and were compiled by MLS Property Information Network, Inc. The property listing data and information are for the personal, non commercial use of consumers havi ng a good faith interest in purchasing or leasing listed properties of the type displayed to them and may not be used for any purpose other than to identify prospective prope rties which such consumers may have a good faith interest in purchasing or leasing. MLS Property Information Network, Inc. and its subscribers disclaim any and all representa tions and warranties as to the accuracy of the property listing data and information set forth herein.
             </div>
         </div>
     </div>
